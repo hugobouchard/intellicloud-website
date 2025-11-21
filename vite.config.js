@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import { glob } from 'glob'
-import path from 'path'
 
 // Get all HTML files for multi-page build
 const files = glob.sync('src/pages/**/*.html')
