@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>High-Intent Targeting | Google Ads | IntelliCloud</title>
-  <meta name="description" content="Ready-to-buy keyword targeting with campaigns integrated into Salesforce for complete deal attribution and closed-loop reporting.">
-  <link rel="stylesheet" href="/src/styles/tailwind.css">
-</head>
-<body class="bg-white">
-    <!-- Header -->
+  <!-- Header -->
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
@@ -44,7 +34,7 @@
 
           <!-- Services Dropdown -->
           <div class="relative group">
-            <button class="paragraph hover:text-blue-600 transition-colors flex items-center">
+            <button class="paragraph SERVICES_ACTIVE flex items-center">
               Services
               <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -88,7 +78,7 @@
 
           <!-- Lead Generation Dropdown -->
           <div class="relative group">
-            <button class="paragraph font-semibold text-blue-600 flex items-center">
+            <button class="paragraph LEADGEN_ACTIVE flex items-center">
               Lead Generation
               <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -121,49 +111,12 @@
         <!-- Language Switcher & CTA -->
         <div class="flex items-center space-x-4">
           <div class="hidden md:flex items-center space-x-2">
-            <a href="/home/user/intellicloud-website/src/pages/en/lead-generation/sem/google-ads.html" class="paragraph paragraph-small font-semibold text-blue-600">EN</a>
+            <a href="LANG_EN_LINK" class="paragraph paragraph-small font-semibold text-blue-600">EN</a>
             <span class="text-gray-300">|</span>
-            <a href="/src/pages/fr/index.html" class="paragraph paragraph-small hover:text-blue-600">FR</a>
+            <a href="LANG_FR_LINK" class="paragraph paragraph-small hover:text-blue-600">FR</a>
           </div>
           <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
         </div>
       </div>
     </nav>
   </header>
-
-  <section class="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-20">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">High-Intent Targeting</h1>
-        <p class="text-xl text-white/90 mb-8">We target ready-to-buy keywords, not vanity traffic. Campaigns integrated directly into Salesforce for closed-loop reporting.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Search Ads</span></li><li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Display Ads</span></li><li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Shopping Ads</span></li><li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Video Ads</span></li><li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Remarketing</span></li><li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Performance Max</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-blue-600 mb-2">300%</div><p class="text-gray-600">Avg ROI</p></div><div class="text-center"><div class="text-4xl font-bold text-blue-600 mb-2">$50M+</div><p class="text-gray-600">Ad Spend</p></div><div class="text-center"><div class="text-4xl font-bold text-blue-600 mb-2">Google</div><p class="text-gray-600">Partner</p></div><div class="text-center"><div class="text-4xl font-bold text-blue-600 mb-2">Certified</div><p class="text-gray-600">Team</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="py-16 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-blue-600 hover:bg-gray-100">Contact Us</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4 text-center text-gray-400">
-      <p>&copy; 2025 IntelliCloud. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
