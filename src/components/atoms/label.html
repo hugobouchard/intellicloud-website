@@ -1,0 +1,104 @@
+<!--
+  Label Component
+  Atomic Design: Atom
+
+  Variants:
+  - Default label
+  - Required label (with asterisk)
+  - Optional label
+  - Label with helper text
+-->
+
+<!-- Default Label -->
+<label class="label" for="input-id">
+  Label Text
+</label>
+
+<!-- Required Label -->
+<label class="label label-required" for="input-id">
+  Required Field
+  <span class="label-asterisk">*</span>
+</label>
+
+<!-- Optional Label -->
+<label class="label" for="input-id">
+  Optional Field
+  <span class="label-optional">(optional)</span>
+</label>
+
+<!-- Label with Helper Text -->
+<label class="label" for="input-id">
+  <span class="label-text">Email Address</span>
+  <span class="label-helper">We'll never share your email</span>
+</label>
+
+<!-- Label with Error -->
+<label class="label label-error" for="input-id">
+  Email Address
+  <span class="label-error-message">Please enter a valid email</span>
+</label>
+
+<style>
+  /* Base Label Styles */
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-2);
+    cursor: pointer;
+  }
+
+  .label-text {
+    font-weight: var(--font-medium);
+    color: var(--color-gray-700);
+  }
+
+  /* Required Label */
+  .label-required {
+    position: relative;
+  }
+
+  .label-asterisk {
+    color: #EF4444;
+    margin-left: var(--space-1);
+  }
+
+  /* Optional Label */
+  .label-optional {
+    font-weight: var(--font-normal);
+    color: var(--color-gray-500);
+    margin-left: var(--space-2);
+  }
+
+  /* Helper Text */
+  .label-helper {
+    font-size: var(--text-xs);
+    font-weight: var(--font-normal);
+    color: var(--color-gray-500);
+    margin-top: var(--space-1);
+  }
+
+  /* Error State */
+  .label-error .label-text {
+    color: #DC2626;
+  }
+
+  .label-error-message {
+    font-size: var(--text-xs);
+    font-weight: var(--font-normal);
+    color: #EF4444;
+    margin-top: var(--space-1);
+  }
+
+  /* Disabled State */
+  .label:has(input:disabled),
+  .label:has(textarea:disabled),
+  .label:has(select:disabled) {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+</style>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliCloud - Design System Preview</title>
+  <meta name="description" content="IntelliCloud official website - Modern, minimalist design with atomic design system">
+  <link rel="stylesheet" href="/src/styles/tailwind.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="py-16 text-center">
+      <h1 class="heading heading-1">IntelliCloud Design System</h1>
+      <p class="paragraph paragraph-lead">
+        A modern, minimalist design system built with atomic design principles
+      </p>
+    </header>
+
+    <!-- Navigation Preview -->
+    <section class="mb-24">
+      <h2 class="heading heading-2">Navigation Components</h2>
+      <div class="bg-gray-50 p-8 rounded-lg">
+        <p class="paragraph paragraph-small paragraph-muted">
+          Navigation components will be built in the Molecules phase
+        </p>
+      </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="mb-24">
+      <h2 class="heading heading-2">Buttons</h2>
+      <div class="flex flex-wrap gap-4 mb-8">
+        <button class="btn btn-primary btn-md" type="button">Primary Button</button>
+        <button class="btn btn-secondary btn-md" type="button">Secondary Button</button>
+        <button class="btn btn-outline btn-md" type="button">Outline Button</button>
+        <button class="btn btn-ghost btn-md" type="button">Ghost Button</button>
+        <button class="btn btn-link btn-md" type="button">Link Button</button>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <button class="btn btn-primary btn-sm" type="button">Small</button>
+        <button class="btn btn-primary btn-md" type="button">Medium</button>
+        <button class="btn btn-primary btn-lg" type="button">Large</button>
+        <button class="btn btn-primary btn-md" type="button" disabled>Disabled</button>
+      </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section class="mb-24">
+      <h2 class="heading heading-2">Typography</h2>
+
+      <div class="mb-12">
+        <h3 class="heading heading-3">Headings</h3>
+        <h1 class="heading heading-1">Heading 1 - Main Title</h1>
+        <h2 class="heading heading-2">Heading 2 - Section Title</h2>
+        <h3 class="heading heading-3">Heading 3 - Subsection Title</h3>
+        <h4 class="heading heading-4">Heading 4 - Component Title</h4>
+        <h5 class="heading heading-5">Heading 5 - Small Heading</h5>
+        <h6 class="heading heading-6">Heading 6 - Smallest Heading</h6>
+      </div>
+
+      <div>
+        <h3 class="heading heading-3">Paragraphs</h3>
+        <p class="paragraph paragraph-lead">
+          This is a lead paragraph, typically used for introductory text or to emphasize important
+          content at the beginning of a section.
+        </p>
+        <p class="paragraph">
+          This is a default paragraph with normal text size and weight. It provides readable body text
+          for content sections and maintains good line height for comfortable reading.
+        </p>
+        <p class="paragraph paragraph-small">
+          This is a small paragraph, often used for secondary information, captions, or supporting text.
+        </p>
+      </div>
+    </section>
+
+    <!-- Form Elements Section -->
+    <section class="mb-24">
+      <h2 class="heading heading-2">Form Elements</h2>
+
+      <div class="max-w-md space-y-6">
+        <div>
+          <label class="label label-required" for="input-1">
+            Full Name
+            <span class="label-asterisk">*</span>
+          </label>
+          <input
+            type="text"
+            class="input"
+            id="input-1"
+            placeholder="Enter your full name"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="input-2">
+            <span class="label-text">Email Address</span>
+            <span class="label-helper">We'll never share your email</span>
+          </label>
+          <input
+            type="email"
+            class="input"
+            id="input-2"
+            placeholder="you@example.com"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="input-3">
+            Search
+          </label>
+          <input
+            type="search"
+            class="input input-search"
+            id="input-3"
+            placeholder="Search..."
+          />
+        </div>
+
+        <div>
+          <label class="label label-error" for="input-4">
+            Password
+            <span class="label-error-message">Password is required</span>
+          </label>
+          <input
+            type="password"
+            class="input input-error"
+            id="input-4"
+            placeholder="Enter password"
+            aria-invalid="true"
+          />
+        </div>
+
+        <div>
+          <label class="label" for="textarea-1">
+            Message
+          </label>
+          <textarea
+            class="input"
+            id="textarea-1"
+            rows="4"
+            placeholder="Enter your message..."
+          ></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- Badges Section -->
+    <section class="mb-24">
+      <h2 class="heading heading-2">Badges</h2>
+
+      <div class="flex flex-wrap gap-3 mb-6">
+        <span class="badge badge-default badge-md">Default</span>
+        <span class="badge badge-primary badge-md">Primary</span>
+        <span class="badge badge-success badge-md">Success</span>
+        <span class="badge badge-warning badge-md">Warning</span>
+        <span class="badge badge-error badge-md">Error</span>
+        <span class="badge badge-info badge-md">Info</span>
+      </div>
+
+      <div class="flex flex-wrap gap-3">
+        <span class="badge badge-primary badge-sm">Small</span>
+        <span class="badge badge-primary badge-md">Medium</span>
+        <span class="badge badge-primary badge-lg">Large</span>
+        <span class="badge badge-primary badge-md badge-pill">Pill</span>
+        <span class="badge badge-outline badge-md">Outline</span>
+      </div>
+    </section>
+
+    <!-- Color Palette Section -->
+    <section class="mb-24">
+      <h2 class="heading heading-2">Color Palette</h2>
+
+      <div class="mb-8">
+        <h3 class="heading heading-4">Primary Colors</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div>
+            <div class="h-24 rounded-lg" style="background-color: #000000;"></div>
+            <p class="paragraph paragraph-small mt-2">Black</p>
+          </div>
+          <div>
+            <div class="h-24 rounded-lg border border-gray-300" style="background-color: #FFFFFF;"></div>
+            <p class="paragraph paragraph-small mt-2">White</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="heading heading-4">Gray Scale</h3>
+        <div class="grid grid-cols-5 md:grid-cols-9 gap-2">
+          <div>
+            <div class="h-16 rounded" style="background-color: #F9FAFB;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">50</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #F3F4F6;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">100</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #E5E7EB;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">200</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #D1D5DB;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">300</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #9CA3AF;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">400</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #6B7280;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">500</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #4B5563;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">600</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #374151;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">700</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #1F2937;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">800</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="heading heading-4">Accent Blue</h3>
+        <div class="grid grid-cols-5 md:grid-cols-9 gap-2">
+          <div>
+            <div class="h-16 rounded" style="background-color: #EFF6FF;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">50</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #DBEAFE;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">100</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #BFDBFE;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">200</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #93C5FD;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">300</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #60A5FA;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">400</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #3B82F6;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">500</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #2563EB;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">600</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #1D4ED8;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">700</p>
+          </div>
+          <div>
+            <div class="h-16 rounded" style="background-color: #1E40AF;"></div>
+            <p class="paragraph paragraph-small mt-1 text-xs">800</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 text-center border-t border-gray-200">
+      <p class="paragraph paragraph-small paragraph-muted">
+        IntelliCloud Design System - Built with Atomic Design Principles
+      </p>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

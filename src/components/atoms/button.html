@@ -1,0 +1,201 @@
+<!--
+  Button Component
+  Atomic Design: Atom
+
+  Variants:
+  - Primary: Main call-to-action buttons
+  - Secondary: Supporting actions
+  - Outline: Alternative style with border
+  - Ghost: Minimal, text-only style
+  - Link: Text link style
+
+  Sizes:
+  - sm: Small buttons
+  - md: Medium (default)
+  - lg: Large buttons
+-->
+
+<!-- Primary Button -->
+<button
+  class="btn btn-primary btn-md"
+  type="button"
+>
+  Primary Button
+</button>
+
+<!-- Secondary Button -->
+<button
+  class="btn btn-secondary btn-md"
+  type="button"
+>
+  Secondary Button
+</button>
+
+<!-- Outline Button -->
+<button
+  class="btn btn-outline btn-md"
+  type="button"
+>
+  Outline Button
+</button>
+
+<!-- Ghost Button -->
+<button
+  class="btn btn-ghost btn-md"
+  type="button"
+>
+  Ghost Button
+</button>
+
+<!-- Link Button -->
+<button
+  class="btn btn-link btn-md"
+  type="button"
+>
+  Link Button
+</button>
+
+<!-- Small Button -->
+<button
+  class="btn btn-primary btn-sm"
+  type="button"
+>
+  Small Button
+</button>
+
+<!-- Large Button -->
+<button
+  class="btn btn-primary btn-lg"
+  type="button"
+>
+  Large Button
+</button>
+
+<!-- Disabled Button -->
+<button
+  class="btn btn-primary btn-md"
+  type="button"
+  disabled
+>
+  Disabled Button
+</button>
+
+<style>
+  /* Base Button Styles */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-weight: var(--font-medium);
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition-all);
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .btn:focus {
+    outline: 2px solid var(--color-blue-500);
+    outline-offset: 2px;
+  }
+
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  /* Button Variants */
+
+  /* Primary */
+  .btn-primary {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  .btn-primary:hover:not(:disabled) {
+    background-color: var(--color-black-soft);
+  }
+
+  .btn-primary:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  /* Secondary */
+  .btn-secondary {
+    background-color: var(--color-gray-200);
+    color: var(--color-black);
+  }
+
+  .btn-secondary:hover:not(:disabled) {
+    background-color: var(--color-gray-300);
+  }
+
+  .btn-secondary:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  /* Outline */
+  .btn-outline {
+    background-color: transparent;
+    color: var(--color-black);
+    border-color: var(--color-gray-300);
+  }
+
+  .btn-outline:hover:not(:disabled) {
+    background-color: var(--color-gray-100);
+    border-color: var(--color-gray-400);
+  }
+
+  .btn-outline:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  /* Ghost */
+  .btn-ghost {
+    background-color: transparent;
+    color: var(--color-black);
+  }
+
+  .btn-ghost:hover:not(:disabled) {
+    background-color: var(--color-gray-100);
+  }
+
+  .btn-ghost:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  /* Link */
+  .btn-link {
+    background-color: transparent;
+    color: var(--color-blue-600);
+    border: none;
+  }
+
+  .btn-link:hover:not(:disabled) {
+    color: var(--color-blue-700);
+    text-decoration: underline;
+  }
+
+  /* Button Sizes */
+
+  /* Small */
+  .btn-sm {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+  }
+
+  /* Medium (default) */
+  .btn-md {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base);
+  }
+
+  /* Large */
+  .btn-lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-lg);
+  }
+</style>
