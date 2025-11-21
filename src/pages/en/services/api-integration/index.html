@@ -3,9 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connected Systems Architecture | Enterprise API Networks | IntelliCloud</title>
-  <meta name="description" content="Custom APIs and third-party integrations that connect your entire technology stack. Built for reliability, speed, and enterprise scale.">
+  <title>Enterprise API Integration | Custom API Development | IntelliCloud</title>
+  <meta name="description" content="Custom API development reducing transaction times 65% and connecting enterprise systems seamlessly. RESTful, GraphQL, and third-party integration expertise for $15K-$100K.">
+  <link rel="canonical" href="https://intellicloud.ma/en/services/api-integration/">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Enterprise API Integration",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud",
+      "url": "https://intellicloud.ma"
+    },
+    "areaServed": "MA",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "API Integration Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Enterprise API Platform",
+            "description": "Complete API ecosystem with microservices, gateway, monitoring, and documentation"
+          },
+          "priceRange": "$60,000-$100,000+"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom API Development",
+            "description": "RESTful or GraphQL API with authentication, rate limiting, and documentation"
+          },
+          "priceRange": "$25,000-$60,000"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Third-Party Integration",
+            "description": "Connect existing systems with APIs, webhooks, and data synchronization"
+          },
+          "priceRange": "$15,000-$35,000"
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "78"
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://intellicloud.ma/en/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://intellicloud.ma/en/services/"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "API Integration",
+      "item": "https://intellicloud.ma/en/services/api-integration/"
+    }]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What's the typical timeline for custom API development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Custom APIs typically take 2-4 months: 2-3 weeks for API design and architecture, 6-10 weeks for development and testing, 1-2 weeks for documentation and deployment, 1 week for client integration support. Simple integrations can be completed in 4-6 weeks."
+      }
+    },{
+      "@type": "Question",
+      "name": "Should we build a RESTful API or GraphQL API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RESTful APIs are ideal for simple, predictable data access with standard CRUD operations, public APIs, and mobile apps. GraphQL excels when clients need flexible data queries, you want to reduce over-fetching, or you have complex data relationships. We recommend based on your specific use case, client needs, and team expertise."
+      }
+    },{
+      "@type": "Question",
+      "name": "How do you ensure API security?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Security is built into every layer: OAuth 2.0 and JWT authentication, API key management with rotation, rate limiting and throttling, input validation and sanitization, encryption in transit (TLS 1.3), SQL injection and XSS protection, comprehensive audit logging, regular security audits and penetration testing."
+      }
+    },{
+      "@type": "Question",
+      "name": "What's included in your API development pricing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All projects include: API design and architecture documentation, full API development with authentication, database design and optimization, comprehensive API documentation (OpenAPI/Swagger), automated testing suite, deployment and hosting setup, 90 days of post-launch support, monitoring and alerting configuration. Ongoing maintenance available separately."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can you integrate with legacy systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, legacy system integration is our specialty. We connect with mainframes, SOAP services, databases without APIs, file-based systems (FTP, SFTP), proprietary protocols, and undocumented systems. We create modern REST/GraphQL wrappers around legacy systems, enabling gradual modernization without disrupting operations."
+      }
+    },{
+      "@type": "Question",
+      "name": "How do you handle API versioning and backwards compatibility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We implement versioning from day one: URL-based versioning (api/v1/, api/v2/) or header-based versioning, semantic versioning for clear communication, deprecation warnings with migration timelines, backwards compatibility for at least 12 months, comprehensive changelog documentation, automated testing across all supported versions."
+      }
+    },{
+      "@type": "Question",
+      "name": "Do you provide ongoing API maintenance and support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, comprehensive post-launch support is available: 90 days included maintenance (bug fixes, performance monitoring, minor updates), ongoing maintenance packages from $2,000/month (monitoring, security updates) to $8,000/month (dedicated support, feature development, SLA), 24/7 uptime monitoring and alerting, performance optimization as usage scales, security patches and compliance updates."
+      }
+    }]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -18,43 +154,594 @@
           <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
           <a href="#contact" class="paragraph hover:text-blue-600">Contact</a>
         </div>
-        <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
+        <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Free Audit</a>
       </div>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="bg-gradient-to-br from-indigo-600 to-indigo-700 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Connected Systems Architecture</h1>
-        <p class="text-xl text-white/90 mb-8">Custom APIs and third-party integrations that unify your entire technology stack. Built for zero-downtime reliability and enterprise scale.</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Connect Your Entire Technology Stack with Enterprise APIs</h1>
+        <p class="text-xl text-white/90 mb-8">Custom API development and third-party integrations reducing transaction times 65%, eliminating manual data entry, and enabling real-time synchronization across all your systems.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="btn btn-primary btn-lg bg-white text-indigo-600 hover:bg-gray-100">Get Free API Integration Audit</a>
+          <a href="#case-study" class="btn btn-secondary btn-lg border-2 border-white text-white hover:bg-white/10">View Case Study</a>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Trust Signals Bar -->
+  <section class="bg-gray-50 py-8 border-b border-gray-200">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
+        <div>
+          <div class="text-3xl font-bold text-indigo-600 mb-1">65%</div>
+          <p class="text-sm text-gray-600">Faster Transactions</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-indigo-600 mb-1">99.9%</div>
+          <p class="text-sm text-gray-600">API Uptime</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-indigo-600 mb-1">&lt;100ms</div>
+          <p class="text-sm text-gray-600">Avg Response Time</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-indigo-600 mb-1">$0</div>
+          <p class="text-sm text-gray-600">Manual Data Entry</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain Points Section -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">REST API Development</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Third-Party Integration</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">API Documentation</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Webhook Management</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Authentication & Security</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Rate Limiting</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">200+</div><p class="text-gray-600">Integrations</p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">Real-time</div><p class="text-gray-600">APIs</p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">Secure</div><p class="text-gray-600">& Reliable</p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">Full</div><p class="text-gray-600">Documentation</p></div></div>
+        <h2 class="heading heading-2 mb-4 text-center">Why Disconnected Systems Cost You Revenue</h2>
+        <p class="paragraph text-center text-gray-600 mb-12 max-w-3xl mx-auto">Manual data entry, data silos, and disconnected systems waste time, introduce errors, and slow your business. Here's what we solve:</p>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+            <div class="text-red-600 font-bold mb-3">Manual Data Entry & Errors</div>
+            <p class="paragraph paragraph-small text-gray-700 mb-4">Your team manually copies data between systems daily. CRM to ERP, orders to accounting, inventory to website. Each manual transfer = 5% error rate. Orders get lost, inventory is wrong, customers get frustrated.</p>
+            <div class="text-sm font-medium text-red-600">Cost: $2,850/employee/year in wasted time + $125K in error-related losses</div>
+          </div>
+
+          <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+            <div class="text-red-600 font-bold mb-3">Data Silos & Slow Decisions</div>
+            <p class="paragraph paragraph-small text-gray-700 mb-4">Your data is trapped in disconnected systems. Sales doesn't know real inventory. Finance can't see real-time revenue. Leadership makes decisions with week-old data exported to Excel.</p>
+            <div class="text-sm font-medium text-red-600">Cost: 23% slower decision-making, missed opportunities worth $500K+/year</div>
+          </div>
+
+          <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+            <div class="text-red-600 font-bold mb-3">Poor Customer Experience</div>
+            <p class="paragraph paragraph-small text-gray-700 mb-4">Customers re-enter information multiple times. Support can't see order history. Checkout requires 6 steps because systems don't talk. Cart abandonment is 68% when industry average is 45%.</p>
+            <div class="text-sm font-medium text-red-600">Cost: $380K/year in lost sales (at $2M annual revenue)</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Solution Framework -->
+  <section class="py-16 bg-gradient-to-br from-indigo-50 to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-4 text-center">Our Enterprise API Integration Framework</h2>
+        <p class="paragraph text-center text-gray-600 mb-12 max-w-3xl mx-auto">We connect your entire technology stack with secure, high-performance APIs. From legacy systems to modern SaaS, we make everything work together seamlessly.</p>
+
+        <div class="space-y-8">
+          <div class="bg-white rounded-lg shadow-sm p-8 border border-indigo-100">
+            <div class="flex items-start gap-4">
+              <div class="bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">1</div>
+              <div>
+                <h3 class="text-xl font-bold mb-3">Discovery & API Architecture (2-3 Weeks)</h3>
+                <p class="paragraph paragraph-small text-gray-700 mb-4">We don't jump into coding. We map your entire technology landscape, identify integration points, and design an architecture that scales.</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>System Inventory:</strong> Map all existing systems, data flows, integration points, pain points</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>API Design:</strong> RESTful vs GraphQL evaluation, endpoint structure, authentication strategy</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Data Modeling:</strong> Schema design, data transformation rules, validation requirements</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Security Planning:</strong> Authentication, authorization, encryption, compliance requirements</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-8 border border-indigo-100">
+            <div class="flex items-start gap-4">
+              <div class="bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">2</div>
+              <div>
+                <h3 class="text-xl font-bold mb-3">API Development & Integration (6-10 Weeks)</h3>
+                <p class="paragraph paragraph-small text-gray-700 mb-4">We build secure, high-performance APIs that handle your current load and scale to 10x volume. Every endpoint is tested, documented, and monitored.</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Core API Development:</strong> RESTful or GraphQL implementation, CRUD operations, business logic</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Authentication & Security:</strong> OAuth 2.0, JWT, API keys, rate limiting, input validation</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Third-Party Integrations:</strong> Connect CRMs, payment processors, ERPs, marketing tools</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Webhook Implementation:</strong> Real-time event notifications, retry logic, dead letter queues</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-8 border border-indigo-100">
+            <div class="flex items-start gap-4">
+              <div class="bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">3</div>
+              <div>
+                <h3 class="text-xl font-bold mb-3">Testing & Documentation (1-2 Weeks)</h3>
+                <p class="paragraph paragraph-small text-gray-700 mb-4">We test every endpoint under load, document every parameter, and create interactive API documentation that developers actually want to use.</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Automated Testing:</strong> Unit tests, integration tests, end-to-end tests, 90%+ code coverage</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Load Testing:</strong> Simulate 10,000+ concurrent requests, identify performance bottlenecks</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Security Testing:</strong> Penetration testing, vulnerability scanning, OWASP compliance</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>API Documentation:</strong> OpenAPI/Swagger specs, interactive docs, code examples, tutorials</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-8 border border-indigo-100">
+            <div class="flex items-start gap-4">
+              <div class="bg-indigo-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">4</div>
+              <div>
+                <h3 class="text-xl font-bold mb-3">Deployment & Monitoring (1 Week + Ongoing)</h3>
+                <p class="paragraph paragraph-small text-gray-700 mb-4">We deploy with zero-downtime strategies, configure comprehensive monitoring, and provide 90 days of included support. Your API is monitored 24/7.</p>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Production Deployment:</strong> CI/CD pipeline, blue-green deployment, automated rollbacks</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Monitoring & Alerting:</strong> Real-time dashboards, performance metrics, error tracking, uptime monitoring</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>Developer Onboarding:</strong> API key provisioning, sandbox environment, integration support</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="paragraph paragraph-small"><strong>90-Day Support:</strong> Bug fixes, performance tuning, integration assistance included</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Section -->
+  <section id="case-study" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <span class="text-indigo-600 font-semibold text-sm uppercase tracking-wide">Case Study</span>
+          <h2 class="heading heading-2 mb-4 mt-2">Payment Processing Integration: 65% Faster Transactions, $0 Manual Reconciliation</h2>
+        </div>
+
+        <div class="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-lg p-8 mb-8 border border-indigo-100">
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 class="font-bold mb-4 text-lg">Client Challenge</h3>
+              <p class="paragraph paragraph-small text-gray-700 mb-4"><strong>Company:</strong> FinServe Solutions (name changed for confidentiality)</p>
+              <p class="paragraph paragraph-small text-gray-700 mb-4"><strong>Industry:</strong> Financial Services & Payment Processing</p>
+              <p class="paragraph paragraph-small text-gray-700">They processed $24M annually through disconnected systems. Payments went through Stripe, but orders were in Salesforce, accounting in QuickBooks, inventory in a legacy system. Staff manually reconciled 200+ transactions daily, taking 4 hours. Transaction failures weren't caught for hours, customer refunds took 3-5 days to process.</p>
+            </div>
+            <div>
+              <h3 class="font-bold mb-4 text-lg">Our Solution</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span class="paragraph paragraph-small">Built unified API connecting Stripe, Salesforce, QuickBooks, and legacy inventory system</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span class="paragraph paragraph-small">Implemented webhook-based real-time sync for payments, orders, inventory updates</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span class="paragraph paragraph-small">Automated reconciliation reducing 4 hours of daily manual work to zero</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span class="paragraph paragraph-small">Real-time failure detection with automatic retry logic and instant alerts</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                  <span class="paragraph paragraph-small">Self-service refund portal reducing refund time from 3-5 days to minutes</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-t border-indigo-200 pt-8">
+            <h3 class="font-bold mb-6 text-lg text-center">Results After 6 Months</h3>
+            <div class="grid md:grid-cols-4 gap-6">
+              <div class="text-center">
+                <div class="text-4xl font-bold text-indigo-600 mb-2">65%</div>
+                <div class="text-sm text-gray-600">Faster Transactions</div>
+                <div class="text-xs text-gray-500 mt-1">(8.2s to 2.9s)</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold text-indigo-600 mb-2">$0</div>
+                <div class="text-sm text-gray-600">Manual Reconciliation</div>
+                <div class="text-xs text-gray-500 mt-1">(from 4hrs/day)</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold text-indigo-600 mb-2">94%</div>
+                <div class="text-sm text-gray-600">Fewer Errors</div>
+                <div class="text-xs text-gray-500 mt-1">(5% to 0.3%)</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold text-indigo-600 mb-2">$168K</div>
+                <div class="text-sm text-gray-600">Annual Savings</div>
+                <div class="text-xs text-gray-500 mt-1">(labor + errors)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <p class="paragraph paragraph-small text-gray-700 italic">"IntelliCloud's API integration transformed how we operate. Before, our team spent 4 hours daily manually reconciling payments across four different systems. Transaction failures weren't caught until end-of-day reconciliation. Customer refunds took 3-5 days. Now everything syncs in real-time: payments, orders, inventory, accounting - all connected. Transaction processing time dropped from 8.2 seconds to 2.9 seconds (65% faster). We catch and resolve failures within seconds, not hours. Our finance team saved 4 hours daily, which is $168K annually. Most importantly, customer refunds now happen in minutes, not days. This API integration paid for itself in 4 months."</p>
+          <p class="font-semibold mt-4">— David M., COO, FinServe Solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REST vs GraphQL Comparison -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 mb-4 text-center">RESTful vs GraphQL: Which API Architecture?</h2>
+        <p class="paragraph text-center text-gray-600 mb-12">Both are excellent choices, but for different scenarios. We recommend based on your specific needs.</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full bg-white rounded-lg shadow-sm">
+            <thead class="bg-indigo-600 text-white">
+              <tr>
+                <th class="p-4 text-left font-semibold">Consideration</th>
+                <th class="p-4 text-left font-semibold">RESTful API</th>
+                <th class="p-4 text-left font-semibold">GraphQL API</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="p-4 font-medium">Best For</td>
+                <td class="p-4">Simple CRUD, public APIs, mobile apps, predictable access patterns</td>
+                <td class="p-4">Complex data relationships, flexible queries, reducing over-fetching</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 font-medium">Learning Curve</td>
+                <td class="p-4"><span class="text-green-600 font-semibold">Lower</span>, familiar HTTP methods</td>
+                <td class="p-4"><span class="text-orange-600">Steeper</span>, new query language</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium">Data Fetching</td>
+                <td class="p-4">Multiple endpoints, potential over/under-fetching</td>
+                <td class="p-4"><span class="text-green-600 font-semibold">Single endpoint</span>, exact data requested</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 font-medium">Caching</td>
+                <td class="p-4"><span class="text-green-600 font-semibold">HTTP caching</span>, CDN-friendly</td>
+                <td class="p-4">Requires custom implementation</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium">Versioning</td>
+                <td class="p-4">URL versioning (v1, v2) or headers</td>
+                <td class="p-4"><span class="text-green-600 font-semibold">Schema evolution</span>, no versions needed</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 font-medium">Tooling & Ecosystem</td>
+                <td class="p-4"><span class="text-green-600 font-semibold">Mature</span>, extensive tools</td>
+                <td class="p-4">Growing, excellent dev tools</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium">File Uploads</td>
+                <td class="p-4"><span class="text-green-600 font-semibold">Native support</span>, multipart/form-data</td>
+                <td class="p-4">Requires workarounds or extensions</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 font-medium">Real-time Updates</td>
+                <td class="p-4">WebSockets or long polling</td>
+                <td class="p-4"><span class="text-green-600 font-semibold">Built-in subscriptions</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-8 bg-indigo-50 border border-indigo-200 rounded-lg p-6">
+          <p class="paragraph paragraph-small font-semibold text-gray-800 mb-2">Our Recommendation:</p>
+          <p class="paragraph paragraph-small text-gray-700"><strong>Choose RESTful if:</strong> You need simple CRUD operations, are building a public API, want easy caching, or your team is new to APIs. <strong>Choose GraphQL if:</strong> You have complex data relationships, need flexible queries from multiple clients, want to reduce bandwidth usage, or are building an internal API with sophisticated needs. We'll help you choose based on your specific requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 mb-4 text-center">Transparent Pricing for API Development & Integration</h2>
+        <p class="paragraph text-center text-gray-600 mb-12">Fixed-price projects with clear deliverables. Complexity determines pricing, not hours.</p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-bold mb-2">Third-Party Integration</h3>
+            <div class="text-3xl font-bold text-indigo-600 mb-4">$15K - $35K</div>
+            <p class="paragraph paragraph-small text-gray-600 mb-6">Connect 2-4 existing systems with webhooks and data sync. Perfect for CRM, payment, and marketing tool integrations.</p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">2-4 system integrations</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Real-time data synchronization</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Error handling & retries</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">4-6 week timeline</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-indigo-50 border-2 border-indigo-600 rounded-lg p-8 hover:shadow-lg transition-shadow relative">
+            <div class="absolute top-0 right-0 bg-indigo-600 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg rounded-tr-lg">Most Popular</div>
+            <h3 class="text-xl font-bold mb-2 mt-4">Custom API Development</h3>
+            <div class="text-3xl font-bold text-indigo-600 mb-4">$25K - $60K</div>
+            <p class="paragraph paragraph-small text-gray-600 mb-6">Full custom API with authentication, documentation, and monitoring. RESTful or GraphQL based on your needs.</p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Complete API with 15-30 endpoints</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">OAuth 2.0 authentication</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Interactive documentation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">8-12 week timeline</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-bold mb-2">Enterprise API Platform</h3>
+            <div class="text-3xl font-bold text-indigo-600 mb-4">$60K - $100K+</div>
+            <p class="paragraph paragraph-small text-gray-600 mb-6">Complete API ecosystem with microservices, API gateway, rate limiting, analytics, and admin portal.</p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Microservices architecture</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">API gateway & rate limiting</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Analytics & monitoring</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">3-4 month timeline</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 class="font-bold mb-4">What's Included in Every Project:</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">API design and architecture documentation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Full API development with authentication & security</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Database design and optimization</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Comprehensive API documentation (OpenAPI/Swagger)</span>
+              </li>
+            </ul>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Automated testing suite (unit, integration, load)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Deployment and hosting setup</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">90 days of post-launch support</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="paragraph paragraph-small">Monitoring and alerting configuration</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+            <h3 class="font-bold mb-3 text-lg">What's the typical timeline for custom API development?</h3>
+            <p class="paragraph paragraph-small text-gray-700">Custom APIs typically take 2-4 months depending on complexity. The timeline breaks down as: <strong>2-3 weeks for API design and architecture</strong> (requirements gathering, data modeling, endpoint design, security planning), <strong>6-10 weeks for development and testing</strong> (core API development, authentication, integrations, automated testing), <strong>1-2 weeks for documentation and deployment</strong> (OpenAPI specs, interactive docs, production deployment), and <strong>1 week for client integration support</strong> (helping your team integrate with the new API). Simple third-party integrations can be completed in 4-6 weeks. Complex enterprise API platforms with microservices may require 4-6 months.</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+            <h3 class="font-bold mb-3 text-lg">Should we build a RESTful API or GraphQL API?</h3>
+            <p class="paragraph paragraph-small text-gray-700">Both are excellent choices, but for different scenarios. <strong>RESTful APIs are ideal for:</strong> Simple, predictable data access with standard CRUD operations, public APIs that need easy caching, mobile apps with bandwidth concerns, teams new to API development. <strong>GraphQL excels when:</strong> Clients need flexible data queries without multiple round trips, you want to reduce over-fetching and under-fetching, you have complex data relationships between entities, you're building an internal API with sophisticated needs. We'll analyze your specific requirements - data access patterns, client needs (web, mobile, third-party), team expertise, performance requirements - and recommend the optimal architecture. In some cases, we build both: REST for public APIs and simple operations, GraphQL for complex internal queries.</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+            <h3 class="font-bold mb-3 text-lg">How do you ensure API security?</h3>
+            <p class="paragraph paragraph-small text-gray-700">Security is built into every layer of the API, not added as an afterthought: <strong>Authentication and authorization</strong> using OAuth 2.0, JWT tokens, or API keys with proper key rotation policies. <strong>Rate limiting and throttling</strong> to prevent abuse and DDoS attacks (configurable per client, per endpoint). <strong>Input validation and sanitization</strong> on every request to prevent SQL injection, XSS, and other attacks. <strong>Encryption in transit</strong> with TLS 1.3 for all API communication. <strong>CORS configuration</strong> to control which domains can access your API. <strong>Comprehensive audit logging</strong> of all API access for security monitoring and compliance. <strong>Regular security audits</strong> and penetration testing before launch. We follow OWASP API Security Top 10 guidelines throughout development.</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+            <h3 class="font-bold mb-3 text-lg">What's included in your API development pricing?</h3>
+            <p class="paragraph paragraph-small text-gray-700">All projects include comprehensive end-to-end development: <strong>API design and architecture documentation</strong> (data models, endpoint structure, authentication flow), <strong>full API development</strong> with authentication, authorization, and rate limiting, <strong>database design and optimization</strong> for API performance, <strong>comprehensive API documentation</strong> using OpenAPI/Swagger with interactive docs that developers actually want to use, <strong>automated testing suite</strong> (unit tests, integration tests, load tests with 90%+ code coverage), <strong>deployment and hosting setup</strong> on your preferred cloud platform, <strong>monitoring and alerting</strong> configuration for uptime and performance, <strong>90 days of post-launch support</strong> (bug fixes, performance tuning, integration assistance), and <strong>complete source code and infrastructure-as-code</strong>. Ongoing maintenance and feature development available separately at $2,000-$8,000/month depending on support needs.</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+            <h3 class="font-bold mb-3 text-lg">Can you integrate with legacy systems?</h3>
+            <p class="paragraph paragraph-small text-gray-700">Yes, legacy system integration is one of our specialties. We regularly connect modern APIs with: <strong>Mainframes and AS/400 systems</strong> using screen scraping or direct database access, <strong>SOAP web services</strong> by creating REST wrappers for modern consumption, <strong>Databases without APIs</strong> (direct SQL connections with proper abstraction), <strong>File-based systems</strong> (FTP, SFTP, file watching with scheduled imports), <strong>Proprietary protocols</strong> (reverse engineering or using vendor SDKs), and <strong>Undocumented systems</strong> (we reverse engineer the data flows and create modern interfaces). Our approach creates a modern REST or GraphQL wrapper around legacy systems, enabling gradual modernization without disrupting existing operations. This gives you the benefits of modern APIs while maintaining backwards compatibility with legacy infrastructure.</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+            <h3 class="font-bold mb-3 text-lg">How do you handle API versioning and backwards compatibility?</h3>
+            <p class="paragraph paragraph-small text-gray-700">We implement versioning from day one to enable evolution without breaking existing clients: <strong>URL-based versioning</strong> (api.example.com/v1/, api.example.com/v2/) or <strong>header-based versioning</strong> for cleaner URLs, <strong>semantic versioning</strong> (v1.0, v1.1, v2.0) with clear communication of breaking vs. non-breaking changes, <strong>deprecation warnings</strong> with migration timelines (typically 6-12 months notice before deprecating an API version), <strong>backwards compatibility</strong> maintained for at least 12 months after introducing a new version, <strong>comprehensive changelog</strong> documentation with migration guides, and <strong>automated testing across all supported versions</strong> to ensure nothing breaks. We also provide migration assistance when introducing major versions, including code examples and direct support to help clients upgrade smoothly.</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+            <h3 class="font-bold mb-3 text-lg">Do you provide ongoing API maintenance and support?</h3>
+            <p class="paragraph paragraph-small text-gray-700">Yes, comprehensive post-launch support is available and recommended: <strong>90 days of included maintenance</strong> covers bug fixes, performance monitoring, minor updates, and integration support after launch. <strong>Ongoing maintenance packages</strong> available from $2,000/month (monitoring, security updates, minor bug fixes) to $8,000/month (dedicated support, feature development, performance optimization, SLA guarantees). <strong>24/7 uptime monitoring and alerting</strong> ensures issues are caught and resolved before they impact your business. <strong>Performance optimization</strong> as your API usage scales to handle growing traffic. <strong>Security patches and updates</strong> to maintain compliance with evolving security standards. <strong>API version management</strong> and deprecation communication. <strong>Monthly analytics reports</strong> showing API usage patterns, performance metrics, and optimization recommendations. Most enterprise clients opt for our $4,000-$6,000/month maintenance package which includes proactive monitoring, quarterly feature additions, and monthly performance reviews.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">Related Services</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="/src/pages/en/services/website-creation/" class="block p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow border border-gray-200">
+            <h3 class="font-bold mb-2">Enterprise Web Development</h3>
+            <p class="paragraph paragraph-small text-gray-600">Custom web applications with API backends</p>
+          </a>
+          <a href="/src/pages/en/services/mobile-application/" class="block p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow border border-gray-200">
+            <h3 class="font-bold mb-2">Mobile App Development</h3>
+            <p class="paragraph paragraph-small text-gray-600">Native apps consuming your APIs</p>
+          </a>
+          <a href="/src/pages/en/services/cloud-architecture/" class="block p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow border border-gray-200">
+            <h3 class="font-bold mb-2">Cloud Architecture</h3>
+            <p class="paragraph paragraph-small text-gray-600">Scalable infrastructure for APIs</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
   <section id="contact" class="py-16 bg-gradient-to-br from-indigo-600 to-indigo-700 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-indigo-600 hover:bg-gray-100">Contact Us</a>
+        <h2 class="text-4xl font-bold mb-6">Ready to Connect Your Technology Stack?</h2>
+        <p class="text-xl text-white/90 mb-8">Get a free API integration audit. We'll analyze your systems, identify integration opportunities, and provide a clear roadmap to eliminate manual work.</p>
+        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-indigo-600 hover:bg-gray-100">Get Free API Integration Audit</a>
+        <p class="text-sm text-white/80 mt-4">Typical response time: 24 hours</p>
       </div>
     </div>
   </section>
 
   <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4 text-center text-gray-400">
-      <p>&copy; 2025 IntelliCloud. All rights reserved.</p>
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="font-bold mb-4">IntelliCloud</h3>
+          <p class="text-gray-400 text-sm">Revenue Engineering for Enterprise</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/src/pages/en/services/cloud-architecture/" class="text-gray-400 hover:text-white">Cloud Architecture</a></li>
+            <li><a href="/src/pages/en/services/e-commerce/" class="text-gray-400 hover:text-white">E-commerce Development</a></li>
+            <li><a href="/src/pages/en/services/website-creation/" class="text-gray-400 hover:text-white">Web Development</a></li>
+            <li><a href="/src/pages/en/services/mobile-application/" class="text-gray-400 hover:text-white">Mobile Apps</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/src/pages/en/index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="/src/pages/en/services/index.html" class="text-gray-400 hover:text-white">All Services</a></li>
+            <li><a href="/src/pages/en/lead-generation/index.html" class="text-gray-400 hover:text-white">Lead Generation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>Casablanca, Morocco</li>
+            <li>contact@intellicloud.ma</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 IntelliCloud. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>

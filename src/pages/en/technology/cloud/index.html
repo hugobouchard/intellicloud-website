@@ -3,51 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elastic Cloud Platforms | AWS & Google Cloud | IntelliCloud</title>
+  <title>Cloud Platform Consulting | AWS, Google Cloud, Azure | IntelliCloud</title>
+  <meta name="description" content="Multi-cloud strategy and platform optimization for AWS, Google Cloud Platform, and Azure. Expert cloud architecture consulting. $30K-$200K projects.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Cloud Platform Consulting",
+    "description": "Multi-cloud strategy consulting and platform optimization for AWS, Google Cloud Platform (GCP), and Microsoft Azure infrastructure.",
+    "provider": {"@type": "Organization", "name": "IntelliCloud"},
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cloud Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cloud Platform Assessment"}, "priceSpecification": {"@type": "PriceSpecification", "price": "30000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Multi-Cloud Implementation"}, "priceSpecification": {"@type": "PriceSpecification", "price": "100000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Enterprise Cloud Architecture"}, "priceSpecification": {"@type": "PriceSpecification", "price": "200000", "priceCurrency": "USD", "unitText": "PROJECT"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "AWS, Google Cloud, or Azure—which is best for my business?", "acceptedAnswer": {"@type": "Answer", "text": "AWS offers the broadest service catalog and most mature ecosystem. Google Cloud excels in data analytics (BigQuery) and AI/ML. Azure integrates seamlessly with Microsoft enterprise tools (Active Directory, Office 365). We assess your tech stack, workloads, and team expertise to recommend the optimal platform."}},
+      {"@type": "Question", "name": "What's a multi-cloud strategy and do I need one?", "acceptedAnswer": {"@type": "Answer", "text": "Multi-cloud means distributing workloads across multiple providers (AWS + GCP, AWS + Azure) for redundancy, cost optimization, or best-of-breed services. You need multi-cloud if: (1) downtime is unacceptable, (2) you require geographic redundancy, or (3) specific services only exist on certain platforms."}},
+      {"@type": "Question", "name": "How much does cloud infrastructure cost?", "acceptedAnswer": {"@type": "Answer", "text": "Highly variable. Small businesses: $500-$5K/month. Mid-market: $10K-$50K/month. Enterprise: $100K-$1M+/month. Costs depend on compute, storage, bandwidth, and services used. We provide cost modeling and implement FinOps practices to optimize spend."}},
+      {"@type": "Question", "name": "Can you reduce our current cloud costs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We audit your current infrastructure for waste: unused resources, over-provisioned instances, inefficient storage tiers, missing reserved instances, and unoptimized data transfer. Average clients reduce cloud spend by 30-50% without impacting performance."}},
+      {"@type": "Question", "name": "What's the difference between cloud migration and cloud optimization?", "acceptedAnswer": {"@type": "Answer", "text": "Migration moves workloads from on-premise to cloud. Optimization improves existing cloud infrastructure for cost, performance, and security. This hub focuses on platform expertise and optimization. For migration services, see our Cloud Architecture service page."}},
+      {"@type": "Question", "name": "How do you ensure cloud security?", "acceptedAnswer": {"@type": "Answer", "text": "We implement: identity and access management (IAM), network segmentation, encryption at rest and in transit, compliance frameworks (SOC 2, HIPAA, GDPR), automated security scanning, and incident response plans. Security is built into architecture from day one."}},
+      {"@type": "Question", "name": "Do you provide ongoing cloud management?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We offer managed cloud services: 24/7 monitoring, automated scaling, cost optimization, security patching, disaster recovery, and performance tuning. Monthly retainers start at $5K for comprehensive management."}}
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html"><img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28 w-auto"></a>
+        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud Revenue Engineering" class="h-24 lg:h-28 w-auto">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
           <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
           <a href="/src/pages/en/technology/index.html" class="paragraph text-blue-600">Technology</a>
           <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600">Contact</a>
         </div>
+        <a href="/src/pages/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
       </div>
     </nav>
   </header>
 
-  <section class="py-16 bg-gradient-to-br from-green-600 to-green-800 text-white">
+  <nav aria-label="Breadcrumb" class="py-4 border-b border-gray-200 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li><a href="/src/pages/en/index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><a href="/src/pages/en/technology/index.html" class="text-gray-600 hover:text-blue-600">Technology</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><span class="text-gray-900 font-medium">Cloud Platforms</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <section class="py-16 bg-gradient-to-br from-sky-600 to-sky-800 text-white">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">Elastic Cloud Platforms</h1>
-      <p class="text-xl text-green-100 max-w-3xl mx-auto">Cloud infrastructure that scales infinitely as your revenue grows. AWS and Google Cloud optimization for cost and performance.</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Cloud Platform Expertise That Cuts Costs 40%</h1>
+      <p class="text-xl text-sky-100 max-w-3xl mx-auto mb-8">Multi-cloud strategy and optimization for AWS, Google Cloud, and Azure. We architect scalable infrastructure, eliminate cloud waste, and ensure 99.99% uptime. Average client: 40% cost reduction, zero downtime migrations.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-sky-600 hover:bg-gray-100">Get Your Cloud Assessment</a>
+        <a href="#pricing" class="btn btn-lg bg-sky-700 text-white border-2 border-white hover:bg-sky-800">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Why Cloud Infrastructure Fails</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Runaway Cloud Costs</h3>
+            <p class="text-gray-600 text-sm">You migrated to "the cloud" expecting savings. Instead, your bill is 3x higher than on-premise. Unused EC2 instances, inefficient storage, and no cost governance bleed money.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Vendor Lock-In</h3>
+            <p class="text-gray-600 text-sm">Your entire infrastructure is AWS-specific. Proprietary services, non-portable code, and zero redundancy. If AWS has an outage, your business stops. Migration is now impossibly expensive.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Security Nightmare</h3>
+            <p class="text-gray-600 text-sm">Wide-open S3 buckets, overly permissive IAM roles, no encryption, and zero disaster recovery plan. You're one misconfiguration away from a data breach or complete data loss.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Our Cloud Platform Framework</h2>
+        <div class="space-y-8">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-sky-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">1</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Cloud Assessment & Platform Selection</h3>
+              <p class="text-gray-600">We audit your current infrastructure, workloads, and team capabilities. Then recommend optimal platform(s): AWS for breadth, Google Cloud for data/AI, Azure for Microsoft integration, or multi-cloud for redundancy.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-sky-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">2</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Architecture & Cost Optimization</h3>
+              <p class="text-gray-600">We design scalable, secure cloud architecture using infrastructure-as-code (Terraform). Implement auto-scaling, right-size instances, optimize storage tiers, and establish FinOps governance to prevent cost overruns.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-sky-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">3</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Security & Compliance Hardening</h3>
+              <p class="text-gray-600">We implement: least-privilege IAM, network segmentation, data encryption, automated backups, disaster recovery, and compliance frameworks (SOC 2, HIPAA, GDPR). Security built into every layer.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-sky-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">4</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Monitoring & Continuous Improvement</h3>
+              <p class="text-gray-600">We set up comprehensive observability: metrics, logs, traces, alerting, and automated incident response. Continuous optimization ensures your cloud improves month over month.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sky-600 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Real Results from Cloud Optimization</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div class="text-center"><div class="text-5xl font-bold mb-2">-40%</div><p class="text-sky-100">Cloud Cost Reduction</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">99.99%</div><p class="text-sky-100">Uptime SLA</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">Zero</div><p class="text-sky-100">Migration Downtime</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">150+</div><p class="text-sky-100">Cloud Projects</p></div>
+      </div>
     </div>
   </section>
 
   <section class="py-16">
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+      <h2 class="heading heading-2 text-center mb-12">Cloud Platform Expertise</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <div class="bg-white rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all p-8">
-          <div class="text-center mb-6"><div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center"><span class="text-3xl font-bold text-white">AWS</span></div><h2 class="text-3xl font-bold mb-2">Amazon Web Services</h2><p class="text-gray-600">Scalable cloud infrastructure at enterprise scale</p></div>
+          <div class="text-center mb-4">
+            <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center"><span class="text-2xl font-bold text-white">AWS</span></div>
+            <h3 class="text-2xl font-bold mb-2">Amazon Web Services</h3>
+            <p class="text-gray-600 text-sm">Most mature cloud platform</p>
+          </div>
           <ul class="space-y-2 mb-6">
-            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">EC2, RDS, Lambda, S3</span></li>
-            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">CloudFront CDN</span></li>
-            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Auto-scaling & Load Balancing</span></li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Broadest service catalog (200+ services)</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Global infrastructure (30+ regions)</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>EC2, S3, Lambda, RDS, etc.</li>
+          </ul>
+          <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #ea580c;">Learn More</a>
+        </div>
+        <div class="bg-white rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all p-8">
+          <div class="text-center mb-4">
+            <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center"><span class="text-2xl font-bold text-white">GCP</span></div>
+            <h3 class="text-2xl font-bold mb-2">Google Cloud</h3>
+            <p class="text-gray-600 text-sm">Best for data & AI workloads</p>
+          </div>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>BigQuery, Vertex AI, Kubernetes</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Superior data analytics</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Google Workspace integration</li>
           </ul>
           <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full">Learn More</a>
         </div>
-
-        <div class="bg-white rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all p-8">
-          <div class="text-center mb-6"><div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center"><span class="text-3xl font-bold text-white">GCP</span></div><h2 class="text-3xl font-bold mb-2">Google Cloud Platform</h2><p class="text-gray-600">Google's cloud with AI-first tools</p></div>
+        <div class="bg-white rounded-lg border-2 border-gray-200 hover:border-cyan-500 transition-all p-8">
+          <div class="text-center mb-4">
+            <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-lg flex items-center justify-center"><span class="text-2xl font-bold text-white">Az</span></div>
+            <h3 class="text-2xl font-bold mb-2">Microsoft Azure</h3>
+            <p class="text-gray-600 text-sm">Best for Microsoft enterprises</p>
+          </div>
           <ul class="space-y-2 mb-6">
-            <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Compute Engine, Cloud Run</span></li>
-            <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">BigQuery Data Warehouse</span></li>
-            <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Cloud AI & ML Services</span></li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-cyan-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Active Directory integration</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-cyan-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Office 365, .NET workloads</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-cyan-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Hybrid cloud (Azure Arc)</li>
           </ul>
-          <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full">Learn More</a>
+          <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #06b6d4;">Learn More</a>
         </div>
       </div>
     </div>
@@ -55,25 +215,145 @@
 
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="heading heading-2 mb-8 text-center">Our Cloud Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-lg border border-gray-200"><h3 class="font-semibold mb-2">Architecture Design</h3><p class="text-sm text-gray-600">Scalable, resilient cloud architecture</p></div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200"><h3 class="font-semibold mb-2">Migration Services</h3><p class="text-sm text-gray-600">Seamless cloud migration from on-premise</p></div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200"><h3 class="font-semibold mb-2">DevOps & CI/CD</h3><p class="text-sm text-gray-600">Automated deployment pipelines</p></div>
-        <div class="bg-white p-6 rounded-lg border border-gray-200"><h3 class="font-semibold mb-2">Monitoring & Support</h3><p class="text-sm text-gray-600">24/7 monitoring and optimization</p></div>
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg border border-gray-200 p-8 md:p-12">
+          <div class="text-sky-600 font-semibold mb-2">CASE STUDY</div>
+          <h2 class="text-3xl font-bold mb-6">How Multi-Cloud Reduced Costs 40% and Eliminated Downtime</h2>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Challenge</h3>
+            <p class="text-gray-600">A high-growth SaaS company ($100M ARR) ran entirely on AWS. Monthly cloud bill: $450K. No cost governance, over-provisioned resources, and single-vendor dependency. They experienced two major outages in 12 months due to AWS regional failures, costing $2M+ in lost revenue.</p>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Solution</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Implemented multi-cloud: AWS for core services, Google Cloud for data analytics (BigQuery), Azure for disaster recovery</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Right-sized 300+ EC2 instances, migrated 80TB to lower-cost storage tiers, implemented Reserved Instances and Savings Plans</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Built infrastructure-as-code (Terraform) for automated provisioning and disaster recovery</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Established FinOps team with monthly cost reviews and automated budget alerts</span></li>
+            </ul>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Results (12 Months)</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div><div class="text-3xl font-bold text-sky-600 mb-1">-40%</div><p class="text-sm text-gray-600">Cloud Costs</p></div>
+              <div><div class="text-3xl font-bold text-sky-600 mb-1">$2.2M</div><p class="text-sm text-gray-600">Annual Savings</p></div>
+              <div><div class="text-3xl font-bold text-sky-600 mb-1">Zero</div><p class="text-sm text-gray-600">Unplanned Downtime</p></div>
+              <div><div class="text-3xl font-bold text-sky-600 mb-1">99.99%</div><p class="text-sm text-gray-600">Uptime Achieved</p></div>
+            </div>
+          </div>
+          <div class="bg-sky-50 border-l-4 border-sky-600 p-6">
+            <p class="text-gray-700 italic">"IntelliCloud transformed our cloud infrastructure from a cost center into a competitive advantage. We're saving $2.2M annually while achieving 99.99% uptime. The multi-cloud strategy eliminated vendor lock-in anxiety, and our team finally has visibility into spend. Best investment we made."</p>
+            <p class="text-sm text-gray-600 mt-2">— CTO, High-Growth SaaS Company</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="py-16 bg-green-600 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for the Cloud?</h2>
-      <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto">Let's architect your cloud infrastructure</p>
-      <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-green-600 hover:bg-gray-100">Schedule Consultation</a>
+  <section id="pricing" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-4">Transparent Pricing</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">One-time consulting fee. Ongoing managed services available separately.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Cloud Assessment</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$30,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Infrastructure audit</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Cost optimization roadmap</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Platform recommendations</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Security review</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #0284c7;">Get Started</a>
+          </div>
+          <div class="bg-sky-600 text-white rounded-lg border-2 border-sky-700 p-8 relative">
+            <div class="absolute top-0 right-0 bg-yellow-400 text-sky-900 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+            <h3 class="text-xl font-semibold mb-2">Multi-Cloud Implementation</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$100,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Architecture design</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Infrastructure-as-code (Terraform)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Security & compliance</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Monitoring & alerting</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">60 days support</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-lg w-full bg-white text-sky-600 hover:bg-gray-100">Get Started</a>
+          </div>
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Enterprise Cloud</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$200,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">All Multi-Cloud features</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Custom compliance (HIPAA, PCI, etc.)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Disaster recovery planning</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">FinOps framework</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-sky-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Dedicated architect</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #0284c7;">Get Started</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-white"><div class="container mx-auto px-4 py-12"><div class="border-t border-gray-800 pt-8 text-center text-gray-400"><p>&copy; 2025 IntelliCloud. All rights reserved.</p></div></div></footer>
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">AWS, Google Cloud, or Azure—which is best for my business?</h3>
+            <p class="text-gray-600">AWS offers the broadest service catalog and most mature ecosystem. Google Cloud excels in data analytics (BigQuery) and AI/ML. Azure integrates seamlessly with Microsoft enterprise tools (Active Directory, Office 365). We assess your tech stack, workloads, and team expertise to recommend the optimal platform.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">What's a multi-cloud strategy and do I need one?</h3>
+            <p class="text-gray-600">Multi-cloud means distributing workloads across multiple providers (AWS + GCP, AWS + Azure) for redundancy, cost optimization, or best-of-breed services. You need multi-cloud if: (1) downtime is unacceptable, (2) you require geographic redundancy, or (3) specific services only exist on certain platforms.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">How much does cloud infrastructure cost?</h3>
+            <p class="text-gray-600">Highly variable. Small businesses: $500-$5K/month. Mid-market: $10K-$50K/month. Enterprise: $100K-$1M+/month. Costs depend on compute, storage, bandwidth, and services used. We provide cost modeling and implement FinOps practices to optimize spend.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can you reduce our current cloud costs?</h3>
+            <p class="text-gray-600">Yes. We audit your current infrastructure for waste: unused resources, over-provisioned instances, inefficient storage tiers, missing reserved instances, and unoptimized data transfer. Average clients reduce cloud spend by 30-50% without impacting performance.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">What's the difference between cloud migration and cloud optimization?</h3>
+            <p class="text-gray-600">Migration moves workloads from on-premise to cloud. Optimization improves existing cloud infrastructure for cost, performance, and security. This hub focuses on platform expertise and optimization. For migration services, see our Cloud Architecture service page.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">How do you ensure cloud security?</h3>
+            <p class="text-gray-600">We implement: identity and access management (IAM), network segmentation, encryption at rest and in transit, compliance frameworks (SOC 2, HIPAA, GDPR), automated security scanning, and incident response plans. Security is built into architecture from day one.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Do you provide ongoing cloud management?</h3>
+            <p class="text-gray-600">Yes. We offer managed cloud services: 24/7 monitoring, automated scaling, cost optimization, security patching, disaster recovery, and performance tuning. Monthly retainers start at $5K for comprehensive management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-sky-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Optimize Your Cloud?</h2>
+      <p class="text-xl text-sky-100 mb-8 max-w-2xl mx-auto">Get a free cloud assessment showing cost reduction opportunities, security gaps, and architecture recommendations.</p>
+      <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-sky-600 hover:bg-gray-100">Get Your Free Cloud Assessment</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div><h3 class="text-2xl font-bold mb-4">IntelliCloud</h3><p class="text-gray-400">Revenue engineering through strategic technology</p></div>
+        <div><h4 class="font-semibold mb-4">Technology</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">CRM Solutions</a></li><li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li><li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Platforms</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Services</h4><ul class="space-y-2"><li><a href="/src/pages/en/lead-generation/seo/index.html" class="text-gray-400 hover:text-white">SEO</a></li><li><a href="/src/pages/en/lead-generation/sem/index.html" class="text-gray-400 hover:text-white">PPC</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Contact</h4><p class="text-gray-400">info@intellicloud.com</p></div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"><p>&copy; 2025 IntelliCloud. All rights reserved.</p></div>
+    </div>
+  </footer>
   <script type="module" src="/src/scripts/main.js"></script>
 </body>
 </html>

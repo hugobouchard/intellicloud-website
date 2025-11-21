@@ -3,19 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Research & Testing | UX Research | IntelliCloud</title>
-  <meta name="description" content="Comprehensive user research with interviews, testing, and persona development">
+  <title>User Research & Testing | Data-Driven UX | IntelliCloud</title>
+  <meta name="description" content="User research that drives product decisions. User interviews, usability testing, analytics analysis. Stop guessing, start shipping features users actually want.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "User Research & Testing",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud"
+    },
+    "description": "User research that drives product decisions. User interviews, usability testing, analytics analysis.",
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "User Research Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Research Strategy Session"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "User Research Project"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Continuous Research Program"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of user research do you conduct?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "User interviews (discovery and validation), usability testing (moderated and unmoderated), surveys and questionnaires, analytics analysis, A/B testing, card sorting and tree testing, competitive analysis, user journey mapping, and persona development."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many users do we need for research?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For qualitative research (interviews, usability testing): 5-8 users per segment typically uncovers 85% of issues. For quantitative research (surveys, A/B tests): depends on statistical significance needs, typically 100+ responses for surveys, 1000+ users per variant for A/B tests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you recruit research participants?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use your existing customer base, recruit via professional panels (UserTesting, Respondent.io), social media and community forums, intercept surveys for in-product recruitment, and work with specialized recruiters for hard-to-reach segments. Screen participants to ensure they match your target user profile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between user research and user testing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "User research is broader—understanding user needs, behaviors, and motivations (interviews, surveys, contextual inquiry). User testing is more specific—evaluating whether users can successfully use your product (usability testing, A/B testing). Both are valuable at different stages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you turn research insights into product decisions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Synthesize findings into actionable insights, map insights to product opportunities, prioritize based on impact and effort, create specific recommendations with supporting evidence, present findings to stakeholders with video clips and quotes, track which insights led to product changes and measure impact."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="text-2xl font-bold">IntelliCloud</a>
+        <a href="/en/index.html" class="-ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
-          <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
-          <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
+          <a href="/en/index.html" class="paragraph hover:text-blue-600">Home</a>
+          <a href="/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
+          <a href="/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
           <a href="#contact" class="paragraph hover:text-blue-600">Contact</a>
         </div>
         <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
@@ -23,11 +115,29 @@
     </nav>
   </header>
 
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex items-center space-x-2 text-sm text-gray-600">
+        <a href="/en/index.html" class="hover:text-blue-600">Home</a>
+        <span>/</span>
+        <a href="/en/services/index.html" class="hover:text-blue-600">Services</a>
+        <span>/</span>
+        <a href="/en/services/ui-ux/index.html" class="hover:text-blue-600">UI/UX</a>
+        <span>/</span>
+        <span class="text-gray-900">User Research</span>
+      </div>
+    </div>
+  </div>
+
   <section class="bg-gradient-to-br from-pink-600 to-pink-700 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Understand Your Users Deeply</h1>
-        <p class="text-xl text-white/90 mb-8">Comprehensive user research with interviews, testing, and persona development</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">User Research That Eliminates Product Guesswork</h1>
+        <p class="text-xl text-white/90 mb-8">Most product teams ship features based on executive opinions or best guesses. We conduct systematic user research—interviews, usability testing, analytics analysis, and A/B testing. Build what users actually need, not what stakeholders think they want. Data-driven product decisions.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="btn btn-primary btn-lg bg-white text-pink-600 hover:bg-gray-100">Discuss Research Needs</a>
+          <a href="#process" class="btn btn-secondary btn-lg bg-pink-700 text-white border-2 border-white hover:bg-pink-800">See Our Process</a>
+        </div>
       </div>
     </div>
   </section>
@@ -35,9 +145,307 @@
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">User Interviews</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Usability Testing</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Competitive Analysis</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">User Personas</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Journey Mapping</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">A/B Testing</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-pink-600 mb-2">100+</div><p class="text-gray-600">Research Projects</p></div><div class="text-center"><div class="text-4xl font-bold text-pink-600 mb-2">Data-Driven</div><p class="text-gray-600">Insights</p></div><div class="text-center"><div class="text-4xl font-bold text-pink-600 mb-2">Actionable</div><p class="text-gray-600">Results</p></div><div class="text-center"><div class="text-4xl font-bold text-pink-600 mb-2">Expert</div><p class="text-gray-600">Researchers</p></div></div>
+        <h2 class="heading heading-2 mb-12 text-center">Common User Research Challenges</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Building Features Nobody Uses</p>
+            <p class="text-gray-600">Shipped major feature that took 3 months to build. Usage: 2%. Wasted engineering time on something users don't want or can't find. No validation before building.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ High Churn, Don't Know Why</p>
+            <p class="text-gray-600">Customers churning but you don't know why. Exit surveys yield generic responses. No systematic research to understand actual pain points driving departures.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Stakeholder-Driven Roadmap</p>
+            <p class="text-gray-600">Building features because executive wants them, not because users need them. No validation, no research. Product becoming bloated with unused features.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our User Research Solution</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-pink-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Discovery Research</h3>
+            <p class="text-gray-600">Understand user needs before building anything. Conduct user interviews (20-30 participants across segments), analyze behavior with analytics, map user journeys identifying pain points. Create personas grounded in real data, not assumptions. Validate problems worth solving.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-pink-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Usability Testing</h3>
+            <p class="text-gray-600">Test whether users can actually use your product. Moderated sessions with 5-8 users per segment (uncovers 85% of usability issues), task-based scenarios with success metrics, think-aloud protocol capturing confusion points. Unmoderated testing for larger sample sizes and quantitative data.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-pink-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Analytics & A/B Testing</h3>
+            <p class="text-gray-600">Quantitative validation at scale. Analyze user behavior data identifying drop-off points, design and run A/B tests with statistical rigor, track metrics that actually matter (activation, retention, revenue—not just clicks). Turn data into actionable insights.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-pink-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Actionable Insights & Recommendations</h3>
+            <p class="text-gray-600">Research means nothing without action. Synthesize findings into clear insights, prioritize recommendations by impact, present findings with video clips and quotes (stakeholders remember stories, not stats), create specific design/product recommendations, track which insights led to changes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Results That Matter</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-5xl font-bold text-pink-600 mb-2">-68%</div>
+            <div class="text-gray-600">Failed Feature Launches</div>
+            <p class="text-sm text-gray-500 mt-2">By validating before building</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-pink-600 mb-2">+47%</div>
+            <div class="text-gray-600">User Satisfaction Scores</div>
+            <p class="text-sm text-gray-500 mt-2">From research-driven improvements</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-pink-600 mb-2">$320k</div>
+            <div class="text-gray-600">Avg. Prevented Waste</div>
+            <p class="text-sm text-gray-500 mt-2">By not building wrong features</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Case Study: B2B SaaS Onboarding Research</h2>
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">The Challenge</h3>
+            <p class="text-gray-600 mb-4">B2B SaaS company had 58% of trial users never complete onboarding. Product team assumed users didn't understand value proposition. Kept redesigning landing page and adding more features. Churn remained high. No user research conducted—just assumptions and opinions.</p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Solution</h3>
+            <p class="text-gray-600 mb-4">Conducted 25 user interviews with churned and successful users. Usability testing revealed real problem: initial setup required 8 separate integrations—overwhelming and time-consuming. Analytics showed 67% drop-off at integration step. Recommended simplified onboarding with progressive setup. A/B tested new flow showing 2.4x improvement.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-pink-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-pink-600 mb-2">58% → 79%</div>
+              <div class="text-gray-900 font-semibold">Onboarding Completion</div>
+              <p class="text-sm text-gray-600 mt-2">After research-driven redesign</p>
+            </div>
+            <div class="bg-pink-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-pink-600 mb-2">+$1.2M</div>
+              <div class="text-gray-900 font-semibold">ARR Impact</div>
+              <p class="text-sm text-gray-600 mt-2">From improved activation</p>
+            </div>
+            <div class="bg-pink-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-pink-600 mb-2">2.4x</div>
+              <div class="text-gray-900 font-semibold">Time-to-Value</div>
+              <p class="text-sm text-gray-600 mt-2">Users get value faster</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our User Research Process</h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Research Planning & Strategy</h3>
+              <p class="text-gray-600">Understand your research questions and business goals, define what you need to learn (problem discovery vs. solution validation), choose appropriate research methods (qualitative vs. quantitative), identify user segments to study, create recruiting screener and discussion guide.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Participant Recruitment</h3>
+              <p class="text-gray-600">Recruit from your existing users, use professional recruiting panels (UserTesting, Respondent.io), post in relevant communities and forums, run intercept surveys for in-product recruitment. Screen participants to ensure they match target profile. Typically recruit 5-8 per segment for qualitative, 100+ for quantitative.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Research Execution</h3>
+              <p class="text-gray-600">Conduct user interviews (60-90 minutes each), run usability tests with think-aloud protocol, analyze behavioral data and funnels, design and execute A/B tests or surveys. Record sessions (with permission), take detailed notes, observe non-verbal cues. Stakeholders can observe live sessions.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Analysis & Synthesis</h3>
+              <p class="text-gray-600">Transcribe and code interview data, identify patterns and themes across participants, map findings to user journeys, create affinity diagrams grouping related insights. Separate observations from insights from recommendations. Quantify where possible (e.g., "7 of 8 users couldn't find X").</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Insights & Recommendations</h3>
+              <p class="text-gray-600">Present findings to stakeholders with video highlights and direct quotes, prioritize recommendations by user impact and implementation effort, create specific design/product recommendations (not just "improve UX"), define success metrics to track if changes work. Follow up to track which insights led to product decisions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Transparent Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-pink-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Research Strategy Session</h3>
+            <div class="text-4xl font-bold text-pink-600 mb-2">$2,500</div>
+            <p class="text-gray-600 mb-6">One-time planning</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Research questions definition</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Method selection & planning</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Participant screening criteria</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Discussion guide draft</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Strategy Session</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-pink-600 relative">
+            <div class="absolute top-0 right-0 bg-pink-600 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">POPULAR</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">User Research Project</h3>
+            <div class="text-4xl font-bold text-pink-600 mb-2">$18k+</div>
+            <p class="text-gray-600 mb-6">Complete research study</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Research planning & design</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Participant recruitment (20-30 users)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Research execution & recording</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Analysis & synthesis</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Insights presentation & recommendations</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-primary w-full">Start Research</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-pink-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Continuous Research</h3>
+            <div class="text-4xl font-bold text-pink-600 mb-2">$6k/mo</div>
+            <p class="text-gray-600 mb-6">Ongoing program</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Monthly research studies</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">User panel management</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Analytics monitoring & analysis</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">A/B test design & analysis</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Quarterly insights reports</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Start Program</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What types of user research do you conduct?</h3>
+            <p class="text-gray-600">User interviews (discovery and validation), usability testing (moderated and unmoderated), surveys and questionnaires, analytics analysis, A/B testing and experimentation, card sorting and tree testing for information architecture, competitive analysis, user journey mapping, and persona development. We select methods based on your research questions.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How many users do we need for research?</h3>
+            <p class="text-gray-600">For qualitative research (interviews, usability testing): 5-8 users per segment typically uncovers 85% of usability issues. For quantitative research (surveys, A/B tests): depends on statistical significance needs, typically 100+ responses for surveys, 1000+ users per variant for A/B tests with measurable impact.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you recruit research participants?</h3>
+            <p class="text-gray-600">Use your existing customer base (easiest for retention/experience research), recruit via professional panels (UserTesting, Respondent.io), social media and community forums, intercept surveys for in-product recruitment, and work with specialized recruiters for hard-to-reach segments (enterprise buyers, doctors, etc.). Always screen participants to ensure they match your target user profile.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What's the difference between user research and user testing?</h3>
+            <p class="text-gray-600">User research is broader—understanding user needs, behaviors, and motivations through interviews, surveys, contextual inquiry, etc. User testing is more specific—evaluating whether users can successfully use your product through usability testing, A/B testing, etc. Discovery research happens before design, validation testing happens after. Both are valuable at different product stages.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you turn research insights into product decisions?</h3>
+            <p class="text-gray-600">Synthesize findings into actionable insights (not just observations), map insights to product opportunities and pain points, prioritize based on user impact and implementation effort, create specific recommendations with supporting evidence (video clips, quotes, data), present findings to stakeholders compellingly, and track which insights led to product changes and measure the impact of those changes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Related Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="/en/services/ui-ux/ui-ux-design.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">UI/UX Design</h3>
+            <p class="text-gray-600 text-sm">Apply research insights to design</p>
+          </a>
+          <a href="/en/services/ui-ux/design-system.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">Design System</h3>
+            <p class="text-gray-600 text-sm">Scale validated patterns</p>
+          </a>
+          <a href="/en/services/conversion-optimization/ab-testing.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">A/B Testing</h3>
+            <p class="text-gray-600 text-sm">Validate changes with data</p>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -45,9 +453,9 @@
   <section id="contact" class="py-16 bg-gradient-to-br from-pink-600 to-pink-700 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-pink-600 hover:bg-gray-100">Contact Us</a>
+        <h2 class="text-4xl font-bold mb-6">Ready to Understand Your Users?</h2>
+        <p class="text-xl text-white/90 mb-8">Let's discuss your research questions and design a study that drives product decisions. Get a detailed proposal within 48 hours.</p>
+        <a href="/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-pink-600 hover:bg-gray-100">Start User Research</a>
       </div>
     </div>
   </section>

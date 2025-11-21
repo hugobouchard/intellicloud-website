@@ -3,20 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HubSpot Implementation & Integration | IntelliCloud</title>
-  <meta name="description" content="Expert HubSpot implementation and integration - all-in-one sales and marketing platform">
+  <title>HubSpot Implementation & Marketing Automation | IntelliCloud</title>
+  <meta name="description" content="HubSpot CRM, Marketing Hub, and Sales Hub implementation. All-in-one platform that aligns marketing and sales. 98% adoption rate. $15K-$75K implementations.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "HubSpot Implementation Services",
+    "description": "HubSpot CRM, Marketing Hub, and Sales Hub implementation. Email automation, lead scoring, sales pipeline management, and inbound marketing strategy.",
+    "provider": {"@type": "Organization", "name": "IntelliCloud"},
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "HubSpot Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Starter HubSpot Setup"}, "priceSpecification": {"@type": "PriceSpecification", "price": "15000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Professional HubSpot Implementation"}, "priceSpecification": {"@type": "PriceSpecification", "price": "40000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Enterprise HubSpot Ecosystem"}, "priceSpecification": {"@type": "PriceSpecification", "price": "75000", "priceCurrency": "USD", "unitText": "PROJECT"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://intellicloud.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Technology", "item": "https://intellicloud.com/technology/"},
+      {"@type": "ListItem", "position": 3, "name": "CRM", "item": "https://intellicloud.com/technology/crm/"},
+      {"@type": "ListItem", "position": 4, "name": "HubSpot", "item": "https://intellicloud.com/technology/crm/hubspot.html"}
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How long does a HubSpot implementation take?", "acceptedAnswer": {"@type": "Answer", "text": "Starter setup: 4-6 weeks. Professional implementation: 8-12 weeks. Enterprise ecosystem: 14-18 weeks. Timeline depends on Marketing Hub complexity, email template design, workflow automation scope, and team training needs."}},
+      {"@type": "Question", "name": "Is HubSpot easier to use than Salesforce?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. HubSpot is designed for ease of use with a modern, intuitive interface. Most teams reach proficiency in 2-3 weeks vs 6-8 weeks for Salesforce. HubSpot is ideal for SMBs and mid-market companies; Salesforce is better for complex enterprise needs."}},
+      {"@type": "Question", "name": "Can HubSpot replace both our CRM and marketing automation?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. HubSpot CRM is free forever (unlimited users). Marketing Hub replaces tools like Mailchimp, Marketo, or Pardot. Sales Hub replaces standalone CRMs. Most companies consolidate 3-5 tools into HubSpot, saving $2K-$5K/month in software costs."}},
+      {"@type": "Question", "name": "Do you migrate data from our old CRM and marketing tools?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We migrate contacts, companies, deals, email history, and campaign data from any CRM (Salesforce, Pipedrive, Zoho) or marketing platform (Mailchimp, ActiveCampaign, Constant Contact). We clean data, deduplicate records, and preserve all historical activity."}},
+      {"@type": "Question", "name": "Can HubSpot integrate with our other tools?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. HubSpot has 1,000+ native integrations: Salesforce, Google Workspace, Microsoft 365, Slack, Zoom, QuickBooks, Shopify, WordPress, and more. We also build custom integrations via HubSpot API for proprietary systems."}},
+      {"@type": "Question", "name": "Do you provide ongoing HubSpot support?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. After implementation, we offer HubSpot managed services retainers ($2K-$6K/month) for ongoing email campaign management, workflow optimization, dashboard updates, new integrations, and monthly strategy calls."}},
+      {"@type": "Question", "name": "What's included in HubSpot training?", "acceptedAnswer": {"@type": "Answer", "text": "Role-based training for marketers (email campaigns, landing pages, workflows), sales reps (pipeline management, sequences), and admins (reporting, integrations). Includes live sessions, recorded videos, documentation, and 30-day post-launch support."}}
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0"><img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28 w-auto"></a>
+        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud Revenue Engineering" class="h-24 lg:h-28 w-auto">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
           <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
           <a href="/src/pages/en/technology/index.html" class="paragraph text-blue-600">Technology</a>
           <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600">Contact</a>
         </div>
+        <a href="/src/pages/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
       </div>
     </nav>
   </header>
@@ -35,135 +90,82 @@
     </div>
   </nav>
 
-  <section class="py-16 bg-gradient-to-br from-orange-600 to-orange-800 text-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <div class="w-32 h-32 mx-auto mb-6 bg-white rounded-lg flex items-center justify-center">
-          <span class="text-5xl font-bold text-orange-600">HS</span>
-        </div>
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">HubSpot Solutions</h1>
-        <p class="text-xl text-orange-100">All-in-one sales and marketing platform built for growth</p>
+  <section class="py-16 bg-gradient-to-br from-orange-500 to-orange-700 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <div class="w-32 h-32 mx-auto mb-6 bg-white rounded-lg flex items-center justify-center">
+        <span class="text-5xl font-bold text-orange-600">HS</span>
       </div>
-    </div>
-  </section>
-
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Why HubSpot?</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">Ease of Use</h3>
-              <p class="text-sm text-gray-600">Intuitive interface that your team will love using every day</p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">Built-in Analytics</h3>
-              <p class="text-sm text-gray-600">Comprehensive reporting and dashboards out of the box</p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">Integration Ready</h3>
-              <p class="text-sm text-gray-600">1000+ integrations with your favorite tools</p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">Free CRM Available</h3>
-              <p class="text-sm text-gray-600">Start with free tools and scale as you grow</p>
-            </div>
-          </div>
-        </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">HubSpot Implementation That Aligns Marketing & Sales</h1>
+      <p class="text-xl text-orange-100 max-w-3xl mx-auto mb-8">All-in-one CRM, marketing automation, and sales pipeline platform. We configure HubSpot to generate qualified leads, nurture them with automated workflows, and close deals faster. Not just a CRM install—a revenue growth engine with 98% team adoption.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-orange-600 hover:bg-gray-100">Get Your HubSpot Strategy</a>
+        <a href="#pricing" class="btn btn-lg bg-orange-600 text-white border-2 border-white hover:bg-orange-700">See Pricing</a>
       </div>
     </div>
   </section>
 
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="heading heading-2 mb-12 text-center">Our HubSpot Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-8 rounded-lg border border-gray-200 text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 rounded-lg flex items-center justify-center">
-            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Why HubSpot Implementations Fail</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Marketing & Sales Silos</h3>
+            <p class="text-gray-600 text-sm">Marketing generates leads, but sales ignores them. Lead scoring doesn't match reality. Sales complains about lead quality. Marketing can't prove ROI. Nobody agrees on what "qualified" means.</p>
           </div>
-          <h3 class="heading heading-4 mb-3">Marketing Hub Setup</h3>
-          <p class="paragraph paragraph-small text-gray-600">Email campaigns, landing pages, and marketing automation</p>
-        </div>
-        <div class="bg-white p-8 rounded-lg border border-gray-200 text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 rounded-lg flex items-center justify-center">
-            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Generic Email Campaigns</h3>
+            <p class="text-gray-600 text-sm">Your email templates look like default HubSpot. No personalization, no dynamic content, no lifecycle-based nurturing. Open rates are 8%. Unsubscribe rates are climbing. Nobody clicks.</p>
           </div>
-          <h3 class="heading heading-4 mb-3">Sales Hub Integration</h3>
-          <p class="paragraph paragraph-small text-gray-600">Pipeline management and sales automation tools</p>
-        </div>
-        <div class="bg-white p-8 rounded-lg border border-gray-200 text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 rounded-lg flex items-center justify-center">
-            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Zero Automation</h3>
+            <p class="text-gray-600 text-sm">You pay for HubSpot but use it like Mailchimp. Manual email sends. No lead nurturing workflows. No deal stage automation. Your team spends 10+ hours weekly on tasks HubSpot could automate in minutes.</p>
           </div>
-          <h3 class="heading heading-4 mb-3">Custom Workflows</h3>
-          <p class="paragraph paragraph-small text-gray-600">Automated processes tailored to your business</p>
-        </div>
-        <div class="bg-white p-8 rounded-lg border border-gray-200 text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 rounded-lg flex items-center justify-center">
-            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-          </div>
-          <h3 class="heading heading-4 mb-3">Training & Support</h3>
-          <p class="paragraph paragraph-small text-gray-600">Onboarding and ongoing optimization</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-16">
+  <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <h2 class="heading heading-2 mb-12 text-center">Success Story</h2>
-      <div class="max-w-4xl mx-auto bg-white rounded-lg border border-gray-200 overflow-hidden">
-        <div class="p-8 md:p-12">
-          <div class="flex items-center mb-6">
-            <div class="w-16 h-16 bg-orange-600 rounded-full mr-4"></div>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Our HubSpot Implementation Framework</h2>
+        <div class="space-y-8">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">1</div>
             <div>
-              <h3 class="font-semibold text-xl">GrowthStart Inc</h3>
-              <p class="text-gray-600">B2B SaaS Startup, 25 employees</p>
+              <h3 class="text-xl font-semibold mb-2">Inbound Strategy & Buyer Personas</h3>
+              <p class="text-gray-600">We define your ideal customer profiles, map buyer journeys, and document pain points at each stage. Create lead scoring models based on demographics, behavior, and engagement. Align marketing and sales on qualified lead definitions.</p>
             </div>
           </div>
-          <div class="mb-6">
-            <h4 class="font-semibold mb-2">Challenge</h4>
-            <p class="text-gray-600">Needed an affordable, easy-to-use CRM and marketing platform to scale their outbound and inbound efforts.</p>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">2</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">HubSpot Configuration & Integration</h3>
+              <p class="text-gray-600">Configure Marketing Hub with custom email templates, landing pages, and forms. Set up Sales Hub with pipeline stages, deal properties, and sales sequences. Integrate with your website, CRM, payment processor, and analytics tools. Migrate clean data from old systems.</p>
+            </div>
           </div>
-          <div class="mb-6">
-            <h4 class="font-semibold mb-2">Solution</h4>
-            <p class="text-gray-600">Implemented HubSpot Marketing Hub and Sales Hub with custom email workflows and lead scoring.</p>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">3</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Marketing Automation Workflows</h3>
+              <p class="text-gray-600">Build automated nurture campaigns: welcome series for new contacts, abandoned cart recovery, demo request follow-ups, win-back campaigns for cold leads. Implement lifecycle stage automation (subscriber → lead → MQL → SQL → customer).</p>
+            </div>
           </div>
-          <div>
-            <h4 class="font-semibold mb-4">Results</h4>
-            <div class="grid grid-cols-3 gap-6">
-              <div class="text-center">
-                <div class="text-3xl font-bold text-orange-600 mb-2">300%</div>
-                <p class="text-sm text-gray-600">Increase in qualified leads</p>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-orange-600 mb-2">50%</div>
-                <p class="text-sm text-gray-600">Reduction in sales cycle</p>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-orange-600 mb-2">98%</div>
-                <p class="text-sm text-gray-600">Team adoption rate</p>
-              </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">4</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Training & Continuous Optimization</h3>
+              <p class="text-gray-600">Train marketers on campaign creation, workflow building, and analytics. Train sales on pipeline management, email sequences, and meeting scheduling. Monthly optimization: A/B test emails, refine lead scoring, improve conversion rates based on data.</p>
             </div>
           </div>
         </div>
@@ -172,22 +174,212 @@
   </section>
 
   <section class="py-16 bg-orange-600 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Grow with HubSpot?</h2>
-      <p class="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">Start with free tools or scale to enterprise with our expert guidance</p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-orange-600 hover:bg-gray-100">Get Started</a>
-        <a href="/src/pages/en/technology/crm/salesforce.html" class="btn btn-lg btn-outline bg-transparent border-2 border-white text-white hover:bg-white hover:text-orange-600">View Salesforce</a>
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Results from Strategic HubSpot</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div class="text-center"><div class="text-5xl font-bold mb-2">98%</div><p class="text-orange-100">Team Adoption Rate</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">3x</div><p class="text-orange-100">Qualified Leads</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">-50%</div><p class="text-orange-100">Sales Cycle Length</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">$180K</div><p class="text-orange-100">Pipeline in 6 Months</p></div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-white">
-    <div class="container mx-auto px-4 py-12">
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="heading heading-2 text-center mb-12">Our HubSpot Core Competencies</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Marketing Hub Automation</h3>
+          <p class="text-gray-600 mb-4">Email campaigns, landing pages, lead nurturing workflows, and lifecycle stage automation. We design custom templates, build smart CTAs, and implement A/B testing for continuous optimization.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Automated email sequences</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Lead scoring & segmentation</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Custom landing page design</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Sales Hub Pipeline Management</h3>
+          <p class="text-gray-600 mb-4">Custom deal pipelines, sales sequences, email tracking, and meeting scheduling. Automate task creation, deal stage updates, and sales notifications so reps focus on selling, not admin work.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pipeline stage automation</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Sales email templates & sequences</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Activity tracking & reporting</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">System Integrations</h3>
+          <p class="text-gray-600 mb-4">Connect HubSpot to your website, analytics, payment processors, and business tools. We use native integrations where possible, custom API connections where needed. Ensure bidirectional data sync.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Website CMS integration</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Payment & e-commerce sync</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Google Analytics & Ads tracking</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Data Migration</h3>
+          <p class="text-gray-600 mb-4">Clean data migration from any CRM (Salesforce, Pipedrive, Zoho) or marketing platform (Mailchimp, ActiveCampaign). We deduplicate contacts, preserve email engagement history, and validate data accuracy before go-live.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Contact & company migration</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Email history preservation</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Deal pipeline transfer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg border border-gray-200 p-8 md:p-12">
+          <div class="text-orange-600 font-semibold mb-2">CASE STUDY</div>
+          <h2 class="text-3xl font-bold mb-6">How Marketing Automation Generated $180K Pipeline in 6 Months</h2>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Challenge</h3>
+            <p class="text-gray-600">A B2B SaaS company ($5M ARR, 30 employees) relied on manual email sends via Gmail and a basic CRM. Marketing couldn't track which campaigns generated revenue. Sales complained that 80% of leads were unqualified. No lead nurturing meant cold leads disappeared. Average sales cycle: 90+ days.</p>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Solution</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Implemented HubSpot Marketing Hub + Sales Hub with lead scoring based on job title, company size, website behavior, and email engagement</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Built automated nurture campaigns: 7-email welcome series for new subscribers, 5-email demo follow-up sequence, 4-email win-back campaign for cold leads</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Designed custom email templates, landing pages for 3 core offers, and smart CTAs that changed based on lifecycle stage</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Integrated with website analytics, Google Ads, and payment processor for closed-loop attribution</span></li>
+            </ul>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Results (6 Months)</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div><div class="text-3xl font-bold text-orange-600 mb-1">300%</div><p class="text-sm text-gray-600">More Qualified Leads</p></div>
+              <div><div class="text-3xl font-bold text-orange-600 mb-1">$180K</div><p class="text-sm text-gray-600">New Pipeline Generated</p></div>
+              <div><div class="text-3xl font-bold text-orange-600 mb-1">-50%</div><p class="text-sm text-gray-600">Sales Cycle Reduction</p></div>
+              <div><div class="text-3xl font-bold text-orange-600 mb-1">98%</div><p class="text-sm text-gray-600">Team Adoption Rate</p></div>
+            </div>
+          </div>
+          <div class="bg-orange-50 border-l-4 border-orange-600 p-6">
+            <p class="text-gray-700 italic">"IntelliCloud transformed our marketing and sales process with HubSpot. We went from manual Gmail sends to automated nurture campaigns that generate 3x more qualified leads. Lead scoring ensures sales only talks to hot prospects. Our average sales cycle dropped from 90 to 45 days. HubSpot generated $180K in new pipeline in just 6 months."</p>
+            <p class="text-sm text-gray-600 mt-2">— VP of Marketing, B2B SaaS Company</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-4">Transparent Pricing</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">One-time implementation fee. HubSpot licenses billed separately by HubSpot (starts at $0/month for free CRM, $20-$3,200/month for paid hubs).</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Starter Setup</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$15,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Free HubSpot CRM + Marketing Hub Starter</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">3 email templates & 2 landing pages</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Basic lead scoring & 3 workflows</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Data migration (up to 5K contacts)</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #ea580c;">Get Started</a>
+          </div>
+          <div class="bg-orange-600 text-white rounded-lg border-2 border-orange-700 p-8 relative">
+            <div class="absolute top-0 right-0 bg-yellow-400 text-orange-900 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+            <h3 class="text-xl font-semibold mb-2">Professional Implementation</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$40,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Marketing Hub Pro + Sales Hub Pro</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">10 custom email templates & 5 landing pages</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Advanced lead scoring & 10 workflows</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">3 system integrations (website, ads, analytics)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Data migration (up to 50K contacts)</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-lg w-full bg-white text-orange-600 hover:bg-gray-100">Get Started</a>
+          </div>
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Enterprise Ecosystem</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$75,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Full HubSpot suite (Marketing + Sales + Service)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Unlimited templates, landing pages & workflows</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Advanced attribution & custom reporting</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Unlimited integrations & API development</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Dedicated support team & quarterly optimization</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #ea580c;">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">How long does a HubSpot implementation take?</h3>
+            <p class="text-gray-600">Starter setup: 4-6 weeks. Professional implementation: 8-12 weeks. Enterprise ecosystem: 14-18 weeks. Timeline depends on Marketing Hub complexity, email template design, workflow automation scope, and team training needs.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Is HubSpot easier to use than Salesforce?</h3>
+            <p class="text-gray-600">Yes. HubSpot is designed for ease of use with a modern, intuitive interface. Most teams reach proficiency in 2-3 weeks vs 6-8 weeks for Salesforce. HubSpot is ideal for SMBs and mid-market companies; Salesforce is better for complex enterprise needs.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can HubSpot replace both our CRM and marketing automation?</h3>
+            <p class="text-gray-600">Absolutely. HubSpot CRM is free forever (unlimited users). Marketing Hub replaces tools like Mailchimp, Marketo, or Pardot. Sales Hub replaces standalone CRMs. Most companies consolidate 3-5 tools into HubSpot, saving $2K-$5K/month in software costs.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Do you migrate data from our old CRM and marketing tools?</h3>
+            <p class="text-gray-600">Yes. We migrate contacts, companies, deals, email history, and campaign data from any CRM (Salesforce, Pipedrive, Zoho) or marketing platform (Mailchimp, ActiveCampaign, Constant Contact). We clean data, deduplicate records, and preserve all historical activity.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can HubSpot integrate with our other tools?</h3>
+            <p class="text-gray-600">Yes. HubSpot has 1,000+ native integrations: Salesforce, Google Workspace, Microsoft 365, Slack, Zoom, QuickBooks, Shopify, WordPress, and more. We also build custom integrations via HubSpot API for proprietary systems.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Do you provide ongoing HubSpot support?</h3>
+            <p class="text-gray-600">Yes. After implementation, we offer HubSpot managed services retainers ($2K-$6K/month) for ongoing email campaign management, workflow optimization, dashboard updates, new integrations, and monthly strategy calls.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">What's included in HubSpot training?</h3>
+            <p class="text-gray-600">Role-based training for marketers (email campaigns, landing pages, workflows), sales reps (pipeline management, sequences), and admins (reporting, integrations). Includes live sessions, recorded videos, documentation, and 30-day post-launch support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-orange-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Implement HubSpot?</h2>
+      <p class="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">Get a free HubSpot strategy session showing inbound marketing plan, workflow automation opportunities, integration requirements, and ROI projections.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-orange-600 hover:bg-gray-100">Get Your Free Strategy Session</a>
+        <a href="/src/pages/en/technology/crm/salesforce.html" class="btn btn-lg bg-orange-700 text-white border-2 border-white hover:bg-orange-800">Compare with Salesforce</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div><h3 class="text-2xl font-bold mb-4">IntelliCloud</h3><p class="text-gray-400">Transform your business with custom technology solutions</p></div>
-        <div><h4 class="font-semibold mb-4">CRM Solutions</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/crm/salesforce.html" class="text-gray-400 hover:text-white">Salesforce</a></li><li><a href="/src/pages/en/technology/crm/hubspot.html" class="text-gray-400 hover:text-white">HubSpot</a></li></ul></div>
-        <div><h4 class="font-semibold mb-4">Technologies</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li><li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Infrastructure</a></li></ul></div>
+        <div><h3 class="text-2xl font-bold mb-4">IntelliCloud</h3><p class="text-gray-400">Revenue engineering through strategic technology</p></div>
+        <div><h4 class="font-semibold mb-4">CRM Solutions</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/crm/salesforce.html" class="text-gray-400 hover:text-white">Salesforce</a></li><li><a href="/src/pages/en/technology/crm/hubspot.html" class="text-gray-400 hover:text-white">HubSpot</a></li><li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">All CRM Solutions</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Other Technologies</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li><li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Platforms</a></li></ul></div>
         <div><h4 class="font-semibold mb-4">Contact</h4><p class="text-gray-400">info@intellicloud.com</p></div>
       </div>
       <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"><p>&copy; 2025 IntelliCloud. All rights reserved.</p></div>

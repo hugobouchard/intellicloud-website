@@ -3,19 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>REST API Development | Node.js & Express | IntelliCloud</title>
-  <meta name="description" content="Custom REST API development with Node.js, Express, and PostgreSQL">
+  <title>REST API Development | Scalable & Secure | IntelliCloud</title>
+  <meta name="description" content="Enterprise REST APIs built for scale and security. RESTful design, authentication, rate limiting, documentation. Built for fintech, healthcare, and high-volume applications.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "REST API Development",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud"
+    },
+    "description": "Enterprise REST APIs built for scale and security. RESTful design, authentication, rate limiting, documentation.",
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "REST API Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "API Architecture Consultation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "REST API Development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "API Maintenance & Support"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes a good REST API design?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Good REST APIs follow consistent patterns: proper HTTP method usage (GET for reading, POST for creating, etc.), resource-based URLs, clear error responses with proper status codes, versioning from day one, comprehensive documentation, and proper authentication/authorization."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you version REST APIs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend URL versioning (/v1/, /v2/) for clarity and simplicity. Maintain backwards compatibility when possible, clearly document breaking changes, give partners advance notice before deprecation, and run multiple versions simultaneously during transition periods."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you secure REST APIs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multi-layered security: OAuth 2.0 or JWT for authentication, role-based access control, rate limiting to prevent abuse, HTTPS everywhere, input validation and sanitization, proper CORS configuration, and API key rotation policies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What about API documentation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We generate OpenAPI/Swagger docs automatically from code, provide interactive documentation with try-it-now functionality, include code examples in multiple languages, document error responses, and maintain changelog of API changes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle API rate limiting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Implement tiered rate limits based on API key type, use token bucket or sliding window algorithms, return proper headers showing remaining quota, provide clear error messages when limits exceeded, and offer higher tiers for enterprise customers."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="text-2xl font-bold">IntelliCloud</a>
+        <a href="/en/index.html" class="-ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
-          <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
-          <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
+          <a href="/en/index.html" class="paragraph hover:text-blue-600">Home</a>
+          <a href="/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
+          <a href="/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
           <a href="#contact" class="paragraph hover:text-blue-600">Contact</a>
         </div>
         <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
@@ -23,11 +115,29 @@
     </nav>
   </header>
 
-  <section class="bg-gradient-to-br from-indigo-600 to-indigo-700 text-white py-20">
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex items-center space-x-2 text-sm text-gray-600">
+        <a href="/en/index.html" class="hover:text-blue-600">Home</a>
+        <span>/</span>
+        <a href="/en/services/index.html" class="hover:text-blue-600">Services</a>
+        <span>/</span>
+        <a href="/en/services/api-integration/index.html" class="hover:text-blue-600">API Integration</a>
+        <span>/</span>
+        <span class="text-gray-900">REST APIs</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-gradient-to-br from-purple-600 to-purple-700 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Building & Integrating REST APIs</h1>
-        <p class="text-xl text-white/90 mb-8">Custom REST API development with Node.js, Express, and PostgreSQL</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">REST APIs Engineered for Enterprise Scale</h1>
+        <p class="text-xl text-white/90 mb-8">Most APIs are built as afterthoughts to support a frontend. We architect REST APIs as products—proper RESTful design, versioning strategy, comprehensive documentation, authentication/authorization, rate limiting, and monitoring. Built for partners, mobile apps, and third-party integrations.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">Discuss Your API Requirements</a>
+          <a href="#process" class="btn btn-secondary btn-lg bg-purple-700 text-white border-2 border-white hover:bg-purple-800">See Our Process</a>
+        </div>
       </div>
     </div>
   </section>
@@ -35,19 +145,317 @@
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">API Design</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Development & Testing</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Documentation</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Versioning</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Authentication</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Performance Optimization</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">100+</div><p class="text-gray-600">APIs Built</p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">RESTful</div><p class="text-gray-600">Standards</p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">OpenAPI/Swagger</div><p class="text-gray-600"></p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">High</div><p class="text-gray-600">Performance</p></div></div>
+        <h2 class="heading heading-2 mb-12 text-center">Common REST API Challenges</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Inconsistent API Design</p>
+            <p class="text-gray-600">Every endpoint follows different patterns. No standards, confusing responses, inconsistent error handling. External developers hate working with your API.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ No Versioning Strategy</p>
+            <p class="text-gray-600">Breaking changes pushed to production, breaking partner integrations. Can't evolve API without destroying existing implementations. Locked into bad design decisions forever.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Security Holes Everywhere</p>
+            <p class="text-gray-600">No proper authentication, rate limiting, or input validation. API keys passed in query params. Vulnerable to abuse, data leakage, and DDoS attacks.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="py-16 bg-gradient-to-br from-indigo-600 to-indigo-700 text-white">
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our REST API Solution</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-purple-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Proper RESTful Architecture</h3>
+            <p class="text-gray-600">Design APIs following REST principles: resource-based URLs (/users/{id}, not /getUser), proper HTTP methods (GET/POST/PUT/DELETE), stateless operations. Consistent naming conventions, predictable patterns. Developers immediately understand your API structure.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-purple-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Built-In Versioning & Evolution</h3>
+            <p class="text-gray-600">Version from day one using URL versioning (/v1/, /v2/). Maintain backwards compatibility, run multiple versions simultaneously, give partners 6-month deprecation notice. Clear migration guides between versions. Never break existing integrations.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-purple-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Enterprise-Grade Security</h3>
+            <p class="text-gray-600">OAuth 2.0 or JWT authentication, role-based access control, API key management, rate limiting per client, input validation and sanitization, HTTPS enforcement, CORS configuration. Audit logging for compliance, IP whitelisting for sensitive endpoints.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-purple-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Comprehensive Documentation</h3>
+            <p class="text-gray-600">OpenAPI/Swagger specs generated from code, interactive documentation with try-it-now, code examples in Python/JavaScript/cURL, detailed error response documentation. Changelog tracking all API changes. Developers can integrate in hours, not days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Results That Matter</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-5xl font-bold text-purple-600 mb-2">99.99%</div>
+            <div class="text-gray-600">API Uptime</div>
+            <p class="text-sm text-gray-500 mt-2">Average across production APIs</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-purple-600 mb-2">&lt;100ms</div>
+            <div class="text-gray-600">P95 Response Time</div>
+            <p class="text-sm text-gray-500 mt-2">For standard API calls</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-purple-600 mb-2">-85%</div>
+            <div class="text-gray-600">Integration Time Reduction</div>
+            <p class="text-sm text-gray-500 mt-2">With proper documentation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Case Study: Fintech API Platform Transformation</h2>
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">The Challenge</h3>
+            <p class="text-gray-600 mb-4">Fintech startup built API to power their web app, then opened it to partners as an afterthought. API was inconsistent (mix of REST and RPC patterns), no versioning, minimal documentation, breaking changes pushed regularly. Partners constantly complained about integration pain and reliability issues. Only 12 partners integrated despite strong demand.</p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Solution</h3>
+            <p class="text-gray-600 mb-4">Designed clean v2 API following REST principles. Implemented OAuth 2.0 authentication, tiered rate limiting, comprehensive OpenAPI documentation with interactive examples. Built API sandbox for testing. Maintained v1 compatibility for 6 months while partners migrated. Added monitoring dashboard showing uptime, response times, error rates per partner.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-purple-600 mb-2">12 → 87</div>
+              <div class="text-gray-900 font-semibold">API Partners</div>
+              <p class="text-sm text-gray-600 mt-2">Within 6 months of v2 launch</p>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-purple-600 mb-2">-76%</div>
+              <div class="text-gray-900 font-semibold">Integration Time</div>
+              <p class="text-sm text-gray-600 mt-2">From 2 weeks to 3 days average</p>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-purple-600 mb-2">99.97%</div>
+              <div class="text-gray-900 font-semibold">API Uptime</div>
+              <p class="text-sm text-gray-600 mt-2">Previously 98.2%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our API Development Process</h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">API Design & Architecture</h3>
+              <p class="text-gray-600">Understand your use cases, identify resources and operations, design URL structure and data models. Define authentication strategy, rate limiting tiers, error handling patterns. Create OpenAPI specification before writing code. Review with stakeholders and potential consumers.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Implementation & Testing</h3>
+              <p class="text-gray-600">Build API endpoints following design specification, implement authentication and authorization, add input validation and error handling. Write comprehensive tests (unit, integration, contract tests). Set up automated testing in CI/CD pipeline.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Security & Rate Limiting</h3>
+              <p class="text-gray-600">Implement OAuth 2.0 or JWT authentication, set up API key management system, configure rate limiting per client tier, add request throttling and DDoS protection. Security audit and penetration testing before launch.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Documentation & Developer Experience</h3>
+              <p class="text-gray-600">Generate interactive OpenAPI/Swagger documentation, create quickstart guides and tutorials, provide code examples in multiple languages, build API sandbox for testing. Set up developer portal with API keys, usage dashboards, and support.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Monitoring & Continuous Improvement</h3>
+              <p class="text-gray-600">Set up monitoring for uptime, response times, error rates. Track API usage by endpoint and client. Alert on anomalies. Gather feedback from API consumers, iterate based on usage patterns. Maintain changelog and deprecation notices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Transparent Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-purple-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">API Architecture Consultation</h3>
+            <div class="text-4xl font-bold text-purple-600 mb-2">$3,500</div>
+            <p class="text-gray-600 mb-6">One-time design session</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Current API audit and recommendations</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">RESTful design workshop</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">OpenAPI specification draft</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Security & versioning strategy</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Consultation</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-purple-600 relative">
+            <div class="absolute top-0 right-0 bg-purple-600 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">POPULAR</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">REST API Development</h3>
+            <div class="text-4xl font-bold text-purple-600 mb-2">$25k+</div>
+            <p class="text-gray-600 mb-6">Complete API build</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">RESTful API design & implementation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Authentication & authorization</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Rate limiting & security hardening</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">OpenAPI/Swagger documentation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">3 months post-launch support</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-primary w-full">Start Project</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-purple-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">API Maintenance</h3>
+            <div class="text-4xl font-bold text-purple-600 mb-2">$3k/mo</div>
+            <p class="text-gray-600 mb-6">Retainer (15 hours/month)</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">New endpoint development</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Performance optimization</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Security updates & monitoring</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Documentation updates</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Developer support via Slack</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Maintenance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What makes a good REST API design?</h3>
+            <p class="text-gray-600">Good REST APIs follow consistent patterns: proper HTTP method usage (GET for reading, POST for creating, etc.), resource-based URLs, clear error responses with proper status codes, versioning from day one, comprehensive documentation, and proper authentication/authorization. Think of your API as a product that developers will love or hate based on its design.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you version REST APIs?</h3>
+            <p class="text-gray-600">We recommend URL versioning (/v1/, /v2/) for clarity and simplicity. Maintain backwards compatibility when possible, clearly document breaking changes, give partners advance notice before deprecation (6+ months), and run multiple versions simultaneously during transition periods. Never force immediate migrations.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you secure REST APIs?</h3>
+            <p class="text-gray-600">Multi-layered security: OAuth 2.0 or JWT for authentication, role-based access control (not all API consumers should access everything), rate limiting to prevent abuse, HTTPS everywhere (reject HTTP), input validation and sanitization, proper CORS configuration, and API key rotation policies. Regular security audits.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What about API documentation?</h3>
+            <p class="text-gray-600">We generate OpenAPI/Swagger docs automatically from code (keeps docs in sync), provide interactive documentation with try-it-now functionality, include code examples in multiple languages (Python, JavaScript, cURL), document error responses thoroughly, and maintain changelog of all API changes. Good documentation reduces integration time by 70%+.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you handle API rate limiting?</h3>
+            <p class="text-gray-600">Implement tiered rate limits based on API key type (free vs. paid), use token bucket or sliding window algorithms, return proper headers showing remaining quota (X-RateLimit-Remaining), provide clear error messages when limits exceeded, and offer higher tiers for enterprise customers. Prevents abuse while allowing legitimate usage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Related Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="/en/services/api-integration/third-party-integration.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">Third-Party Integration</h3>
+            <p class="text-gray-600 text-sm">Connect with external APIs seamlessly</p>
+          </a>
+          <a href="/en/services/backend/microservices.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">Microservices Architecture</h3>
+            <p class="text-gray-600 text-sm">Build scalable service-oriented systems</p>
+          </a>
+          <a href="/en/services/backend/nodejs.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">Node.js Development</h3>
+            <p class="text-gray-600 text-sm">Fast, scalable API backends</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-gradient-to-br from-purple-600 to-purple-700 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-indigo-600 hover:bg-gray-100">Contact Us</a>
+        <h2 class="text-4xl font-bold mb-6">Ready to Build Your REST API?</h2>
+        <p class="text-xl text-white/90 mb-8">Let's discuss your API requirements and design an architecture that scales. Get a detailed proposal within 48 hours.</p>
+        <a href="/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">Start Your API Project</a>
       </div>
     </div>
   </section>

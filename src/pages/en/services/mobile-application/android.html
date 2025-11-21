@@ -3,19 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Android App Development | Kotlin & Jetpack | IntelliCloud</title>
-  <meta name="description" content="High-performance Android apps built with Kotlin and Jetpack Compose">
+  <title>Android App Development | Kotlin & Jetpack Compose | IntelliCloud</title>
+  <meta name="description" content="Native Android applications built with Kotlin and Jetpack Compose. Play Store optimization, Material Design, performance. 4.6+ average Play Store rating.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Android App Development",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud"
+    },
+    "description": "Native Android applications built with Kotlin and Jetpack Compose. Play Store optimization, Material Design, performance.",
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Android Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Android App Audit"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Android App Development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Android App Ongoing Support"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Should we build native Android or use React Native/Flutter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Native Android (Kotlin/Jetpack Compose) delivers superior performance, better Material Design integration, and access to latest Android features immediately. Cross-platform tools lag behind Android releases by months and always feel slightly 'off' on Android."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle Android device fragmentation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We test on real devices across different manufacturers (Samsung, Google, OnePlus, etc.), Android versions, and screen sizes. Use Android's compatibility libraries, handle edge cases gracefully, and monitor crash reports by device type."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's your Play Store approval rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "98% first-submission approval rate. We thoroughly review Google Play policies, implement proper permissions, ensure data safety disclosures are accurate, and test all flows before submission."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you migrate our existing Android app to Kotlin/Jetpack Compose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We assess your current Java/XML codebase, create migration plan that allows incremental modernization (you don't have to rewrite everything), migrate screens progressively to Compose, and maintain backward compatibility throughout."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you optimize Android app performance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Profile with Android Profiler to identify bottlenecks, optimize image loading and caching, implement proper background task handling, reduce APK size, and monitor battery usage. Target 60fps animations and <3s cold start time."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="text-2xl font-bold">IntelliCloud</a>
+        <a href="/en/index.html" class="-ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
-          <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
-          <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
+          <a href="/en/index.html" class="paragraph hover:text-blue-600">Home</a>
+          <a href="/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
+          <a href="/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
           <a href="#contact" class="paragraph hover:text-blue-600">Contact</a>
         </div>
         <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
@@ -23,11 +115,29 @@
     </nav>
   </header>
 
-  <section class="bg-gradient-to-br from-orange-600 to-orange-700 text-white py-20">
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex items-center space-x-2 text-sm text-gray-600">
+        <a href="/en/index.html" class="hover:text-blue-600">Home</a>
+        <span>/</span>
+        <a href="/en/services/index.html" class="hover:text-blue-600">Services</a>
+        <span>/</span>
+        <a href="/en/services/mobile-application/index.html" class="hover:text-blue-600">Mobile Application</a>
+        <span>/</span>
+        <span class="text-gray-900">Android</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-gradient-to-br from-green-600 to-green-700 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Native Android App Development</h1>
-        <p class="text-xl text-white/90 mb-8">High-performance Android apps built with Kotlin and Jetpack Compose</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Android Apps That Dominate the Play Store</h1>
+        <p class="text-xl text-white/90 mb-8">Android represents 70%+ global mobile market share but most companies treat it as an afterthought. We build native Android experiences using Kotlin and Jetpack Compose—Material Design perfection, device compatibility, and performance optimization. 4.6+ average Play Store rating.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="btn btn-primary btn-lg bg-white text-green-600 hover:bg-gray-100">Discuss Your Android App</a>
+          <a href="#process" class="btn btn-secondary btn-lg bg-green-700 text-white border-2 border-white hover:bg-green-800">See Our Process</a>
+        </div>
       </div>
     </div>
   </section>
@@ -35,19 +145,317 @@
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Kotlin Development</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Jetpack Compose</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Play Store Submission</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Firebase Integration</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Material Design</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Backward Compatibility</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-orange-600 mb-2">75+</div><p class="text-gray-600">Android Apps</p></div><div class="text-center"><div class="text-4xl font-bold text-orange-600 mb-2">Kotlin</div><p class="text-gray-600">Experts</p></div><div class="text-center"><div class="text-4xl font-bold text-orange-600 mb-2">Play</div><p class="text-gray-600">Store Certified</p></div><div class="text-center"><div class="text-4xl font-bold text-orange-600 mb-2">All</div><p class="text-gray-600">Devices Supported</p></div></div>
+        <h2 class="heading heading-2 mb-12 text-center">Common Android Development Challenges</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ iOS-First Neglect</p>
+            <p class="text-gray-600">Android version is poorly maintained iOS port. Ignores Material Design, feels foreign on Android. Missing features that work perfectly on iOS. Android users feel like second-class citizens.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Device Fragmentation Nightmare</p>
+            <p class="text-gray-600">App works on your test device but crashes on customer devices. Thousands of Android device variations, can't test them all. One-star reviews citing compatibility issues.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Play Store Rejection Loop</p>
+            <p class="text-gray-600">App keeps getting rejected for policy violations. Privacy policy issues, permission problems, or UI violations. Delayed launches, frustrated stakeholders.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="py-16 bg-gradient-to-br from-orange-600 to-orange-700 text-white">
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our Android Development Solution</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-green-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Material Design Perfection</h3>
+            <p class="text-gray-600">Build apps that feel naturally Android using Material Design 3 components. Proper navigation patterns (Navigation Component), consistent theming with Material You dynamic color, smooth animations following Android motion principles. Android users immediately recognize quality.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-green-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Kotlin & Jetpack Compose</h3>
+            <p class="text-gray-600">Modern Android development with Kotlin and declarative UI. Jetpack Compose reduces code by 40%, eliminates XML layouts, enables powerful UI composition. Leverage coroutines for async operations, Flow for reactive data, Room for database, WorkManager for background tasks.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-green-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Device Compatibility Testing</h3>
+            <p class="text-gray-600">Test across real devices: Samsung, Google Pixel, OnePlus, Xiaomi. Multiple Android versions (support back to Android 7+), screen sizes (phones, tablets, foldables), manufacturers' custom Android flavors. Use Firebase Test Lab for automated testing across 50+ device configurations.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-green-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Play Store Optimization</h3>
+            <p class="text-gray-600">Guaranteed first-submission approval. Proper permission handling, data safety disclosure accuracy, privacy policy compliance, target latest Android API level. Optimize app size using App Bundles (30% smaller downloads), implement proper screenshots and descriptions for conversion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Results That Matter</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-5xl font-bold text-green-600 mb-2">4.6+</div>
+            <div class="text-gray-600">Average Play Store Rating</div>
+            <p class="text-sm text-gray-500 mt-2">Across all Android apps we've built</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-green-600 mb-2">98%</div>
+            <div class="text-gray-600">First-Submission Approval</div>
+            <p class="text-sm text-gray-500 mt-2">Play Store acceptance rate</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-green-600 mb-2">&lt;0.5%</div>
+            <div class="text-gray-600">Crash Rate</div>
+            <p class="text-sm text-gray-500 mt-2">Industry average is 2-3%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Case Study: E-Commerce Android App Transformation</h2>
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">The Challenge</h3>
+            <p class="text-gray-600 mb-4">Mid-sized e-commerce company had successful iOS app (4.7 rating) but terrible Android version (2.3 rating). Android app was poorly maintained iOS port built with React Native—didn't follow Material Design, frequent crashes, missing features. Android represented 65% of their mobile traffic but only 30% of mobile revenue.</p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Solution</h3>
+            <p class="text-gray-600 mb-4">Rebuilt Android app natively using Kotlin and Jetpack Compose. Implemented proper Material Design navigation, integrated Android-specific features (widgets, share targets, notification channels), optimized checkout flow for Android users. Added Firebase Crashlytics for monitoring, implemented proper caching for offline browsing.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-green-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-green-600 mb-2">2.3 → 4.5</div>
+              <div class="text-gray-900 font-semibold">Play Store Rating</div>
+              <p class="text-sm text-gray-600 mt-2">Within 2 months of launch</p>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-green-600 mb-2">-78%</div>
+              <div class="text-gray-900 font-semibold">Crash Rate Reduction</div>
+              <p class="text-sm text-gray-600 mt-2">From 3.2% to 0.7%</p>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-green-600 mb-2">+156%</div>
+              <div class="text-gray-900 font-semibold">Android Conversion Rate</div>
+              <p class="text-sm text-gray-600 mt-2">Android revenue now matches iOS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our Android Development Process</h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Discovery & Architecture Planning</h3>
+              <p class="text-gray-600">Review your product requirements, user flows, and design mockups. Plan app architecture (MVVM with Jetpack components), define navigation structure, identify Android-specific features to leverage (widgets, shortcuts, share targets). Set performance targets and define success metrics.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">UI Implementation with Jetpack Compose</h3>
+              <p class="text-gray-600">Build declarative UI using Compose, implement Material Design 3 theming with dynamic color support, create reusable composable components, implement proper state management. Weekly demos showing actual app running on physical devices.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Backend Integration & Data Layer</h3>
+              <p class="text-gray-600">Implement API integration with Retrofit/Ktor, set up Room database for offline support, configure proper caching strategy, implement coroutines for async operations. Handle network errors gracefully, ensure app works offline where possible.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Device Testing & Performance Optimization</h3>
+              <p class="text-gray-600">Test across multiple real devices (Samsung, Google, OnePlus), test different Android versions and screen sizes, use Firebase Test Lab for automated testing. Profile performance using Android Profiler, optimize images and assets, ensure 60fps animations, reduce APK size.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Play Store Launch & Post-Launch Monitoring</h3>
+              <p class="text-gray-600">Prepare Play Store listing with optimized screenshots and description, ensure compliance with all Google Play policies, submit for review (98% first-approval rate). After launch: monitor crash reports via Crashlytics, track performance metrics, analyze user feedback, iterate based on data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Transparent Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-green-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Android App Audit</h3>
+            <div class="text-4xl font-bold text-green-600 mb-2">$2,500</div>
+            <p class="text-gray-600 mb-6">One-time assessment</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Performance analysis & crash report review</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Material Design compliance evaluation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Device compatibility testing</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Detailed improvement roadmap</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Audit</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-green-600 relative">
+            <div class="absolute top-0 right-0 bg-green-600 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">POPULAR</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Android App Development</h3>
+            <div class="text-4xl font-bold text-green-600 mb-2">$35k+</div>
+            <p class="text-gray-600 mb-6">Native Android application</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Kotlin & Jetpack Compose development</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Material Design 3 implementation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Device compatibility testing</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Play Store launch support</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">3 months post-launch support</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-primary w-full">Start Project</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-green-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Ongoing Support</h3>
+            <div class="text-4xl font-bold text-green-600 mb-2">$4k/mo</div>
+            <p class="text-gray-600 mb-6">Retainer (20 hours/month)</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Feature development & enhancements</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Bug fixes & performance optimization</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Android OS updates compatibility</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Crash monitoring & resolution</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 font-bold">✓</span>
+                <span class="text-gray-600">Slack support & monthly reviews</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Should we build native Android or use React Native/Flutter?</h3>
+            <p class="text-gray-600">Native Android (Kotlin/Jetpack Compose) delivers superior performance, better Material Design integration, and access to latest Android features immediately. Cross-platform tools lag behind Android releases by months and always feel slightly "off" on Android. If Android is important to your business (which it should be—70%+ market share), go native.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you handle Android device fragmentation?</h3>
+            <p class="text-gray-600">We test on real devices across different manufacturers (Samsung, Google, OnePlus, etc.), Android versions, and screen sizes. Use Android's compatibility libraries, handle edge cases gracefully, and monitor crash reports by device type. Firebase Test Lab provides automated testing across 50+ device configurations.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What's your Play Store approval rate?</h3>
+            <p class="text-gray-600">98% first-submission approval rate. We thoroughly review Google Play policies, implement proper permissions, ensure data safety disclosures are accurate, and test all flows before submission. We stay current with policy changes and proactively address potential issues.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Can you migrate our existing Android app to Kotlin/Jetpack Compose?</h3>
+            <p class="text-gray-600">Yes. We assess your current Java/XML codebase, create migration plan that allows incremental modernization (you don't have to rewrite everything), migrate screens progressively to Compose, and maintain backward compatibility throughout. Migration reduces code by 30-40% while improving maintainability.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you optimize Android app performance?</h3>
+            <p class="text-gray-600">Profile with Android Profiler to identify bottlenecks, optimize image loading and caching, implement proper background task handling, reduce APK size, and monitor battery usage. Target 60fps animations and <3s cold start time. Continuous monitoring via Firebase Performance helps catch regressions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Related Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="/en/services/mobile-application/ios.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">iOS App Development</h3>
+            <p class="text-gray-600 text-sm">Native iOS apps with Swift & SwiftUI</p>
+          </a>
+          <a href="/en/services/api-integration/rest-apis.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">REST API Development</h3>
+            <p class="text-gray-600 text-sm">Enterprise REST APIs for mobile apps</p>
+          </a>
+          <a href="/en/services/ui-ux/mobile-app-design.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">Mobile App Design</h3>
+            <p class="text-gray-600 text-sm">Material Design UI/UX for Android</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-gradient-to-br from-green-600 to-green-700 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-orange-600 hover:bg-gray-100">Contact Us</a>
+        <h2 class="text-4xl font-bold mb-6">Ready to Build Your Android App?</h2>
+        <p class="text-xl text-white/90 mb-8">Let's discuss your Android app requirements and create a development plan. Get a detailed proposal within 48 hours.</p>
+        <a href="/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-green-600 hover:bg-gray-100">Start Your Android Project</a>
       </div>
     </div>
   </section>

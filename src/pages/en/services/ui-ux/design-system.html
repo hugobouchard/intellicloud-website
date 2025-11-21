@@ -3,19 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design Systems | Component Libraries | IntelliCloud</title>
-  <meta name="description" content="Comprehensive design systems for consistency, efficiency, and scalability">
+  <title>Design System Development | Scalable UI | IntelliCloud</title>
+  <meta name="description" content="Enterprise design systems that scale. Component libraries, design tokens, documentation. Ship features 3x faster with consistent UX across all products.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Design System Development",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud"
+    },
+    "description": "Enterprise design systems that scale. Component libraries, design tokens, documentation.",
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Design System Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Design System Audit"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Design System Creation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Design System Maintenance"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's included in a design system?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Design tokens (colors, typography, spacing), component library (buttons, forms, modals, etc.), design patterns and guidelines, Figma design files synced with code, interactive documentation site, accessibility guidelines, and contribution processes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you keep Figma and code in sync?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use design tokens as single source of truth, Figma variables map to CSS variables, maintain component parity between design and code, automated visual regression testing catches drift, regular design-dev sync meetings to address gaps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the ROI of a design system?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Teams ship features 40-60% faster by reusing components instead of rebuilding from scratch, fewer design inconsistencies mean less QA cycles, onboarding new designers/developers becomes faster, design debt reduces significantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which framework should we use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depends on your tech stack. React with Styled Components or Tailwind is popular. For multi-framework support, Web Components or design tokens with framework-specific implementations. We'll recommend based on your needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle design system governance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Establish design system team or guild, create contribution guidelines and review processes, maintain changelog of component updates, provide migration guides for breaking changes, offer office hours for questions and support."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="text-2xl font-bold">IntelliCloud</a>
+        <a href="/en/index.html" class="-ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
-          <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
-          <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
+          <a href="/en/index.html" class="paragraph hover:text-blue-600">Home</a>
+          <a href="/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
+          <a href="/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
           <a href="#contact" class="paragraph hover:text-blue-600">Contact</a>
         </div>
         <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
@@ -23,11 +115,29 @@
     </nav>
   </header>
 
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex items-center space-x-2 text-sm text-gray-600">
+        <a href="/en/index.html" class="hover:text-blue-600">Home</a>
+        <span>/</span>
+        <a href="/en/services/index.html" class="hover:text-blue-600">Services</a>
+        <span>/</span>
+        <a href="/en/services/ui-ux/index.html" class="hover:text-blue-600">UI/UX</a>
+        <span>/</span>
+        <span class="text-gray-900">Design System</span>
+      </div>
+    </div>
+  </div>
+
   <section class="bg-gradient-to-br from-pink-600 to-pink-700 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Scalable Design Systems</h1>
-        <p class="text-xl text-white/90 mb-8">Comprehensive design systems for consistency, efficiency, and scalability</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Design Systems That Accelerate Product Development</h1>
+        <p class="text-xl text-white/90 mb-8">Most companies waste weeks building the same buttons, forms, and modals repeatedly. We build comprehensive design systems—reusable components, design tokens, documentation, and governance. Ship features 3x faster with perfect consistency across all products.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="btn btn-primary btn-lg bg-white text-pink-600 hover:bg-gray-100">Discuss Design System Needs</a>
+          <a href="#process" class="btn btn-secondary btn-lg bg-pink-700 text-white border-2 border-white hover:bg-pink-800">See Our Process</a>
+        </div>
       </div>
     </div>
   </section>
@@ -35,9 +145,307 @@
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Component Libraries</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Style Guides</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Documentation</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Design Tokens</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Accessibility Standards</span></li><li class="flex items-start"><svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Version Control</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-pink-600 mb-2">25+</div><p class="text-gray-600">Design Systems</p></div><div class="text-center"><div class="text-4xl font-bold text-pink-600 mb-2">Atomic</div><p class="text-gray-600">Design</p></div><div class="text-center"><div class="text-4xl font-bold text-pink-600 mb-2">Fully</div><p class="text-gray-600">Documented</p></div><div class="text-center"><div class="text-4xl font-bold text-pink-600 mb-2">Developer-Friendly</div><p class="text-gray-600"></p></div></div>
+        <h2 class="heading heading-2 mb-12 text-center">Common Design System Challenges</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Every Feature Reinvents UI</p>
+            <p class="text-gray-600">Designers recreating buttons for every screen. Developers building custom dropdowns for every form. Same components, different code, inconsistent UX. Massive wasted effort.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Inconsistent User Experience</p>
+            <p class="text-gray-600">Every product area looks different. Buttons styled differently, forms behave inconsistently, colors vary. Users confused, brand diluted.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ No Single Source of Truth</p>
+            <p class="text-gray-600">Design team has Figma library, frontend has component library, they don't match. Changes made in one, not the other. Constant drift and misalignment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our Design System Solution</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-pink-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Design Tokens Foundation</h3>
+            <p class="text-gray-600">Single source of truth for colors, typography, spacing, shadows. Design tokens transform automatically into CSS variables, iOS/Android themes, and Figma variables. Change primary color once, update everywhere. Perfect consistency across platforms.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-pink-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Production-Ready Component Library</h3>
+            <p class="text-gray-600">Comprehensive components built with your framework (React, Vue, Angular). Buttons, forms, modals, tables, navigation—everything you need. Fully accessible (WCAG AA), responsive, theme-able. Published to npm for easy installation and updates.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-pink-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Figma-to-Code Workflow</h3>
+            <p class="text-gray-600">Figma component library matching code components 1:1. Designers and developers speak same language. Design handoffs become trivial. Use Figma variables for design tokens, maintain component parity through automated testing and regular sync reviews.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-pink-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Interactive Documentation</h3>
+            <p class="text-gray-600">Storybook or similar documentation site. Live component playground, usage guidelines, do's and don'ts, code examples, accessibility notes. Searchable, always up-to-date. New team members onboard in hours, not weeks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Results That Matter</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-5xl font-bold text-pink-600 mb-2">3x</div>
+            <div class="text-gray-600">Faster Feature Development</div>
+            <p class="text-sm text-gray-500 mt-2">By reusing vs. rebuilding components</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-pink-600 mb-2">-67%</div>
+            <div class="text-gray-600">Design Inconsistencies</div>
+            <p class="text-sm text-gray-500 mt-2">Measured in QA bug reports</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-pink-600 mb-2">90%</div>
+            <div class="text-gray-600">Developer Adoption Rate</div>
+            <p class="text-sm text-gray-500 mt-2">Within 3 months of launch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Case Study: SaaS Platform Design System</h2>
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">The Challenge</h3>
+            <p class="text-gray-600 mb-4">Fast-growing SaaS company with 3 products, each built by different teams. Every product had different UI patterns—buttons styled differently, forms behaved inconsistently, navigation varied wildly. Designers spent 60% of time recreating components, developers constantly built one-off UI elements. Users complained about inconsistent experience.</p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Solution</h3>
+            <p class="text-gray-600 mb-4">Built comprehensive design system with design tokens, 50+ React components, Figma component library with matching behavior, Storybook documentation site. Established design system team to govern contributions and updates. Migrated all 3 products to use design system over 6 months. Provided training and office hours for adoption support.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-pink-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-pink-600 mb-2">+58%</div>
+              <div class="text-gray-900 font-semibold">Feature Velocity</div>
+              <p class="text-sm text-gray-600 mt-2">Ship features 58% faster post-migration</p>
+            </div>
+            <div class="bg-pink-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-pink-600 mb-2">-73%</div>
+              <div class="text-gray-900 font-semibold">UI Bug Reports</div>
+              <p class="text-sm text-gray-600 mt-2">Fewer inconsistency issues in QA</p>
+            </div>
+            <div class="bg-pink-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-pink-600 mb-2">2 weeks</div>
+              <div class="text-gray-900 font-semibold">Onboarding Time</div>
+              <p class="text-sm text-gray-600 mt-2">From 6 weeks for new developers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our Design System Process</h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Audit & Discovery</h3>
+              <p class="text-gray-600">Inventory existing UI components across all products, identify inconsistencies and duplication, understand your brand guidelines and visual identity. Interview designers and developers about pain points. Define scope and priorities for initial release vs. future iterations.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Design Tokens & Foundation</h3>
+              <p class="text-gray-600">Define design tokens (colors, typography, spacing, elevation) as single source of truth. Set up token transformation pipeline generating CSS variables, iOS/Android themes, Figma variables. Establish naming conventions and token structure. This foundation ensures consistency.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Component Library Development</h3>
+              <p class="text-gray-600">Build component library with your framework (React, Vue, etc.). Start with foundational components (buttons, inputs, cards), then compose into complex patterns (forms, modals, tables). Ensure accessibility (WCAG AA), responsiveness, theme-ability. Write comprehensive tests.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Figma Library & Documentation</h3>
+              <p class="text-gray-600">Create Figma component library matching code components 1:1. Set up interactive documentation site (Storybook) with live examples, usage guidelines, code snippets, accessibility notes. Make documentation searchable and easy to navigate. Provide contribution guidelines.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Rollout & Governance</h3>
+              <p class="text-gray-600">Train teams on design system usage, provide office hours for questions and support, establish governance model (design system team or guild), create contribution and review processes. Monitor adoption, gather feedback, iterate based on real-world usage. Design systems are living products.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Transparent Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-pink-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Design System Audit</h3>
+            <div class="text-4xl font-bold text-pink-600 mb-2">$4,000</div>
+            <p class="text-gray-600 mb-6">One-time assessment</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">UI component inventory</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Inconsistency analysis</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Team interviews & pain points</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Detailed implementation roadmap</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Audit</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-pink-600 relative">
+            <div class="absolute top-0 right-0 bg-pink-600 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">POPULAR</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Design System Creation</h3>
+            <div class="text-4xl font-bold text-pink-600 mb-2">$45k+</div>
+            <p class="text-gray-600 mb-6">Complete system build</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Design tokens foundation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Component library (40+ components)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Figma design library</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Interactive documentation site</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Team training & 3 months support</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-primary w-full">Start Project</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-pink-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Ongoing Maintenance</h3>
+            <div class="text-4xl font-bold text-pink-600 mb-2">$5k/mo</div>
+            <p class="text-gray-600 mb-6">Retainer (25 hours/month)</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">New component development</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Component updates & bug fixes</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Documentation updates</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Governance & contribution reviews</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-pink-600 font-bold">✓</span>
+                <span class="text-gray-600">Office hours & team support</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Maintenance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What's included in a design system?</h3>
+            <p class="text-gray-600">Design tokens (colors, typography, spacing, elevation, animations), component library (buttons, forms, modals, tables, navigation—everything you need), design patterns and guidelines, Figma design files synced with code, interactive documentation site (typically Storybook), accessibility guidelines (WCAG AA compliance), and contribution processes for governance.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you keep Figma and code in sync?</h3>
+            <p class="text-gray-600">Use design tokens as single source of truth (colors, spacing defined once, transformed to both Figma variables and CSS), Figma variables map directly to CSS variables, maintain component parity between design and code (same props, same behavior), automated visual regression testing catches drift, and regular design-dev sync meetings to address gaps.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What's the ROI of a design system?</h3>
+            <p class="text-gray-600">Teams ship features 40-60% faster by reusing components instead of rebuilding from scratch. Fewer design inconsistencies mean less QA cycles and rework. Onboarding new designers/developers becomes 3x faster with clear documentation. Design debt reduces significantly. The investment pays back within 6-12 months for most teams.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Which framework should we use?</h3>
+            <p class="text-gray-600">Depends on your tech stack. React with Styled Components or Tailwind is most popular. Vue or Angular if that's your framework. For multi-framework support, consider Web Components or design tokens with framework-specific component implementations. We'll recommend the best approach based on your specific needs and constraints.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you handle design system governance?</h3>
+            <p class="text-gray-600">Establish design system team or guild (designers + developers), create contribution guidelines and review processes, maintain changelog of component updates with semantic versioning, provide migration guides for breaking changes, offer office hours for questions and support, and gather feedback continuously to prioritize improvements. Governance ensures long-term success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Related Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="/en/services/ui-ux/ui-ux-design.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">UI/UX Design</h3>
+            <p class="text-gray-600 text-sm">Design products that users love</p>
+          </a>
+          <a href="/en/services/frontend/react.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">React Development</h3>
+            <p class="text-gray-600 text-sm">Build component libraries with React</p>
+          </a>
+          <a href="/en/services/ui-ux/user-research.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">User Research</h3>
+            <p class="text-gray-600 text-sm">Validate design decisions with data</p>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -45,9 +453,9 @@
   <section id="contact" class="py-16 bg-gradient-to-br from-pink-600 to-pink-700 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-pink-600 hover:bg-gray-100">Contact Us</a>
+        <h2 class="text-4xl font-bold mb-6">Ready to Build Your Design System?</h2>
+        <p class="text-xl text-white/90 mb-8">Let's discuss your design system needs and create a plan that accelerates your product development. Get a detailed proposal within 48 hours.</p>
+        <a href="/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-pink-600 hover:bg-gray-100">Start Your Design System</a>
       </div>
     </div>
   </section>

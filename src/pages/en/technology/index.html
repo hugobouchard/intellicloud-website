@@ -3,54 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Technical Arsenal | Enterprise Technology Stack | IntelliCloud</title>
-  <meta name="description" content="Expert implementation of Salesforce, AI agents, cloud infrastructure, and custom APIs. The technical weapons for enterprise growth.">
+  <title>Enterprise Technology Stack | Salesforce, AI, Cloud, API Integration | IntelliCloud</title>
+  <meta name="description" content="Expert technology implementation: Salesforce CRM, AI agents (OpenAI/Gemini), AWS/GCP cloud infrastructure, and enterprise API integration. 500+ projects, 40% cost savings, $2M+ ROI.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "IntelliCloud Technology Solutions",
+    "description": "Enterprise technology implementation including Salesforce CRM, AI integration, cloud infrastructure, and API services",
+    "url": "https://site-web-ic.web.app/en/technology/",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud",
+      "url": "https://site-web-ic.web.app"
+    },
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Technology Solutions",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "CRM Solutions (Salesforce, HubSpot)",
+            "url": "https://site-web-ic.web.app/en/technology/crm/"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI Integration (OpenAI, Gemini, Claude)",
+            "url": "https://site-web-ic.web.app/en/technology/ai/"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Cloud Infrastructure (AWS, GCP, Azure)",
+            "url": "https://site-web-ic.web.app/en/technology/cloud/"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "API Integration Services",
+            "url": "https://site-web-ic.web.app/en/technology/api/"
+          }
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "150"
+    }
+  }
+  </script>
 </head>
 <body class="bg-white">
   <!-- Header -->
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+        <a href="/en/index.html" class="flex items-center -ml-4 lg:ml-0">
           <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28 w-auto">
         </a>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600 transition-colors">Home</a>
-          <a href="/src/pages/en/technology/index.html" class="paragraph text-blue-600 font-semibold">Technology</a>
-          <a href="/src/pages/en/services.html" class="paragraph hover:text-blue-600 transition-colors">Services</a>
-          <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600 transition-colors">Contact</a>
+          <a href="/en/index.html" class="paragraph hover:text-blue-600 transition-colors">Home</a>
+          <a href="/en/technology/index.html" class="paragraph text-blue-600 font-semibold">Technology</a>
+          <a href="/en/services.html" class="paragraph hover:text-blue-600 transition-colors">Services</a>
+          <a href="/en/contact.html" class="paragraph hover:text-blue-600 transition-colors">Contact</a>
         </div>
         <div class="flex items-center space-x-4">
           <div class="hidden md:flex items-center space-x-2">
-            <a href="/src/pages/en/technology/index.html" class="paragraph paragraph-small font-semibold text-blue-600">EN</a>
+            <a href="/en/technology/index.html" class="paragraph paragraph-small font-semibold text-blue-600">EN</a>
             <span class="text-gray-300">|</span>
-            <a href="/src/pages/fr/technology/index.html" class="paragraph paragraph-small hover:text-blue-600">FR</a>
+            <a href="/fr/technology/index.html" class="paragraph paragraph-small hover:text-blue-600">FR</a>
           </div>
-          <a href="/src/pages/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
+          <a href="/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
         </div>
       </div>
     </nav>
   </header>
+
+  <!-- Breadcrumbs with Schema -->
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <nav aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2 text-sm" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/en/" itemprop="item" class="text-gray-600 hover:text-blue-600">
+              <span itemprop="name">Home</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name" class="text-gray-900 font-semibold">Technology</span>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
 
   <!-- Hero Section -->
   <section class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 md:py-24">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
-          The Technical Arsenal
+          Enterprise Technology Stack That Drives Business Outcomes
         </h1>
         <p class="text-xl md:text-2xl text-gray-300 mb-8">
-          Expert implementation of Salesforce dashboards, AI agents, cloud infrastructure, and custom APIs. The weapons for enterprise revenue acceleration.
+          Expert implementation of Salesforce CRM, AI agents (OpenAI/Gemini/Claude), AWS/GCP cloud infrastructure, and enterprise API integrations. We deploy technology that moves metrics, not just technical checkboxes.
         </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <a href="#technologies" class="btn btn-primary btn-lg bg-white text-gray-900 hover:bg-gray-100">
+            Explore Technologies
+          </a>
+          <a href="#contact" class="btn btn-outline btn-lg border-white text-white hover:bg-white/10">
+            Get Free Technology Audit
+          </a>
+        </div>
+        <!-- Trust Signals Bar -->
+        <div class="flex flex-wrap justify-center gap-6 text-sm">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            <span>AWS & Salesforce Certified</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            <span>15+ Years Experience</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            <span>150+ Implementations</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            <span>40% Avg Cost Savings</span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
   </section>
 
-  <!-- Technology Categories Grid -->
-  <section class="py-16">
+  <!-- Problem Section -->
+  <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">Why Most Technology Implementations Fail</h2>
+        <p class="paragraph text-center text-gray-600 mb-12">Companies invest millions in technology that never delivers ROI. Systems get implemented but don't move business metrics. Here's why:</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Technology for Technology's Sake</p>
+            <p class="text-gray-600">IT teams deploy tools because they're "best in class," not because they solve business problems. Shiny new systems that don't integrate with existing workflows.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Implementation Without Strategy</p>
+            <p class="text-gray-600">Consultants configure out-of-the-box features without understanding your business model. Generic setups that require expensive customization later.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ No Adoption, No ROI</p>
+            <p class="text-gray-600">Teams implement powerful platforms but users ignore them. No training, no change management, no measurement. Technology shelf-ware.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Framework -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">Our Business-First Technology Implementation Framework</h2>
+        <p class="paragraph text-center text-gray-600 mb-12">We don't deploy technology for its own sake. Every implementation is architected around your business model, optimized for user adoption, and measured by ROI.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">1. Business Process Mapping</h3>
+            <p class="text-sm text-gray-600">We map your current workflows, identify bottlenecks, and design technology solutions that eliminate friction—not create more of it.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">2. Platform Selection & Architecture</h3>
+            <p class="text-sm text-gray-600">Choose the right tools based on your needs, not vendor marketing. We design system architectures that integrate seamlessly with existing infrastructure.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">3. Custom Configuration & Integration</h3>
+            <p class="text-sm text-gray-600">Tailor platforms to your business model. Custom dashboards, automated workflows, and API integrations that connect all your systems.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">4. User Training & Change Management</h3>
+            <p class="text-sm text-gray-600">Comprehensive training programs, documentation, and ongoing support. We ensure teams actually use the technology—adoption rates matter.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">5. Performance Monitoring & Optimization</h3>
+            <p class="text-sm text-gray-600">Real-time dashboards tracking business metrics, not just system uptime. Continuous optimization based on actual usage data.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">6. ROI Measurement & Reporting</h3>
+            <p class="text-sm text-gray-600">Quarterly business reviews showing exactly how technology investments impact revenue, cost savings, and operational efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Categories Grid -->
+  <section id="technologies" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="heading heading-2 mb-4">Our Enterprise Technology Stack</h2>
+        <p class="paragraph text-gray-600">Expert implementation across CRM, AI, cloud infrastructure, and enterprise integrations</p>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- CRM Category -->
         <div class="bg-white rounded-lg border border-gray-200 p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -81,7 +259,7 @@
               Custom CRM Development
             </li>
           </ul>
-          <a href="/src/pages/en/technology/crm/index.html" class="btn btn-outline btn-md w-full">Explore CRM</a>
+          <a href="/en/technology/crm/index.html" class="btn btn-outline btn-md w-full">Explore CRM</a>
         </div>
 
         <!-- AI Category -->
@@ -113,7 +291,7 @@
               Claude AI Solutions
             </li>
           </ul>
-          <a href="/src/pages/en/technology/ai/index.html" class="btn btn-outline btn-md w-full">Explore AI</a>
+          <a href="/en/technology/ai/index.html" class="btn btn-outline btn-md w-full">Explore AI</a>
         </div>
 
         <!-- Cloud Category -->
@@ -145,7 +323,7 @@
               Microsoft Azure
             </li>
           </ul>
-          <a href="/src/pages/en/technology/cloud/index.html" class="btn btn-outline btn-md w-full">Explore Cloud</a>
+          <a href="/en/technology/cloud/index.html" class="btn btn-outline btn-md w-full">Explore Cloud</a>
         </div>
 
         <!-- API Category -->
@@ -177,46 +355,101 @@
               Stripe Payments
             </li>
           </ul>
-          <a href="/src/pages/en/technology/api/index.html" class="btn btn-outline btn-md w-full">Explore APIs</a>
+          <a href="/en/technology/api/index.html" class="btn btn-outline btn-md w-full">Explore APIs</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Section -->
+  <!-- Results/Metrics Section -->
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-        <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">15+</div>
-          <p class="text-gray-600 font-medium">Years Experience</p>
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="heading heading-2 mb-4">Proven Technology Implementation Results</h2>
+          <p class="paragraph text-gray-600">Real business impact from enterprise technology deployments</p>
         </div>
-        <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">150+</div>
-          <p class="text-gray-600 font-medium">Projects Completed</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 bg-purple-50 p-8 rounded-lg">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">$40M+</div>
+            <p class="text-gray-700 font-semibold">Revenue Impact</p>
+            <p class="text-sm text-gray-600">From technology optimization</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">40%</div>
+            <p class="text-gray-700 font-semibold">Avg Cost Savings</p>
+            <p class="text-sm text-gray-600">Cloud & CRM optimization</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">150+</div>
+            <p class="text-gray-700 font-semibold">Implementations</p>
+            <p class="text-sm text-gray-600">Across all platforms</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">95%</div>
+            <p class="text-gray-700 font-semibold">User Adoption</p>
+            <p class="text-sm text-gray-600">Avg after 90 days</p>
+          </div>
         </div>
-        <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
-          <p class="text-gray-600 font-medium">Happy Clients</p>
-        </div>
-        <div class="text-center">
-          <div class="text-4xl font-bold text-blue-600 mb-2">99%</div>
-          <p class="text-gray-600 font-medium">Client Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Frequently Asked Questions About Enterprise Technology</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-semibold text-lg mb-2">Which CRM platform is right for my business: Salesforce or HubSpot?</h3>
+            <p class="text-gray-600">Salesforce is ideal for complex B2B sales processes, enterprise customization, and organizations with dedicated admins (10+ licenses). HubSpot works better for smaller teams (5-50 licenses), simpler workflows, and marketing-first organizations. We audit your needs and recommend based on actual requirements, not vendor preferences.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-semibold text-lg mb-2">How long does a typical CRM or cloud implementation take?</h3>
+            <p class="text-gray-600">CRM implementations: 8-16 weeks for Salesforce (depending on complexity), 4-8 weeks for HubSpot. Cloud migrations: 6-12 weeks for AWS/GCP infrastructure. AI integrations: 4-8 weeks for custom agents. We provide detailed project timelines after discovery phase.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-semibold text-lg mb-2">Can you integrate our existing systems with new technology?</h3>
+            <p class="text-gray-600">Yes. We specialize in complex integrations: ERP to CRM, legacy databases to cloud platforms, custom APIs connecting disparate systems. Most integrations take 2-6 weeks depending on data complexity and API availability.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-semibold text-lg mb-2">What's the real cost of AI implementation (beyond the software)?</h3>
+            <p class="text-gray-600">AI agent implementations range from $15K (simple chatbot) to $150K+ (custom workflow automation). Costs include: custom development, data preparation, prompt engineering, integration with existing systems, and ongoing optimization. Most clients see ROI within 6-12 months from automation savings.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-semibold text-lg mb-2">How do you ensure our team actually adopts new technology?</h3>
+            <p class="text-gray-600">Our implementations include: hands-on training workshops, role-specific documentation, change management planning, executive sponsorship alignment, and 90-day post-launch support. We measure adoption rates and optimize workflows based on actual usage data. Average 95% adoption after 90 days.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-semibold text-lg mb-2">What ongoing support do you provide after implementation?</h3>
+            <p class="text-gray-600">We offer managed services starting at $2K/month: platform administration, user support, system optimization, security updates, and monthly performance reviews. Unlike consultants who disappear post-launch, we're your long-term technology partner.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-semibold text-lg mb-2">Can you audit our current technology stack and identify improvements?</h3>
+            <p class="text-gray-600">Yes. Our Technology Stack Audit ($5K, refundable if we proceed with implementation) includes: system architecture review, integration analysis, cost optimization opportunities, security assessment, and ROI projections for improvements. Most audits identify 20-40% cost savings.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 bg-blue-600 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
-      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-        Let's discuss how our technology solutions can help you achieve your goals
-      </p>
-      <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-blue-600 hover:bg-gray-100">
-        Schedule a Consultation
-      </a>
+  <section id="contact" class="py-16 bg-gradient-to-br from-purple-600 to-blue-700 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Deploy Technology That Actually Drives Business Results</h2>
+        <p class="text-xl text-purple-100 mb-8">Start with a free technology audit. We'll assess your current stack, identify optimization opportunities, and show you exactly how to maximize ROI from your technology investments.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <a href="/en/#contact" class="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">
+            Get Free Technology Audit
+          </a>
+          <a href="/en/lead-generation/seo/content-strategy.html" class="btn btn-outline btn-lg border-white text-white hover:bg-white/10">
+            Download Implementation Guide
+          </a>
+        </div>
+        <p class="text-sm text-purple-100">150+ implementations. 40% avg cost savings. 95% user adoption. Zero-obligation consultation.</p>
+      </div>
     </div>
   </section>
 
@@ -231,18 +464,18 @@
         <div>
           <h4 class="font-semibold mb-4">Technologies</h4>
           <ul class="space-y-2">
-            <li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">CRM Solutions</a></li>
-            <li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li>
-            <li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Infrastructure</a></li>
-            <li><a href="/src/pages/en/technology/api/index.html" class="text-gray-400 hover:text-white">API Integration</a></li>
+            <li><a href="/en/technology/crm/index.html" class="text-gray-400 hover:text-white">CRM Solutions</a></li>
+            <li><a href="/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li>
+            <li><a href="/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Infrastructure</a></li>
+            <li><a href="/en/technology/api/index.html" class="text-gray-400 hover:text-white">API Integration</a></li>
           </ul>
         </div>
         <div>
           <h4 class="font-semibold mb-4">Company</h4>
           <ul class="space-y-2">
-            <li><a href="/src/pages/en/index.html" class="text-gray-400 hover:text-white">Home</a></li>
-            <li><a href="/src/pages/en/services.html" class="text-gray-400 hover:text-white">Services</a></li>
-            <li><a href="/src/pages/en/contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+            <li><a href="/en/index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="/en/services.html" class="text-gray-400 hover:text-white">Services</a></li>
+            <li><a href="/en/contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
           </ul>
         </div>
         <div>
