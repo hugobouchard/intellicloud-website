@@ -39,7 +39,7 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           channelId: live
-          projectId: intellicloud-website
+          projectId: site-web-ic
           target: production
 
       - name: Deploy to Firebase (Staging)
@@ -48,7 +48,7 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-          projectId: intellicloud-website
+          projectId: site-web-ic
           target: staging
 
       - name: Deploy to Firebase (Preview)
@@ -57,4 +57,4 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-          projectId: intellicloud-website
+          projectId: site-web-ic
