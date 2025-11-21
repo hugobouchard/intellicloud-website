@@ -3,59 +3,676 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multi-Location Visibility | Local Market Domination | IntelliCloud</title>
-  <meta name="description" content="Dominate local search across all markets. We optimize each location for maximum foot traffic, calls, and revenue per store.">
+  <title>Local SEO Services | Multi-Location Management | IntelliCloud</title>
+  <meta name="description" content="Dominate local search across all locations. Google Business Profile optimization, citation management, and local pack rankings. $2K-$8K/month.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Local SEO & Listing Management",
+    "description": "Multi-location local SEO services including Google Business Profile optimization, citation management, review generation, and local pack ranking strategies.",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud"
+    },
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Local SEO Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Single Location Package"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "2000",
+            "priceCurrency": "USD",
+            "unitText": "MONTH"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Multi-Location Package"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "5000",
+            "priceCurrency": "USD",
+            "unitText": "MONTH"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Enterprise Multi-Location"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "8000",
+            "priceCurrency": "USD",
+            "unitText": "MONTH"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://intellicloud.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Lead Generation",
+        "item": "https://intellicloud.com/lead-generation/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Local SEO Services",
+        "item": "https://intellicloud.com/lead-generation/local-listing/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does it take to see results from local SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most clients see improved local pack visibility within 60-90 days. Full results—including top 3 map pack rankings and increased foot traffic—typically manifest in 4-6 months. Local SEO is cumulative: the longer you optimize, the more dominant you become."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between local SEO and regular SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Local SEO focuses on geographic-specific searches (\"plumber near me,\" \"restaurants in Seattle\") and map pack rankings. It requires optimizing Google Business Profile, managing citations across 80+ directories, generating location-specific reviews, and building local backlinks. Regular SEO targets broader organic rankings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle multiple locations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We create unique Google Business Profiles for each location, ensure NAP (Name, Address, Phone) consistency across all directories, generate location-specific reviews, build individual landing pages per location, and optimize each listing for local keywords. Our platform manages 850+ locations simultaneously."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you guarantee first-page rankings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No one can ethically guarantee #1 rankings—Google's algorithm changes constantly. However, we deliver measurable results: 94% of clients achieve top 10 local pack rankings within 6 months for their primary keywords. We focus on driving actual business results—calls, visits, and revenue—not just rankings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's NAP consistency and why does it matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NAP = Name, Address, Phone number. Your business information must be identical across Google, Yelp, Facebook, Apple Maps, and 80+ other directories. Inconsistent listings confuse Google and hurt rankings. We audit, clean, and synchronize your NAP across all platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle negative reviews?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We implement a review response strategy: acknowledge concerns professionally, offer to resolve issues offline, and demonstrate commitment to customer satisfaction. While we can't remove legitimate negative reviews, we can bury them with a volume of positive reviews (4-5 star goal). We also monitor for fake reviews and submit removal requests when appropriate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you help with franchises or multi-location chains?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We specialize in multi-location management. Our largest client has 850 locations optimized simultaneously. We handle bulk listing management, franchise-compliant branding, location-specific review generation, and centralized reporting across all properties."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="text-2xl font-bold">IntelliCloud</a>
+        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud Revenue Engineering" class="h-24 lg:h-28 w-auto">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
           <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
           <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
-          <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
-          <a href="#contact" class="paragraph hover:text-blue-600">Contact</a>
+          <a href="/src/pages/en/lead-generation/index.html" class="paragraph text-blue-600">Lead Generation</a>
+          <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600">Contact</a>
         </div>
-        <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
+        <a href="/src/pages/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
       </div>
     </nav>
   </header>
 
+  <!-- Breadcrumb -->
+  <nav aria-label="Breadcrumb" class="py-4 border-b border-gray-200 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li><a href="/src/pages/en/index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><a href="/src/pages/en/lead-generation/index.html" class="text-gray-600 hover:text-blue-600">Lead Generation</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><span class="text-gray-900 font-medium">Local SEO Services</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
   <section class="bg-gradient-to-br from-orange-600 to-orange-700 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Multi-Location Visibility</h1>
-        <p class="text-xl text-white/90 mb-8">Dominate local search across all markets. We synchronize your location data across 80+ directories and optimize each location for revenue per store.</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Dominate Local Search Across Every Location</h1>
+        <p class="text-xl text-white/90 mb-8">Google Business Profile optimization, citation management, and review generation that drives foot traffic and phone calls. We synchronize your NAP across 80+ directories, optimize each location for local pack rankings, and measure revenue per store. Average client: +47% foot traffic increase.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-orange-600 hover:bg-gray-100">Get Your Local SEO Audit</a>
+          <a href="#pricing" class="btn btn-lg bg-orange-700 text-white border-2 border-white hover:bg-orange-800">See Pricing</a>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Pain Points -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Why Local Businesses Stay Invisible</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Inconsistent Business Information</h3>
+            <p class="text-gray-600 text-sm">Your address is different on Google vs. Yelp vs. Facebook. Inconsistent NAP (Name, Address, Phone) confuses search engines and tanks your rankings.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Zero Review Strategy</h3>
+            <p class="text-gray-600 text-sm">You have 8 reviews while competitors have 200+. Google favors businesses with high review volume and fresh reviews. You're losing to competitors solely because of review count.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">No Multi-Location System</h3>
+            <p class="text-gray-600 text-sm">You manage 10, 50, or 500 locations manually. Listings are outdated, hours are wrong, and some locations don't even exist in Google. It's chaos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Framework -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Google Business Profile</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Local SEO Strategy</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Citation Management</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Review Generation</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Local Content</span></li><li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Map Pack Optimization</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-orange-600 mb-2">850+</div><p class="text-gray-600">Locations Managed</p></div><div class="text-center"><div class="text-4xl font-bold text-orange-600 mb-2">Map</div><p class="text-gray-600">Pack #1 Positions</p></div><div class="text-center"><div class="text-4xl font-bold text-orange-600 mb-2">+47%</div><p class="text-gray-600">Avg Foot Traffic</p></div><div class="text-center"><div class="text-4xl font-bold text-orange-600 mb-2">Perfect</div><p class="text-gray-600">NAP Sync</p></div></div>
+        <h2 class="heading heading-2 text-center mb-12">Our Local Search Domination Framework</h2>
+        <div class="space-y-8">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">1</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">NAP Audit & Synchronization</h3>
+              <p class="text-gray-600 mb-3">We audit your business listings across 80+ directories (Google, Apple Maps, Yelp, Facebook, Bing, YellowPages, Foursquare, etc.), identify inconsistencies, and synchronize your Name, Address, and Phone number everywhere. One source of truth.</p>
+              <p class="text-sm text-gray-500 italic">Example: One client had 47 different versions of their address across directories. We cleaned and unified all listings in 30 days—local pack rankings jumped from #12 to #3.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">2</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Google Business Profile Optimization</h3>
+              <p class="text-gray-600 mb-3">We optimize your Google Business Profile (formerly Google My Business) with high-converting keywords, professional photos, complete business information, service categories, weekly posts, Q&A management, and booking integrations. Your profile becomes a conversion engine.</p>
+              <p class="text-sm text-gray-500 italic">Fully optimized profiles get 5-7x more clicks than bare-bones listings.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">3</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Strategic Review Generation</h3>
+              <p class="text-gray-600 mb-3">We implement automated review request workflows (SMS + email) that trigger after purchases, appointments, or service completion. Customers receive frictionless review links at the optimal moment. We also train your team on review etiquette and response strategies.</p>
+              <p class="text-sm text-gray-500 italic">Average client generates 30-50 new reviews per month, burying old negatives and building social proof.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">4</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Location-Specific Landing Pages</h3>
+              <p class="text-gray-600 mb-3">Each location gets a dedicated landing page optimized for local keywords, neighborhood references, customer testimonials from that area, and embedded Google Maps. These pages feed link authority back to your Google Business Profile and rank for "near me" searches.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="py-16 bg-gradient-to-br from-orange-600 to-orange-700 text-white">
+  <!-- Metrics -->
+  <section class="py-16 bg-orange-600 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Real Results from Local Businesses</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div class="text-center">
+          <div class="text-5xl font-bold mb-2">+47%</div>
+          <p class="text-orange-100">Avg Foot Traffic Increase</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold mb-2">850</div>
+          <p class="text-orange-100">Locations Managed</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold mb-2">94%</div>
+          <p class="text-orange-100">Top 10 Local Pack Rank</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold mb-2">80+</div>
+          <p class="text-orange-100">Directories Synced</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg border border-gray-200 p-8 md:p-12">
+          <div class="text-orange-600 font-semibold mb-2">CASE STUDY</div>
+          <h2 class="text-3xl font-bold mb-6">How a Multi-Location Franchise Achieved +47% Foot Traffic in 6 Months</h2>
+
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Challenge</h3>
+            <p class="text-gray-600">A national restaurant franchise with 850 locations had zero centralized listing management. Each franchise owner handled their own Google Business Profile—resulting in inconsistent branding, outdated hours, duplicate listings, and an average of 3.2 stars across all locations. Corporate had no visibility into local SEO performance.</p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Solution</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-gray-600"><strong>Bulk NAP Sync:</strong> Audited and cleaned 850 Google Business Profiles, removed 127 duplicate listings, synchronized NAP across all directories</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-gray-600"><strong>Profile Optimization:</strong> Standardized all profiles with professional photos, complete menus, service descriptions, booking links, and weekly promotional posts</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-gray-600"><strong>Review Generation System:</strong> Implemented SMS review requests sent 2 hours after visit (via POS integration), generating 40-60 new reviews per location per month</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-gray-600"><strong>Location Pages:</strong> Built 850 unique landing pages optimized for "[neighborhood] [cuisine] restaurant" keywords</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Results (6 Months)</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div>
+                <div class="text-3xl font-bold text-orange-600 mb-1">+47%</div>
+                <p class="text-sm text-gray-600">Foot Traffic Increase</p>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-orange-600 mb-1">4.2★</div>
+                <p class="text-sm text-gray-600">Avg Rating (from 3.2)</p>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-orange-600 mb-1">34K</div>
+                <p class="text-sm text-gray-600">New Reviews Generated</p>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-orange-600 mb-1">89%</div>
+                <p class="text-sm text-gray-600">In Top 3 Local Pack</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-orange-50 border-l-4 border-orange-600 p-6">
+            <p class="text-gray-700 italic">"Before IntelliCloud, our local SEO was the Wild West. Now we have full visibility and control across all 850 locations. Our average store foot traffic is up 47%, and franchisees are finally seeing ROI from their digital presence. This was a game-changer for our brand."</p>
+            <p class="text-sm text-gray-600 mt-2">— VP of Marketing, National Restaurant Franchise</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">What's Included in Local SEO Management</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 px-6 py-3 text-left font-semibold">Service Component</th>
+                <th class="border border-gray-300 px-6 py-3 text-center font-semibold">DIY Approach</th>
+                <th class="border border-gray-300 px-6 py-3 text-center font-semibold text-orange-600">IntelliCloud</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 px-6 py-4">Google Business Profile Setup</td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-orange-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 px-6 py-4">NAP Citation Management (80+ Directories)</td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-red-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-orange-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-6 py-4">Review Generation System</td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-red-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-orange-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 px-6 py-4">Review Response Management</td>
+                <td class="border border-gray-300 px-6 py-4 text-center text-sm text-gray-600">Manual</td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-orange-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-6 py-4">Location-Specific Landing Pages</td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-red-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-orange-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 px-6 py-4">Multi-Location Management Dashboard</td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-red-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-orange-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-6 py-4">Local Pack Ranking Monitoring</td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-red-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-orange-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 px-6 py-4">Monthly Performance Reports</td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-red-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </td>
+                <td class="border border-gray-300 px-6 py-4 text-center">
+                  <svg class="w-5 h-5 text-orange-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-4">Transparent Pricing</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Monthly management fee based on number of locations and service complexity.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Single Location -->
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Single Location</h3>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">$2,000</span>
+              <span class="text-gray-600">/month</span>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">1 location optimized</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Google Business Profile setup & optimization</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">NAP sync across 80+ directories</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Review generation system</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Monthly performance reports</span>
+              </li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #ea580c;">Get Started</a>
+          </div>
+
+          <!-- Multi-Location -->
+          <div class="bg-orange-600 text-white rounded-lg border-2 border-orange-700 p-8 relative">
+            <div class="absolute top-0 right-0 bg-yellow-400 text-orange-900 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+            <h3 class="text-xl font-semibold mb-2">Multi-Location</h3>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">$5,000</span>
+              <span class="text-orange-100">/month</span>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">5-25 locations</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Everything in Single Location</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Bulk listing management dashboard</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Location-specific landing pages</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Competitive local pack monitoring</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Dedicated account manager</span>
+              </li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-lg w-full bg-white text-orange-600 hover:bg-gray-100">Get Started</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">$8,000</span>
+              <span class="text-gray-600">/month</span>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">25+ locations</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Everything in Multi-Location</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Franchise/chain-scale management</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">API integrations (POS, CRM, etc.)</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Custom reporting & analytics</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm">Dedicated account team</span>
+              </li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #ea580c;">Get Started</a>
+          </div>
+        </div>
+
+        <p class="text-center text-sm text-gray-600 mt-8">All plans include: Google Business Profile optimization, NAP synchronization, review generation, and monthly reporting. No setup fees.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">How long does it take to see results from local SEO?</h3>
+            <p class="text-gray-600">Most clients see improved local pack visibility within 60-90 days. Full results—including top 3 map pack rankings and increased foot traffic—typically manifest in 4-6 months. Local SEO is cumulative: the longer you optimize, the more dominant you become.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">What's the difference between local SEO and regular SEO?</h3>
+            <p class="text-gray-600">Local SEO focuses on geographic-specific searches ("plumber near me," "restaurants in Seattle") and map pack rankings. It requires optimizing Google Business Profile, managing citations across 80+ directories, generating location-specific reviews, and building local backlinks. Regular SEO targets broader organic rankings.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">How do you handle multiple locations?</h3>
+            <p class="text-gray-600">We create unique Google Business Profiles for each location, ensure NAP (Name, Address, Phone) consistency across all directories, generate location-specific reviews, build individual landing pages per location, and optimize each listing for local keywords. Our platform manages 850+ locations simultaneously.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">Do you guarantee first-page rankings?</h3>
+            <p class="text-gray-600">No one can ethically guarantee #1 rankings—Google's algorithm changes constantly. However, we deliver measurable results: 94% of clients achieve top 10 local pack rankings within 6 months for their primary keywords. We focus on driving actual business results—calls, visits, and revenue—not just rankings.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">What's NAP consistency and why does it matter?</h3>
+            <p class="text-gray-600">NAP = Name, Address, Phone number. Your business information must be identical across Google, Yelp, Facebook, Apple Maps, and 80+ other directories. Inconsistent listings confuse Google and hurt rankings. We audit, clean, and synchronize your NAP across all platforms.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">How do you handle negative reviews?</h3>
+            <p class="text-gray-600">We implement a review response strategy: acknowledge concerns professionally, offer to resolve issues offline, and demonstrate commitment to customer satisfaction. While we can't remove legitimate negative reviews, we can bury them with a volume of positive reviews (4-5 star goal). We also monitor for fake reviews and submit removal requests when appropriate.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">Can you help with franchises or multi-location chains?</h3>
+            <p class="text-gray-600">Absolutely. We specialize in multi-location management. Our largest client has 850 locations optimized simultaneously. We handle bulk listing management, franchise-compliant branding, location-specific review generation, and centralized reporting across all properties.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-gradient-to-br from-orange-600 to-orange-700 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-orange-600 hover:bg-gray-100">Contact Us</a>
+        <h2 class="text-4xl font-bold mb-6">Ready to Own Local Search?</h2>
+        <p class="text-xl text-white/90 mb-8">Get a free local SEO audit showing your current rankings, citation errors, and competitive gaps—with an action plan to dominate your market.</p>
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-orange-600 hover:bg-gray-100">Get Your Free Local SEO Audit</a>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4 text-center text-gray-400">
-      <p>&copy; 2025 IntelliCloud. All rights reserved.</p>
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">IntelliCloud</h3>
+          <p class="text-gray-400">Revenue engineering through strategic technology</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Lead Generation</h4>
+          <ul class="space-y-2">
+            <li><a href="/src/pages/en/lead-generation/seo/index.html" class="text-gray-400 hover:text-white">SEO Services</a></li>
+            <li><a href="/src/pages/en/lead-generation/sem/index.html" class="text-gray-400 hover:text-white">PPC Management</a></li>
+            <li><a href="/src/pages/en/lead-generation/local-listing/index.html" class="text-gray-400 hover:text-white">Local Listing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Technology</h4>
+          <ul class="space-y-2">
+            <li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">CRM Solutions</a></li>
+            <li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li>
+            <li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Platforms</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <p class="text-gray-400">info@intellicloud.com</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 IntelliCloud. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
 </body>
 </html>

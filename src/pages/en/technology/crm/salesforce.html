@@ -3,26 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salesforce Intelligence & Experience Cloud | IntelliCloud</title>
-  <meta name="description" content="Custom Executive Dashboards visualizing pipeline health in real-time. Experience Cloud portals that reduce support costs by 40%.">
+  <title>Salesforce Implementation & Consulting Services | IntelliCloud</title>
+  <meta name="description" content="Salesforce Sales Cloud & Experience Cloud implementation. Executive dashboards for pipeline visibility, customer portals that cut support costs 40%. $25K-$150K implementations.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Salesforce Implementation Services",
+    "description": "Salesforce Sales Cloud, Service Cloud, and Experience Cloud implementation and consulting. Custom dashboards, customer portals, integrations, and data migration.",
+    "provider": {"@type": "Organization", "name": "IntelliCloud"},
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Salesforce Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Essential Salesforce Setup"}, "priceSpecification": {"@type": "PriceSpecification", "price": "25000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Advanced Salesforce Implementation"}, "priceSpecification": {"@type": "PriceSpecification", "price": "75000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Enterprise Salesforce Ecosystem"}, "priceSpecification": {"@type": "PriceSpecification", "price": "150000", "priceCurrency": "USD", "unitText": "PROJECT"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://intellicloud.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Technology", "item": "https://intellicloud.com/technology/"},
+      {"@type": "ListItem", "position": 3, "name": "CRM", "item": "https://intellicloud.com/technology/crm/"},
+      {"@type": "ListItem", "position": 4, "name": "Salesforce", "item": "https://intellicloud.com/technology/crm/salesforce.html"}
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How long does a Salesforce implementation take?", "acceptedAnswer": {"@type": "Answer", "text": "Essential setup: 6-10 weeks. Advanced implementation: 12-16 weeks. Enterprise ecosystem: 20-26 weeks. Timeline depends on data migration complexity, number of integrations, custom development needs, and user training requirements."}},
+      {"@type": "Question", "name": "Do I need Sales Cloud, Service Cloud, or both?", "acceptedAnswer": {"@type": "Answer", "text": "Sales Cloud for managing opportunities, forecasting, and sales pipeline. Service Cloud for support tickets, knowledge base, and case management. Most companies start with Sales Cloud, then add Service Cloud as support volume grows. We assess your needs during discovery."}},
+      {"@type": "Question", "name": "What's the difference between Experience Cloud and a website?", "acceptedAnswer": {"@type": "Answer", "text": "Experience Cloud is a branded portal connected to your Salesforce data. Customers log in to check order status, pay invoices, view service history, and submit tickets—without calling support. It's not a marketing website; it's a self-service customer portal."}},
+      {"@type": "Question", "name": "Can you migrate data from our old CRM?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We migrate accounts, contacts, opportunities, activities, and custom data from any CRM (Microsoft Dynamics, Zoho, SugarCRM, spreadsheets, etc.). We clean data, deduplicate records, map fields, and validate accuracy before go-live."}},
+      {"@type": "Question", "name": "Will you train our team on Salesforce?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We provide role-based training: admin training for your Salesforce administrator, user training for sales reps and support agents, and executive training for dashboard interpretation. Includes recorded sessions and documentation."}},
+      {"@type": "Question", "name": "Do you provide ongoing Salesforce support?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. After implementation, we offer managed services retainers ($3K-$10K/month) for ongoing configuration changes, user support, new integrations, quarterly health checks, and Salesforce release updates (3 per year)."}},
+      {"@type": "Question", "name": "Can Salesforce integrate with our other systems?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We integrate Salesforce with marketing automation (HubSpot, Marketo), accounting (QuickBooks, NetSuite), ERP systems, custom databases, email platforms, and 5,000+ apps via Salesforce AppExchange. Most integrations use native connectors or REST APIs."}}
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
-  <!-- Header -->
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0"><img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28 w-auto"></a>
+        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud Revenue Engineering" class="h-24 lg:h-28 w-auto">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
           <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
           <a href="/src/pages/en/technology/index.html" class="paragraph text-blue-600">Technology</a>
           <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600">Contact</a>
         </div>
+        <a href="/src/pages/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
       </div>
     </nav>
   </header>
 
-  <!-- Breadcrumb -->
   <nav aria-label="Breadcrumb" class="py-4 border-b border-gray-200 bg-gray-50">
     <div class="container mx-auto px-4">
       <ol class="flex items-center space-x-2 text-sm">
@@ -37,234 +90,301 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="py-16 bg-gradient-to-br from-blue-700 to-blue-900 text-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <div class="w-32 h-32 mx-auto mb-6 bg-white rounded-lg flex items-center justify-center">
-          <span class="text-5xl font-bold text-blue-700">SF</span>
-        </div>
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">Salesforce Intelligence & Experience</h1>
-        <p class="text-xl text-blue-100">
-          Two core competencies: Executive Dashboards that visualize pipeline health in real-time, and Experience Cloud portals where customers serve themselves.
-        </p>
+  <section class="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <div class="w-32 h-32 mx-auto mb-6 bg-white rounded-lg flex items-center justify-center">
+        <span class="text-5xl font-bold text-blue-600">SF</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Salesforce Implementation That Drives Revenue</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8">Executive dashboards that visualize pipeline health in real-time. Experience Cloud portals where customers serve themselves. We build Salesforce configurations that reduce support costs 40% while accelerating sales velocity. Not a vanilla install—a revenue engine.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-blue-600 hover:bg-gray-100">Get Your Salesforce Strategy</a>
+        <a href="#pricing" class="btn btn-lg bg-blue-700 text-white border-2 border-white hover:bg-blue-800">See Pricing</a>
       </div>
     </div>
   </section>
 
-  <!-- Why Salesforce -->
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Salesforce Pillars</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">Executive Dashboards</h3>
-              <p class="text-sm text-gray-600">Stop staring at spreadsheets. We build live dashboards that visualize pipeline health, forecast accuracy, and revenue velocity in real-time.</p>
-            </div>
-          </div>
-
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">Experience Cloud Portals</h3>
-              <p class="text-sm text-gray-600">Branded portals where customers check status, pay bills, and log tickets without calling you. Reduce support costs by 40%.</p>
-            </div>
-          </div>
-
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">Predictive Analytics</h3>
-              <p class="text-sm text-gray-600">Einstein AI provides insights to predict customer behavior and trends</p>
-            </div>
-          </div>
-
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">Scalability</h3>
-              <p class="text-sm text-gray-600">Grows with your business from startup to enterprise</p>
-            </div>
-          </div>
-
-          <div class="flex items-start">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-semibold mb-2">AppExchange Ecosystem</h3>
-              <p class="text-sm text-gray-600">5000+ pre-built apps and integrations available</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Our Expertise -->
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="heading heading-2 mb-12 text-center">Our Salesforce Expertise</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-8 rounded-lg border border-gray-200 text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Why Salesforce Implementations Fail</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Configured Like a Spreadsheet</h3>
+            <p class="text-gray-600 text-sm">Most implementations just replicate your old CRM. Same clunky processes, now in Salesforce. Your team still manually updates fields, pipeline forecasts are still wrong, and nobody trusts the data.</p>
           </div>
-          <h3 class="heading heading-4 mb-3">Custom Configuration</h3>
-          <p class="paragraph paragraph-small text-gray-600">Tailored Salesforce setup matching your unique business processes</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-lg border border-gray-200 text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Zero User Adoption</h3>
+            <p class="text-gray-600 text-sm">Your sales team ignores Salesforce because it feels like busywork. They log activities after deals close (if at all). Leadership makes decisions without real-time data because the CRM is empty.</p>
           </div>
-          <h3 class="heading heading-4 mb-3">API Integration</h3>
-          <p class="paragraph paragraph-small text-gray-600">Connect Salesforce with your existing tools and systems</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-lg border border-gray-200 text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
-            </svg>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Disconnected Systems</h3>
+            <p class="text-gray-600 text-sm">Salesforce doesn't talk to marketing automation, accounting, or support systems. Your team manually exports CSVs and copy-pastes data between platforms. Every sync breaks the workflow.</p>
           </div>
-          <h3 class="heading heading-4 mb-3">Data Migration</h3>
-          <p class="paragraph paragraph-small text-gray-600">Seamless transfer of data from legacy systems to Salesforce</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-lg border border-gray-200 text-center">
-          <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-            </svg>
-          </div>
-          <h3 class="heading heading-4 mb-3">User Training</h3>
-          <p class="paragraph paragraph-small text-gray-600">Comprehensive training programs for admins and end users</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Success Story -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Our Salesforce Implementation Framework</h2>
+        <div class="space-y-8">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">1</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Discovery & Process Mapping</h3>
+              <p class="text-gray-600">We audit your current sales, service, and customer workflows. Map every touchpoint from lead capture to renewal. Identify automation opportunities, integration requirements, and data migration scope. Document what success looks like in 6 months.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">2</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Configuration & Integration</h3>
+              <p class="text-gray-600">We configure Sales Cloud with custom objects, fields, and automation (workflows, process builder, flows). Build executive dashboards for pipeline visibility. Integrate with marketing automation, accounting systems, and support tools. Migrate clean data from your old CRM.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">3</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Experience Cloud Portals (Optional)</h3>
+              <p class="text-gray-600">Build branded customer portals where clients check order status, pay invoices, view service history, and submit support tickets—without calling you. Self-service reduces support costs 40% while improving customer satisfaction.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">4</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Training & Optimization</h3>
+              <p class="text-gray-600">Role-based training for admins, sales reps, support agents, and executives. Go-live with production data, then optimize based on real usage. Quarterly health checks to refine automation, dashboards, and integrations as your business evolves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-blue-600 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Results from Strategic Salesforce</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div class="text-center"><div class="text-5xl font-bold mb-2">95%</div><p class="text-blue-100">User Adoption Rate</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">-40%</div><p class="text-blue-100">Support Costs</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">3x</div><p class="text-blue-100">Forecast Accuracy</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">Real-Time</div><p class="text-blue-100">Pipeline Visibility</p></div>
+      </div>
+    </div>
+  </section>
+
   <section class="py-16">
     <div class="container mx-auto px-4">
-      <h2 class="heading heading-2 mb-12 text-center">Success Story</h2>
-      <div class="max-w-4xl mx-auto bg-white rounded-lg border border-gray-200 overflow-hidden">
-        <div class="p-8 md:p-12">
-          <div class="flex items-center mb-6">
-            <div class="w-16 h-16 bg-blue-600 rounded-full mr-4"></div>
-            <div>
-              <h3 class="font-semibold text-xl">TechCorp Enterprise</h3>
-              <p class="text-gray-600">SaaS Company, 500+ employees</p>
+      <h2 class="heading heading-2 text-center mb-12">Our Salesforce Core Competencies</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Executive Dashboards</h3>
+          <p class="text-gray-600 mb-4">Live dashboards that visualize pipeline health, forecast accuracy, revenue velocity, and win/loss analysis. No more spreadsheet exports—just real-time insights for leadership decisions.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pipeline coverage metrics</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Win rate by rep/region</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Sales cycle velocity tracking</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Experience Cloud Portals</h3>
+          <p class="text-gray-600 mb-4">Branded customer portals connected to Salesforce data. Customers check order status, pay invoices, view service history, and submit tickets—without calling support.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Self-service knowledge base</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Case submission & tracking</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Invoice payment integration</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">System Integrations</h3>
+          <p class="text-gray-600 mb-4">Connect Salesforce to marketing automation, accounting, support systems, and custom databases. Bidirectional sync ensures data flows seamlessly without manual exports.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Marketing automation sync</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Accounting system integration</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Custom API development</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Data Migration</h3>
+          <p class="text-gray-600 mb-4">Clean data migration from legacy CRMs, spreadsheets, or databases. We deduplicate records, map custom fields, validate accuracy, and ensure zero data loss during transition.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Data cleansing & deduplication</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Field mapping validation</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Historical data preservation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg border border-gray-200 p-8 md:p-12">
+          <div class="text-blue-600 font-semibold mb-2">CASE STUDY</div>
+          <h2 class="text-3xl font-bold mb-6">How Experience Cloud Cut Support Costs $850K Annually</h2>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Challenge</h3>
+            <p class="text-gray-600">A SaaS company ($50M ARR, 2,000 enterprise customers) received 15,000+ monthly support calls for "Where's my invoice?", "What's my subscription status?", and "How do I change my billing?" questions. Support team of 40 agents spent 60% of their time answering repetitive questions. Annual support costs exceeded $2.1M.</p>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Solution</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Built Salesforce Experience Cloud portal with customer login, displaying real-time subscription status, billing history, and invoice downloads</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Integrated with Stripe for payment method updates, invoice regeneration, and subscription plan changes—all self-service</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Added knowledge base with searchable articles, video tutorials, and case submission form for complex issues</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Deployed in 14 weeks with zero downtime; trained customers via in-app tours and email campaigns</span></li>
+            </ul>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Results (6 Months)</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div><div class="text-3xl font-bold text-blue-600 mb-1">-40%</div><p class="text-sm text-gray-600">Support Tickets</p></div>
+              <div><div class="text-3xl font-bold text-blue-600 mb-1">$850K</div><p class="text-sm text-gray-600">Annual Cost Savings</p></div>
+              <div><div class="text-3xl font-bold text-blue-600 mb-1">78%</div><p class="text-sm text-gray-600">Portal Adoption</p></div>
+              <div><div class="text-3xl font-bold text-blue-600 mb-1">+22 NPS</div><p class="text-sm text-gray-600">Customer Satisfaction</p></div>
             </div>
           </div>
-
-          <div class="mb-6">
-            <h4 class="font-semibold mb-2">Challenge</h4>
-            <p class="text-gray-600">TechCorp was using multiple disconnected systems for sales, marketing, and customer service, leading to data silos and inefficient processes.</p>
-          </div>
-
-          <div class="mb-6">
-            <h4 class="font-semibold mb-2">Solution</h4>
-            <p class="text-gray-600">Implemented Salesforce Sales Cloud and Service Cloud with custom integrations to their existing marketing automation and billing systems.</p>
-          </div>
-
-          <div>
-            <h4 class="font-semibold mb-4">Results</h4>
-            <div class="grid grid-cols-3 gap-6">
-              <div class="text-center">
-                <div class="text-3xl font-bold text-blue-600 mb-2">40%</div>
-                <p class="text-sm text-gray-600">Increase in sales productivity</p>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-blue-600 mb-2">60%</div>
-                <p class="text-sm text-gray-600">Faster case resolution</p>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-blue-600 mb-2">95%</div>
-                <p class="text-sm text-gray-600">User adoption rate</p>
-              </div>
-            </div>
+          <div class="bg-blue-50 border-l-4 border-blue-600 p-6">
+            <p class="text-gray-700 italic">"IntelliCloud's Experience Cloud portal eliminated 6,000 support calls per month. Customers now check invoices, update payment methods, and troubleshoot issues themselves. We reduced our support team from 40 to 24 agents while improving customer satisfaction. This portal paid for itself in 4 months."</p>
+            <p class="text-sm text-gray-600 mt-2">— VP of Customer Success, SaaS Company</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <section id="pricing" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-4">Transparent Pricing</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">One-time implementation fee. Salesforce licenses billed separately by Salesforce ($25-$300/user/month depending on edition).</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Essential Setup</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$25,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Sales Cloud setup (up to 20 users)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Basic dashboards & reports</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Data migration (up to 10K records)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">User training (2 sessions)</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full">Get Started</a>
+          </div>
+          <div class="bg-blue-600 text-white rounded-lg border-2 border-blue-700 p-8 relative">
+            <div class="absolute top-0 right-0 bg-yellow-400 text-blue-900 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+            <h3 class="text-xl font-semibold mb-2">Advanced Implementation</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$75,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Sales + Service Cloud (up to 50 users)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Executive dashboards & custom automation</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">3 system integrations (marketing, accounting, etc.)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Data migration (up to 100K records)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Role-based training (4 sessions)</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-lg w-full bg-white text-blue-600 hover:bg-gray-100">Get Started</a>
+          </div>
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Enterprise Ecosystem</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$150,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Full Salesforce suite (unlimited users)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Experience Cloud portal for customers</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Unlimited integrations & custom development</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Complex data migration (1M+ records)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Dedicated support team & quarterly reviews</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">How long does a Salesforce implementation take?</h3>
+            <p class="text-gray-600">Essential setup: 6-10 weeks. Advanced implementation: 12-16 weeks. Enterprise ecosystem: 20-26 weeks. Timeline depends on data migration complexity, number of integrations, custom development needs, and user training requirements.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Do I need Sales Cloud, Service Cloud, or both?</h3>
+            <p class="text-gray-600">Sales Cloud for managing opportunities, forecasting, and sales pipeline. Service Cloud for support tickets, knowledge base, and case management. Most companies start with Sales Cloud, then add Service Cloud as support volume grows. We assess your needs during discovery.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">What's the difference between Experience Cloud and a website?</h3>
+            <p class="text-gray-600">Experience Cloud is a branded portal connected to your Salesforce data. Customers log in to check order status, pay invoices, view service history, and submit tickets—without calling support. It's not a marketing website; it's a self-service customer portal.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can you migrate data from our old CRM?</h3>
+            <p class="text-gray-600">Yes. We migrate accounts, contacts, opportunities, activities, and custom data from any CRM (Microsoft Dynamics, Zoho, SugarCRM, spreadsheets, etc.). We clean data, deduplicate records, map fields, and validate accuracy before go-live.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Will you train our team on Salesforce?</h3>
+            <p class="text-gray-600">Absolutely. We provide role-based training: admin training for your Salesforce administrator, user training for sales reps and support agents, and executive training for dashboard interpretation. Includes recorded sessions and documentation.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Do you provide ongoing Salesforce support?</h3>
+            <p class="text-gray-600">Yes. After implementation, we offer managed services retainers ($3K-$10K/month) for ongoing configuration changes, user support, new integrations, quarterly health checks, and Salesforce release updates (3 per year).</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can Salesforce integrate with our other systems?</h3>
+            <p class="text-gray-600">Yes. We integrate Salesforce with marketing automation (HubSpot, Marketo), accounting (QuickBooks, NetSuite), ERP systems, custom databases, email platforms, and 5,000+ apps via Salesforce AppExchange. Most integrations use native connectors or REST APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="py-16 bg-blue-600 text-white">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Implement Salesforce?</h2>
-      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-        Let our certified Salesforce experts transform your customer relationships
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-blue-600 hover:bg-gray-100">Get Started</a>
-        <a href="/src/pages/en/technology/crm/hubspot.html" class="btn btn-lg btn-outline bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600">View HubSpot</a>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Get a free Salesforce strategy session showing configuration recommendations, integration requirements, data migration scope, and ROI projections.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-blue-600 hover:bg-gray-100">Get Your Free Strategy Session</a>
+        <a href="/src/pages/en/technology/crm/hubspot.html" class="btn btn-lg bg-blue-700 text-white border-2 border-white hover:bg-blue-800">Compare with HubSpot</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white">
-    <div class="container mx-auto px-4 py-12">
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <h3 class="text-2xl font-bold mb-4">IntelliCloud</h3>
-          <p class="text-gray-400">Transform your business with custom technology solutions</p>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-4">CRM Solutions</h4>
-          <ul class="space-y-2">
-            <li><a href="/src/pages/en/technology/crm/salesforce.html" class="text-gray-400 hover:text-white">Salesforce</a></li>
-            <li><a href="/src/pages/en/technology/crm/hubspot.html" class="text-gray-400 hover:text-white">HubSpot</a></li>
-            <li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">All CRM Solutions</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-4">Other Technologies</h4>
-          <ul class="space-y-2">
-            <li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li>
-            <li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Infrastructure</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-4">Contact</h4>
-          <p class="text-gray-400">info@intellicloud.com</p>
-        </div>
+        <div><h3 class="text-2xl font-bold mb-4">IntelliCloud</h3><p class="text-gray-400">Revenue engineering through strategic technology</p></div>
+        <div><h4 class="font-semibold mb-4">CRM Solutions</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/crm/salesforce.html" class="text-gray-400 hover:text-white">Salesforce</a></li><li><a href="/src/pages/en/technology/crm/hubspot.html" class="text-gray-400 hover:text-white">HubSpot</a></li><li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">All CRM Solutions</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Other Technologies</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li><li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Platforms</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Contact</h4><p class="text-gray-400">info@intellicloud.com</p></div>
       </div>
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-        <p>&copy; 2025 IntelliCloud. All rights reserved.</p>
-      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"><p>&copy; 2025 IntelliCloud. All rights reserved.</p></div>
     </div>
   </footer>
-
   <script type="module" src="/src/scripts/main.js"></script>
 </body>
 </html>

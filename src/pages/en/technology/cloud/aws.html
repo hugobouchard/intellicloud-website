@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Cloud Consulting & Migration Services | IntelliCloud</title>
+  <meta name="description" content="AWS cloud architecture, migration, and optimization. EC2, S3, RDS, Lambda serverless. Reduce infrastructure costs 40% while scaling reliably. $30K-$150K projects.">
+  <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AWS Cloud Services",
+    "description": "Amazon Web Services cloud architecture, migration, cost optimization, and managed services. EC2, S3, RDS, Lambda, and full AWS ecosystem expertise.",
+    "provider": {"@type": "Organization", "name": "IntelliCloud"},
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AWS Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AWS Migration & Setup"}, "priceSpecification": {"@type": "PriceSpecification", "price": "30000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AWS Architecture & Optimization"}, "priceSpecification": {"@type": "PriceSpecification", "price": "75000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Enterprise AWS Ecosystem"}, "priceSpecification": {"@type": "PriceSpecification", "price": "150000", "priceCurrency": "USD", "unitText": "PROJECT"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://intellicloud.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Technology", "item": "https://intellicloud.com/technology/"},
+      {"@type": "ListItem", "position": 3, "name": "Cloud", "item": "https://intellicloud.com/technology/cloud/"},
+      {"@type": "ListItem", "position": 4, "name": "AWS", "item": "https://intellicloud.com/technology/cloud/aws.html"}
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How long does an AWS migration take?", "acceptedAnswer": {"@type": "Answer", "text": "Basic migration: 6-10 weeks. Complex migration with data center exit: 12-18 weeks. Enterprise multi-region architecture: 20-26 weeks. Timeline depends on application complexity, data volume, downtime tolerance, and security/compliance requirements."}},
+      {"@type": "Question", "name": "Will AWS really reduce our infrastructure costs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if optimized correctly. Most companies overpay by 30-40% for AWS due to overprovisioned instances, unoptimized storage, and unused resources. We right-size EC2 instances, implement auto-scaling, use Reserved Instances/Savings Plans, and move cold data to cheaper storage tiers."}},
+      {"@type": "Question", "name": "What's the difference between EC2, Lambda, and Fargate?", "acceptedAnswer": {"@type": "Answer", "text": "EC2: Virtual servers you manage (good for traditional apps). Lambda: Serverless functions that run code without servers (good for event-driven workloads). Fargate: Serverless containers (good for Docker apps without managing servers). We recommend the right mix based on your workload."}},
+      {"@type": "Question", "name": "Can you migrate our on-premise servers to AWS?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We use AWS Application Migration Service (formerly CloudEndure) for lift-and-shift migrations, or refactor applications for cloud-native architecture (containerization, serverless, managed databases). We handle data transfer, testing, cutover, and DNS switchover."}},
+      {"@type": "Question", "name": "How do you ensure our AWS environment is secure?", "acceptedAnswer": {"@type": "Answer", "text": "We implement AWS Well-Architected Framework security best practices: IAM roles with least privilege, VPC isolation, Security Groups, encryption at rest (S3, RDS, EBS) and in transit, CloudTrail logging, GuardDuty threat detection, and AWS Config compliance monitoring."}},
+      {"@type": "Question", "name": "Do you provide ongoing AWS management?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We offer AWS managed services retainers ($5K-$15K/month) for 24/7 monitoring, cost optimization reviews, security patching, backup management, scaling adjustments, and architecture updates as your business grows."}},
+      {"@type": "Question", "name": "Can AWS handle our traffic spikes?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We configure auto-scaling for EC2 instances, use Elastic Load Balancers, implement CloudFront CDN for global content delivery, and design for elasticity. Your infrastructure scales up during traffic spikes and scales down during quiet periods—you only pay for what you use."}}
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white">
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-2">
+      <div class="flex items-center justify-between">
+        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud Revenue Engineering" class="h-24 lg:h-28 w-auto">
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
+          <a href="/src/pages/en/technology/index.html" class="paragraph text-blue-600">Technology</a>
+          <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600">Contact</a>
+        </div>
+        <a href="/src/pages/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <nav aria-label="Breadcrumb" class="py-4 border-b border-gray-200 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li><a href="/src/pages/en/index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><a href="/src/pages/en/technology/index.html" class="text-gray-600 hover:text-blue-600">Technology</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-600 hover:text-blue-600">Cloud</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><span class="text-gray-900 font-medium">AWS</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <section class="py-16 bg-gradient-to-br from-yellow-500 to-orange-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <div class="w-32 h-32 mx-auto mb-6 bg-white rounded-lg flex items-center justify-center">
+        <span class="text-5xl font-bold text-orange-600">AWS</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">AWS Cloud Architecture That Scales & Saves Money</h1>
+      <p class="text-xl text-orange-100 max-w-3xl mx-auto mb-8">Amazon Web Services migration and optimization that reduces infrastructure costs 40% while handling 10x traffic. We architect for EC2 compute, S3 storage, RDS databases, and Lambda serverless—with auto-scaling, security, and 99.99% uptime. Not a basic lift-and-shift—a cloud-native revenue platform.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-orange-600 hover:bg-gray-100">Get Your AWS Strategy</a>
+        <a href="#pricing" class="btn btn-lg bg-orange-600 text-white border-2 border-white hover:bg-orange-700">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Why AWS Migrations Fail</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Runaway Cloud Costs</h3>
+            <p class="text-gray-600 text-sm">You migrated to AWS but your bill is 2x what you expected. Overprovisioned EC2 instances run 24/7. Nobody turns off dev environments. You're paying $5K/month for resources you don't use.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Security Misconfiguration</h3>
+            <p class="text-gray-600 text-sm">Your S3 buckets are publicly accessible. IAM roles grant admin access to everyone. No VPC isolation. Security Groups allow 0.0.0.0/0. One breach away from disaster.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">No Auto-Scaling</h3>
+            <p class="text-gray-600 text-sm">Your app crashes during traffic spikes because you didn't configure auto-scaling. Or you manually scale up and forget to scale down, wasting money. You're in AWS but still managing infrastructure like it's 2010.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Our AWS Migration & Optimization Framework</h2>
+        <div class="space-y-8">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">1</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Discovery & Architecture Design</h3>
+              <p class="text-gray-600">We audit your current infrastructure, map application dependencies, assess workload requirements, and design cloud-native AWS architecture. Choose between EC2 (VMs), Lambda (serverless), Fargate (containers), or hybrid. Document security requirements, compliance needs, and disaster recovery strategy.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">2</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Migration & Infrastructure Deployment</h3>
+              <p class="text-gray-600">Provision AWS resources using Infrastructure as Code (Terraform or CloudFormation). Migrate databases to RDS, files to S3, servers to EC2 or Lambda. Configure VPC networks, Security Groups, IAM roles, and encryption. Test thoroughly in staging environment before production cutover.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">3</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Optimization & Auto-Scaling</h3>
+              <p class="text-gray-600">Implement auto-scaling groups for EC2, configure CloudFront CDN for global performance, set up automated backups, implement monitoring with CloudWatch. Right-size instances, purchase Reserved Instances for predictable workloads, and automate shutdowns for dev/staging environments to reduce costs 40%.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">4</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Ongoing Management & Cost Optimization</h3>
+              <p class="text-gray-600">Continuous monitoring for security threats (GuardDuty), cost anomalies (Cost Anomaly Detection), and performance issues. Monthly cost optimization reviews: identify unused resources, resize overprovisioned instances, and migrate infrequently accessed data to cheaper storage tiers (S3 Glacier).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-orange-600 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Results from Strategic AWS</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div class="text-center"><div class="text-5xl font-bold mb-2">-40%</div><p class="text-orange-100">Infrastructure Costs</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">99.99%</div><p class="text-orange-100">Uptime SLA</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">10x</div><p class="text-orange-100">Traffic Capacity</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">8 Weeks</div><p class="text-orange-100">Avg Migration Time</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="heading heading-2 text-center mb-12">Our AWS Core Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">EC2 Compute & Auto-Scaling</h3>
+          <p class="text-gray-600 mb-4">Virtual servers that scale automatically based on traffic. We configure auto-scaling groups, load balancers, and right-size instances for optimal performance and cost. Use Reserved Instances and Savings Plans to reduce compute costs 60%.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Auto-scaling configuration</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Load balancing (ALB/NLB)</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Cost optimization strategies</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">RDS Managed Databases</h3>
+          <p class="text-gray-600 mb-4">Managed MySQL, PostgreSQL, SQL Server, or Aurora databases with automated backups, multi-AZ failover, and read replicas for performance. We handle database migration, optimization, and ongoing management.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Multi-AZ high availability</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Automated backups & snapshots</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Performance query optimization</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">S3 Storage & CDN</h3>
+          <p class="text-gray-600 mb-4">Unlimited object storage for files, backups, and data lakes. Configure lifecycle policies to move cold data to cheaper tiers (S3 Glacier). Use CloudFront CDN for global content delivery with millisecond latency.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Lifecycle policy automation</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>CloudFront CDN integration</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Versioning & encryption</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-orange-500 transition-all">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Lambda Serverless</h3>
+          <p class="text-gray-600 mb-4">Run code without managing servers. Perfect for event-driven workloads, API backends, and data processing. Pay only for compute time used (milliseconds). Scale automatically from 1 to 10,000 concurrent executions.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Event-driven architecture</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>API Gateway integration</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pay-per-use pricing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg border border-gray-200 p-8 md:p-12">
+          <div class="text-orange-600 font-semibold mb-2">CASE STUDY</div>
+          <h2 class="text-3xl font-bold mb-6">How AWS Migration Reduced Infrastructure Costs $120K Annually</h2>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Challenge</h3>
+            <p class="text-gray-600">A SaaS company ($20M ARR, 500K users) ran on dedicated servers in a colocation data center. Monthly infrastructure costs: $25K ($300K/year). During traffic spikes, servers crashed because scaling required ordering new hardware (2-week lead time). Site downtime cost $50K per incident. Disaster recovery plan: "hope nothing breaks."</p>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Solution</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Migrated application to AWS: EC2 auto-scaling groups behind Application Load Balancer, RDS PostgreSQL with multi-AZ failover, S3 for file storage, CloudFront CDN for global delivery</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Implemented Infrastructure as Code (Terraform) for repeatable deployments, auto-scaling from 4 to 40 instances based on CPU and traffic</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Cost optimization: Right-sized EC2 instances, purchased Reserved Instances for base capacity (60% discount), automated shutdown of dev/staging environments (7pm-7am), moved old data to S3 Glacier</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Implemented CloudWatch monitoring, automated backups, multi-region disaster recovery</span></li>
+            </ul>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Results (12 Months)</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div><div class="text-3xl font-bold text-orange-600 mb-1">-40%</div><p class="text-sm text-gray-600">Infrastructure Costs</p></div>
+              <div><div class="text-3xl font-bold text-orange-600 mb-1">$120K</div><p class="text-sm text-gray-600">Annual Savings</p></div>
+              <div><div class="text-3xl font-bold text-orange-600 mb-1">99.99%</div><p class="text-sm text-gray-600">Uptime Achieved</p></div>
+              <div><div class="text-3xl font-bold text-orange-600 mb-1">10x</div><p class="text-sm text-gray-600">Peak Traffic Capacity</p></div>
+            </div>
+          </div>
+          <div class="bg-orange-50 border-l-4 border-orange-600 p-6">
+            <p class="text-gray-700 italic">"IntelliCloud's AWS migration reduced our infrastructure costs from $25K to $15K per month—$120K in annual savings. Auto-scaling handled 10x traffic during our product launch without a single crash. We've had zero downtime in 12 months. Best of all, we eliminated our data center lease and tech debt. AWS paid for itself in 8 months."</p>
+            <p class="text-sm text-gray-600 mt-2">— CTO, SaaS Company</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-4">Transparent Pricing</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">One-time migration/setup fee. AWS infrastructure costs billed directly by Amazon (typically $500-$50K+/month depending on usage).</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">AWS Migration & Setup</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$30,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Basic AWS architecture (EC2, RDS, S3)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Single application migration</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Basic monitoring & backups</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">30 days post-launch support</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #ea580c;">Get Started</a>
+          </div>
+          <div class="bg-orange-600 text-white rounded-lg border-2 border-orange-700 p-8 relative">
+            <div class="absolute top-0 right-0 bg-yellow-400 text-orange-900 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+            <h3 class="text-xl font-semibold mb-2">AWS Architecture & Optimization</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$75,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Full AWS ecosystem (EC2, RDS, Lambda, S3, CDN)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Auto-scaling & load balancing configuration</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Multi-application migration</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Cost optimization (40% reduction)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">60 days support & optimization</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-lg w-full bg-white text-orange-600 hover:bg-gray-100">Get Started</a>
+          </div>
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Enterprise AWS Ecosystem</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$150,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Multi-region architecture & disaster recovery</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Containerization (ECS/EKS) or serverless</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Data center exit & full migration</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Compliance & security hardening</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Dedicated support team & quarterly reviews</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full" style="background-color: #ea580c;">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">How long does an AWS migration take?</h3>
+            <p class="text-gray-600">Basic migration: 6-10 weeks. Complex migration with data center exit: 12-18 weeks. Enterprise multi-region architecture: 20-26 weeks. Timeline depends on application complexity, data volume, downtime tolerance, and security/compliance requirements.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Will AWS really reduce our infrastructure costs?</h3>
+            <p class="text-gray-600">Yes, if optimized correctly. Most companies overpay by 30-40% for AWS due to overprovisioned instances, unoptimized storage, and unused resources. We right-size EC2 instances, implement auto-scaling, use Reserved Instances/Savings Plans, and move cold data to cheaper storage tiers.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">What's the difference between EC2, Lambda, and Fargate?</h3>
+            <p class="text-gray-600">EC2: Virtual servers you manage (good for traditional apps). Lambda: Serverless functions that run code without servers (good for event-driven workloads). Fargate: Serverless containers (good for Docker apps without managing servers). We recommend the right mix based on your workload.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can you migrate our on-premise servers to AWS?</h3>
+            <p class="text-gray-600">Yes. We use AWS Application Migration Service (formerly CloudEndure) for lift-and-shift migrations, or refactor applications for cloud-native architecture (containerization, serverless, managed databases). We handle data transfer, testing, cutover, and DNS switchover.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">How do you ensure our AWS environment is secure?</h3>
+            <p class="text-gray-600">We implement AWS Well-Architected Framework security best practices: IAM roles with least privilege, VPC isolation, Security Groups, encryption at rest (S3, RDS, EBS) and in transit, CloudTrail logging, GuardDuty threat detection, and AWS Config compliance monitoring.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Do you provide ongoing AWS management?</h3>
+            <p class="text-gray-600">Yes. We offer AWS managed services retainers ($5K-$15K/month) for 24/7 monitoring, cost optimization reviews, security patching, backup management, scaling adjustments, and architecture updates as your business grows.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can AWS handle our traffic spikes?</h3>
+            <p class="text-gray-600">Absolutely. We configure auto-scaling for EC2 instances, use Elastic Load Balancers, implement CloudFront CDN for global content delivery, and design for elasticity. Your infrastructure scales up during traffic spikes and scales down during quiet periods—you only pay for what you use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-orange-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Migrate to AWS?</h2>
+      <p class="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">Get a free AWS strategy session showing migration roadmap, cost estimates, architecture recommendations, and ROI projections.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-orange-600 hover:bg-gray-100">Get Your Free AWS Strategy Session</a>
+        <a href="/src/pages/en/technology/cloud/google-cloud.html" class="btn btn-lg bg-orange-700 text-white border-2 border-white hover:bg-orange-800">Compare with Google Cloud</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div><h3 class="text-2xl font-bold mb-4">IntelliCloud</h3><p class="text-gray-400">Revenue engineering through strategic technology</p></div>
+        <div><h4 class="font-semibold mb-4">Cloud Platforms</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/cloud/aws.html" class="text-gray-400 hover:text-white">AWS</a></li><li><a href="/src/pages/en/technology/cloud/google-cloud.html" class="text-gray-400 hover:text-white">Google Cloud</a></li><li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">All Cloud Services</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Other Technologies</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">CRM Solutions</a></li><li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Contact</h4><p class="text-gray-400">info@intellicloud.com</p></div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"><p>&copy; 2025 IntelliCloud. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

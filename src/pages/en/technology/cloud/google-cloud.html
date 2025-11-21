@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Cloud Platform (GCP) Consulting & Migration | IntelliCloud</title>
+  <meta name="description" content="Google Cloud Platform migration, BigQuery data analytics, Kubernetes (GKE) containers. Leverage Google's AI/ML infrastructure. $30K-$150K cloud projects.">
+  <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Google Cloud Platform Services",
+    "description": "Google Cloud Platform (GCP) migration, architecture, BigQuery analytics, Kubernetes (GKE) containers, Cloud Run serverless, and AI/ML infrastructure.",
+    "provider": {"@type": "Organization", "name": "IntelliCloud"},
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Google Cloud Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GCP Migration & Setup"}, "priceSpecification": {"@type": "PriceSpecification", "price": "30000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GCP Architecture & Data Platform"}, "priceSpecification": {"@type": "PriceSpecification", "price": "75000", "priceCurrency": "USD", "unitText": "PROJECT"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Enterprise GCP Ecosystem"}, "priceSpecification": {"@type": "PriceSpecification", "price": "150000", "priceCurrency": "USD", "unitText": "PROJECT"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://intellicloud.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Technology", "item": "https://intellicloud.com/technology/"},
+      {"@type": "ListItem", "position": 3, "name": "Cloud", "item": "https://intellicloud.com/technology/cloud/"},
+      {"@type": "ListItem", "position": 4, "name": "Google Cloud", "item": "https://intellicloud.com/technology/cloud/google-cloud.html"}
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How long does a Google Cloud migration take?", "acceptedAnswer": {"@type": "Answer", "text": "Basic migration: 6-10 weeks. Complex migration with data pipeline setup: 12-18 weeks. Enterprise multi-region with BigQuery analytics: 20-26 weeks. Timeline depends on application complexity, data warehouse requirements, containerization needs, and compliance requirements."}},
+      {"@type": "Question", "name": "Why choose Google Cloud over AWS or Azure?", "acceptedAnswer": {"@type": "Answer", "text": "Google Cloud excels at: 1) Data analytics (BigQuery is the fastest data warehouse), 2) Kubernetes (GKE is based on Google's internal orchestration), 3) AI/ML (TensorFlow, Vertex AI built by Google), 4) Developer experience (simpler pricing, better networking). Choose GCP if data analytics, containers, or AI/ML are core to your business."}},
+      {"@type": "Question", "name": "What's the difference between GKE, Cloud Run, and Compute Engine?", "acceptedAnswer": {"@type": "Answer", "text": "Compute Engine: Virtual machines (like AWS EC2). GKE (Google Kubernetes Engine): Managed Kubernetes clusters for containerized apps. Cloud Run: Serverless containers that auto-scale from 0 to 1,000 instances. We recommend GKE for complex microservices, Cloud Run for simple containerized apps, Compute Engine for traditional VMs."}},
+      {"@type": "Question", "name": "Can BigQuery replace our data warehouse?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. BigQuery is a serverless, petabyte-scale data warehouse with SQL interface. It's faster and cheaper than traditional data warehouses (Snowflake, Redshift) for analytical queries. We migrate data from your existing warehouse, ETL tools, or databases into BigQuery and build dashboards (Looker, Tableau, Power BI)."}},
+      {"@type": "Question", "name": "How does Google Cloud pricing compare to AWS?", "acceptedAnswer": {"@type": "Answer", "text": "GCP is typically 10-20% cheaper than AWS for equivalent resources. Google offers sustained-use discounts automatically (no Reserved Instances needed), per-second billing (vs per-hour), and simpler pricing with fewer hidden fees. BigQuery and Cloud Run are especially cost-effective."}},
+      {"@type": "Question", "name": "Do you provide ongoing GCP management?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We offer Google Cloud managed services retainers ($5K-$15K/month) for 24/7 monitoring, cost optimization, security updates, BigQuery query optimization, GKE cluster management, and architecture refinements as your data and traffic grow."}},
+      {"@type": "Question", "name": "Can Google Cloud handle our Kubernetes workloads?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. GKE (Google Kubernetes Engine) is the most advanced managed Kubernetes service—Google invented Kubernetes. We migrate existing Kubernetes clusters to GKE, implement auto-scaling, set up CI/CD pipelines, and optimize for cost and performance."}}
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white">
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-2">
+      <div class="flex items-center justify-between">
+        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud Revenue Engineering" class="h-24 lg:h-28 w-auto">
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
+          <a href="/src/pages/en/technology/index.html" class="paragraph text-blue-600">Technology</a>
+          <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600">Contact</a>
+        </div>
+        <a href="/src/pages/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <nav aria-label="Breadcrumb" class="py-4 border-b border-gray-200 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li><a href="/src/pages/en/index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><a href="/src/pages/en/technology/index.html" class="text-gray-600 hover:text-blue-600">Technology</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-600 hover:text-blue-600">Cloud</a></li>
+        <li><svg class="w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+        <li><span class="text-gray-900 font-medium">Google Cloud</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <section class="py-16 bg-gradient-to-br from-blue-500 to-green-500 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <div class="w-32 h-32 mx-auto mb-6 bg-white rounded-lg flex items-center justify-center">
+        <span class="text-5xl font-bold text-blue-600">GCP</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Google Cloud Platform Built for Data & Scale</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8">Google Cloud migration and data platform that queries petabytes in seconds with BigQuery, runs containers at scale with Kubernetes (GKE), and leverages Google's AI/ML infrastructure. Not just cloud hosting—a data-driven revenue engine with 99.99% uptime and 20% lower costs than AWS.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-blue-600 hover:bg-gray-100">Get Your GCP Strategy</a>
+        <a href="#pricing" class="btn btn-lg bg-blue-600 text-white border-2 border-white hover:bg-blue-700">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Why Google Cloud Projects Fail</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Data Silos & Slow Queries</h3>
+            <p class="text-gray-600 text-sm">Your data is trapped in spreadsheets, databases, and SaaS tools. Analytics queries take hours. Nobody trusts the data. Decisions are based on gut feelings instead of real-time insights.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">Kubernetes Complexity</h3>
+            <p class="text-gray-600 text-sm">You tried Kubernetes but managing clusters, networking, scaling, and security is overwhelming. Your DevOps team spends more time fighting K8s than building features. Apps crash mysteriously.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg border border-red-200">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+            </div>
+            <h3 class="font-semibold mb-3 text-lg">No AI/ML Infrastructure</h3>
+            <p class="text-gray-600 text-sm">You want to leverage AI/ML but don't have the infrastructure, expertise, or data pipelines. Training models on laptops takes days. You're missing revenue opportunities competitors are capturing with AI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Our Google Cloud Migration Framework</h2>
+        <div class="space-y-8">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">1</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Discovery & Data Architecture</h3>
+              <p class="text-gray-600">We audit your current data sources, application architecture, analytics needs, and AI/ML requirements. Design Google Cloud architecture: BigQuery for analytics, GKE for containers, Cloud Run for serverless, Cloud SQL for transactional databases. Document data pipeline requirements and compliance needs.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">2</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Migration & Data Platform Setup</h3>
+              <p class="text-gray-600">Migrate applications to Compute Engine, GKE, or Cloud Run. Build data pipelines to stream data into BigQuery from databases, SaaS tools, and APIs. Configure VPC networks, IAM roles, encryption, and security controls. Test thoroughly in staging before production cutover.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">3</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Analytics & AI/ML Infrastructure</h3>
+              <p class="text-gray-600">Build BigQuery data warehouse with scheduled queries, materialized views, and BI dashboards (Looker, Data Studio). Implement Vertex AI for machine learning workloads, Dataflow for data processing, and Cloud Composer for workflow orchestration. Your data becomes actionable insights.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-xl mr-6">4</div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Optimization & Continuous Improvement</h3>
+              <p class="text-gray-600">Monitor performance with Cloud Monitoring, optimize BigQuery queries for cost and speed, tune GKE cluster sizing, and implement auto-scaling. Monthly reviews identify cost-saving opportunities: committed use discounts, spot VMs for batch workloads, and storage tier optimization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-blue-600 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Results from Strategic Google Cloud</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div class="text-center"><div class="text-5xl font-bold mb-2">100x</div><p class="text-blue-100">Faster Analytics</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">-35%</div><p class="text-blue-100">Infrastructure Costs</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">99.99%</div><p class="text-blue-100">Uptime SLA</p></div>
+        <div class="text-center"><div class="text-5xl font-bold mb-2">Real-Time</div><p class="text-blue-100">Data Insights</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="heading heading-2 text-center mb-12">Our Google Cloud Core Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">BigQuery Data Warehouse</h3>
+          <p class="text-gray-600 mb-4">Serverless, petabyte-scale data warehouse that runs SQL queries in seconds. No infrastructure to manage. Load data from databases, APIs, spreadsheets, and SaaS tools. Build real-time dashboards and data-driven decisions.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Query petabytes in seconds</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Automated data pipelines</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Real-time streaming analytics</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Google Kubernetes Engine (GKE)</h3>
+          <p class="text-gray-600 mb-4">Managed Kubernetes clusters for containerized applications. Auto-scaling, auto-repair, and auto-upgrades. Run microservices at scale without managing infrastructure. Google invented Kubernetes—GKE is the most advanced implementation.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Auto-scaling clusters</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Multi-region deployments</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>CI/CD pipeline integration</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Cloud Run Serverless</h3>
+          <p class="text-gray-600 mb-4">Deploy containers without managing servers. Auto-scales from 0 to 1,000 instances in seconds. Pay only for requests processed. Perfect for APIs, web apps, and event-driven workloads. No Kubernetes complexity.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Zero infrastructure management</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pay-per-request pricing</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>HTTPS & custom domains</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Vertex AI & Machine Learning</h3>
+          <p class="text-gray-600 mb-4">Google's AI/ML platform built on TensorFlow. Train custom models, use pre-trained models (natural language, vision, recommendations), and deploy to production. Leverage Google's AI infrastructure without PhD-level expertise.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pre-trained AI models</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Custom model training</li>
+            <li class="flex items-center text-sm"><svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>MLOps & AutoML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-lg border border-gray-200 p-8 md:p-12">
+          <div class="text-blue-600 font-semibold mb-2">CASE STUDY</div>
+          <h2 class="text-3xl font-bold mb-6">How BigQuery Made Analytics 100x Faster & Saved $200K</h2>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Challenge</h3>
+            <p class="text-gray-600">An e-commerce company ($50M revenue) ran analytics on a self-managed PostgreSQL database. Queries took 2-8 hours to complete. Dashboard refreshes locked the database, making the website slow. Data team spent 60% of their time optimizing queries instead of building features. Annual database infrastructure costs: $300K.</p>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Solution</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Migrated analytics to BigQuery data warehouse. Built data pipelines streaming from PostgreSQL, Shopify, Google Analytics, and Facebook Ads into BigQuery every 15 minutes</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Rebuilt dashboards in Looker Studio connected to BigQuery for real-time insights. Queries that took hours now complete in 2-5 seconds</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Offloaded analytics from production database, eliminating website slowdowns during dashboard refreshes</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-gray-600">Implemented scheduled queries, materialized views, and partitioned tables for optimal performance and cost</span></li>
+            </ul>
+          </div>
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Results (6 Months)</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div><div class="text-3xl font-bold text-blue-600 mb-1">100x</div><p class="text-sm text-gray-600">Faster Queries</p></div>
+              <div><div class="text-3xl font-bold text-blue-600 mb-1">$200K</div><p class="text-sm text-gray-600">Annual Cost Savings</p></div>
+              <div><div class="text-3xl font-bold text-blue-600 mb-1">Real-Time</div><p class="text-sm text-gray-600">Data Insights</p></div>
+              <div><div class="text-3xl font-bold text-blue-600 mb-1">+40%</div><p class="text-sm text-gray-600">Data Team Productivity</p></div>
+            </div>
+          </div>
+          <div class="bg-blue-50 border-l-4 border-blue-600 p-6">
+            <p class="text-gray-700 italic">"IntelliCloud's BigQuery migration transformed our analytics. Queries that took 8 hours now finish in 3 seconds. Our dashboards update in real-time, so we make decisions based on current data, not yesterday's. We reduced database costs from $300K to $100K annually. Best investment we've made in our data infrastructure."</p>
+            <p class="text-sm text-gray-600 mt-2">— VP of Engineering, E-Commerce Company</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-4">Transparent Pricing</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">One-time migration/setup fee. Google Cloud infrastructure costs billed directly by Google (typically $400-$40K+/month depending on usage).</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">GCP Migration & Setup</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$30,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Basic GCP setup (Compute Engine, Cloud SQL)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Single application migration</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Basic BigQuery data warehouse</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">30 days post-launch support</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full">Get Started</a>
+          </div>
+          <div class="bg-blue-600 text-white rounded-lg border-2 border-blue-700 p-8 relative">
+            <div class="absolute top-0 right-0 bg-yellow-400 text-blue-900 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+            <h3 class="text-xl font-semibold mb-2">GCP Architecture & Data Platform</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$75,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Full GCP stack (GKE, BigQuery, Cloud Run)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Data pipelines & real-time analytics</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Kubernetes (GKE) or Cloud Run deployment</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">BI dashboards (Looker/Data Studio)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-white mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">60 days support & query optimization</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-lg w-full bg-white text-blue-600 hover:bg-gray-100">Get Started</a>
+          </div>
+          <div class="bg-white rounded-lg border-2 border-gray-200 p-8">
+            <h3 class="text-xl font-semibold mb-2">Enterprise GCP Ecosystem</h3>
+            <div class="mb-6"><span class="text-4xl font-bold">$150,000</span></div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Multi-region architecture & disaster recovery</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">AI/ML infrastructure (Vertex AI)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Data center exit & full migration</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Advanced security & compliance</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Dedicated support & quarterly optimization</span></li>
+            </ul>
+            <a href="/src/pages/en/contact.html" class="btn btn-primary btn-md w-full">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="heading heading-2 text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">How long does a Google Cloud migration take?</h3>
+            <p class="text-gray-600">Basic migration: 6-10 weeks. Complex migration with data pipeline setup: 12-18 weeks. Enterprise multi-region with BigQuery analytics: 20-26 weeks. Timeline depends on application complexity, data warehouse requirements, containerization needs, and compliance requirements.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Why choose Google Cloud over AWS or Azure?</h3>
+            <p class="text-gray-600">Google Cloud excels at: 1) Data analytics (BigQuery is the fastest data warehouse), 2) Kubernetes (GKE is based on Google's internal orchestration), 3) AI/ML (TensorFlow, Vertex AI built by Google), 4) Developer experience (simpler pricing, better networking). Choose GCP if data analytics, containers, or AI/ML are core to your business.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">What's the difference between GKE, Cloud Run, and Compute Engine?</h3>
+            <p class="text-gray-600">Compute Engine: Virtual machines (like AWS EC2). GKE (Google Kubernetes Engine): Managed Kubernetes clusters for containerized apps. Cloud Run: Serverless containers that auto-scale from 0 to 1,000 instances. We recommend GKE for complex microservices, Cloud Run for simple containerized apps, Compute Engine for traditional VMs.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can BigQuery replace our data warehouse?</h3>
+            <p class="text-gray-600">Yes. BigQuery is a serverless, petabyte-scale data warehouse with SQL interface. It's faster and cheaper than traditional data warehouses (Snowflake, Redshift) for analytical queries. We migrate data from your existing warehouse, ETL tools, or databases into BigQuery and build dashboards (Looker, Tableau, Power BI).</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">How does Google Cloud pricing compare to AWS?</h3>
+            <p class="text-gray-600">GCP is typically 10-20% cheaper than AWS for equivalent resources. Google offers sustained-use discounts automatically (no Reserved Instances needed), per-second billing (vs per-hour), and simpler pricing with fewer hidden fees. BigQuery and Cloud Run are especially cost-effective.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Do you provide ongoing GCP management?</h3>
+            <p class="text-gray-600">Yes. We offer Google Cloud managed services retainers ($5K-$15K/month) for 24/7 monitoring, cost optimization, security updates, BigQuery query optimization, GKE cluster management, and architecture refinements as your data and traffic grow.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6 bg-white">
+            <h3 class="font-semibold text-lg mb-2">Can Google Cloud handle our Kubernetes workloads?</h3>
+            <p class="text-gray-600">Absolutely. GKE (Google Kubernetes Engine) is the most advanced managed Kubernetes service—Google invented Kubernetes. We migrate existing Kubernetes clusters to GKE, implement auto-scaling, set up CI/CD pipelines, and optimize for cost and performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Migrate to Google Cloud?</h2>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Get a free Google Cloud strategy session showing migration roadmap, BigQuery data architecture, cost estimates, and ROI projections.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/src/pages/en/contact.html" class="btn btn-lg bg-white text-blue-600 hover:bg-gray-100">Get Your Free GCP Strategy Session</a>
+        <a href="/src/pages/en/technology/cloud/aws.html" class="btn btn-lg bg-blue-700 text-white border-2 border-white hover:bg-blue-800">Compare with AWS</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div><h3 class="text-2xl font-bold mb-4">IntelliCloud</h3><p class="text-gray-400">Revenue engineering through strategic technology</p></div>
+        <div><h4 class="font-semibold mb-4">Cloud Platforms</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/cloud/aws.html" class="text-gray-400 hover:text-white">AWS</a></li><li><a href="/src/pages/en/technology/cloud/google-cloud.html" class="text-gray-400 hover:text-white">Google Cloud</a></li><li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">All Cloud Services</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Other Technologies</h4><ul class="space-y-2"><li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">CRM Solutions</a></li><li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li></ul></div>
+        <div><h4 class="font-semibold mb-4">Contact</h4><p class="text-gray-400">info@intellicloud.com</p></div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"><p>&copy; 2025 IntelliCloud. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
