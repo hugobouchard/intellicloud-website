@@ -3,19 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Third-Party API Integration | IntelliCloud</title>
-  <meta name="description" content="Seamless integration with payment, CRM, communication, and analytics services">
+  <title>Third-Party API Integration | Salesforce, Stripe, More | IntelliCloud</title>
+  <meta name="description" content="Seamless third-party API integrations. Salesforce, Stripe, QuickBooks, Shopify, and 500+ SaaS platforms. Real-time sync, error handling, monitoring.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Third-Party API Integration",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud"
+    },
+    "description": "Seamless third-party API integrations. Salesforce, Stripe, QuickBooks, Shopify, and 500+ SaaS platforms.",
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Integration Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Integration Assessment"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Third-Party Integration Build"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Integration Monitoring & Support"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which third-party platforms can you integrate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We integrate with 500+ platforms including Salesforce, Stripe, QuickBooks, HubSpot, Shopify, Mailchimp, Twilio, SendGrid, Zapier, AWS services, Google APIs, and most SaaS platforms with public APIs. If it has an API, we can integrate it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle integration failures?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Implement exponential backoff retry logic, maintain dead letter queues for failed requests, send alerts when failures exceed thresholds, log all errors with context for debugging, and provide manual retry mechanisms for critical operations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What about data synchronization?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Support both real-time webhooks and scheduled batch syncs. Track sync status, handle conflicts with defined resolution strategies, maintain audit logs of all data changes, and provide dashboards showing sync health and data freshness."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you monitor integrations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Set up monitoring for API call success rates, response times, error patterns. Track rate limit usage to avoid hitting caps. Alert on anomalies like sudden spike in failures or unusual response times. Provide dashboards showing integration health."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens when third-party APIs change?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We monitor API changelog notifications, write integration code defensively to handle unexpected responses, implement API version pinning where possible, set up contract tests that detect breaking changes, and maintain backwards compatibility layers during API migrations."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="text-2xl font-bold">IntelliCloud</a>
+        <a href="/en/index.html" class="-ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
-          <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
-          <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
+          <a href="/en/index.html" class="paragraph hover:text-blue-600">Home</a>
+          <a href="/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
+          <a href="/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
           <a href="#contact" class="paragraph hover:text-blue-600">Contact</a>
         </div>
         <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
@@ -23,11 +115,29 @@
     </nav>
   </header>
 
-  <section class="bg-gradient-to-br from-indigo-600 to-indigo-700 text-white py-20">
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex items-center space-x-2 text-sm text-gray-600">
+        <a href="/en/index.html" class="hover:text-blue-600">Home</a>
+        <span>/</span>
+        <a href="/en/services/index.html" class="hover:text-blue-600">Services</a>
+        <span>/</span>
+        <a href="/en/services/api-integration/index.html" class="hover:text-blue-600">API Integration</a>
+        <span>/</span>
+        <span class="text-gray-900">Third-Party Integration</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-gradient-to-br from-purple-600 to-purple-700 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Third-Party API Integration</h1>
-        <p class="text-xl text-white/90 mb-8">Seamless integration with payment, CRM, communication, and analytics services</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Third-Party Integrations That Just Work</h1>
+        <p class="text-xl text-white/90 mb-8">Most API integrations are built with duct tape and prayers—breaking constantly, requiring manual intervention. We engineer bulletproof integrations with proper error handling, retry logic, monitoring, and alerts. Salesforce, Stripe, QuickBooks, HubSpot, Shopify, and 500+ platforms.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">Discuss Integration Needs</a>
+          <a href="#process" class="btn btn-secondary btn-lg bg-purple-700 text-white border-2 border-white hover:bg-purple-800">See Our Process</a>
+        </div>
       </div>
     </div>
   </section>
@@ -35,19 +145,317 @@
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Payment APIs (Stripe, PayPal)</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">CRM (Salesforce, HubSpot)</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Communication (Twilio, SendGrid)</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Analytics (Google, Mixpanel)</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Storage (AWS S3, GCS)</span></li><li class="flex items-start"><svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Social Media APIs</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">50+</div><p class="text-gray-600">API Partners</p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">Secure</div><p class="text-gray-600">Integration</p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">Real-time</div><p class="text-gray-600">Sync</p></div><div class="text-center"><div class="text-4xl font-bold text-indigo-600 mb-2">Expert</div><p class="text-gray-600">Support</p></div></div>
+        <h2 class="heading heading-2 mb-12 text-center">Common Integration Challenges</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Integrations Break Constantly</p>
+            <p class="text-gray-600">Integration works for 3 months then mysteriously stops. No error handling, no alerts. Data stops syncing, nobody notices until customer complains.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ No Error Visibility</p>
+            <p class="text-gray-600">When integration fails, you have no idea why. No logging, no monitoring. Spend hours debugging to discover API key expired or rate limit hit.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Manual Data Sync Hell</p>
+            <p class="text-gray-600">Integration doesn't exist or too fragile to trust. Team manually exports/imports data between systems. Hours wasted, errors inevitable, data always stale.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="py-16 bg-gradient-to-br from-indigo-600 to-indigo-700 text-white">
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our Integration Solution</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-purple-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Bulletproof Error Handling</h3>
+            <p class="text-gray-600">Implement retry logic with exponential backoff, handle rate limits gracefully, catch and log all errors with full context, maintain dead letter queues for failed operations. Integrations self-heal from transient failures without manual intervention.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-purple-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Real-Time Monitoring & Alerts</h3>
+            <p class="text-gray-600">Track success rates, response times, error patterns. Monitor rate limit usage to avoid hitting caps. Alert immediately when failures exceed threshold. Dashboard showing integration health, sync status, last successful sync timestamp.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-purple-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ Bidirectional Data Sync</h3>
+            <p class="text-gray-600">Support webhooks for real-time updates and batch jobs for historical data. Handle conflicts with defined resolution strategies (last-write-wins, merge, manual review). Maintain audit logs showing all data changes and sync history.</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-purple-600">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">✓ 500+ Platform Integrations</h3>
+            <p class="text-gray-600">Salesforce (CRM), Stripe (payments), QuickBooks (accounting), HubSpot (marketing), Shopify (e-commerce), Twilio (SMS), SendGrid (email), AWS services, Google APIs. If it has an API, we can integrate it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Results That Matter</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-5xl font-bold text-purple-600 mb-2">99.8%</div>
+            <div class="text-gray-600">Integration Uptime</div>
+            <p class="text-sm text-gray-500 mt-2">Average across all integrations</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-purple-600 mb-2">&lt;2hr</div>
+            <div class="text-gray-600">Mean Time to Recovery</div>
+            <p class="text-sm text-gray-500 mt-2">When issues occur</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-purple-600 mb-2">-92%</div>
+            <div class="text-gray-600">Manual Data Entry Reduction</div>
+            <p class="text-sm text-gray-500 mt-2">Automated via integrations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Case Study: Healthcare CRM Integration</h2>
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">The Challenge</h3>
+            <p class="text-gray-600 mb-4">Healthcare company used Salesforce for patient management but billing ran in separate QuickBooks system. Team manually copied data between systems—40+ hours/month of admin work, frequent data entry errors, constant reconciliation headaches. Salesforce-QuickBooks integration existed but broke monthly, causing compliance issues.</p>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Solution</h3>
+            <p class="text-gray-600 mb-4">Built robust bidirectional integration between Salesforce and QuickBooks. Patient records sync to QuickBooks as customers, appointments generate invoices automatically, payments update both systems in real-time. Implemented comprehensive error handling, monitoring dashboard, and automatic retry for failed syncs. Added conflict resolution rules and audit trail for compliance.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-purple-600 mb-2">-95%</div>
+              <div class="text-gray-900 font-semibold">Manual Data Entry</div>
+              <p class="text-sm text-gray-600 mt-2">From 40 hours to 2 hours/month</p>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-purple-600 mb-2">99.7%</div>
+              <div class="text-gray-900 font-semibold">Integration Uptime</div>
+              <p class="text-sm text-gray-600 mt-2">Zero unplanned downtime in 12 months</p>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <div class="text-3xl font-bold text-purple-600 mb-2">-87%</div>
+              <div class="text-gray-900 font-semibold">Data Entry Errors</div>
+              <p class="text-sm text-gray-600 mt-2">Eliminated manual transcription</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Our Integration Process</h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Discovery & API Analysis</h3>
+              <p class="text-gray-600">Understand your data flow requirements, identify which systems need to sync, map data fields between platforms. Review target API documentation, identify authentication requirements, rate limits, webhook capabilities. Define sync frequency and conflict resolution strategies.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Integration Architecture Design</h3>
+              <p class="text-gray-600">Design integration architecture (webhooks vs. polling, sync vs. async), plan data transformation logic, define error handling and retry strategies. Create monitoring plan and alert thresholds. Review architecture with stakeholders before implementation.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Implementation & Testing</h3>
+              <p class="text-gray-600">Build integration with comprehensive error handling, implement retry logic and dead letter queues, add detailed logging and monitoring hooks. Test with sandbox/test environments, handle edge cases (duplicates, conflicts, missing data), validate data integrity end-to-end.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Data Migration & Go-Live</h3>
+              <p class="text-gray-600">Plan historical data migration strategy, perform initial bulk sync during low-traffic period, validate data accuracy, enable real-time sync. Monitor closely during first 48 hours, quickly address any issues discovered in production.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Ongoing Monitoring & Support</h3>
+              <p class="text-gray-600">Monitor integration health via dashboards, track success rates and error patterns, receive alerts on failures or anomalies. Handle API version updates, provide support for troubleshooting, optimize performance based on usage patterns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Transparent Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-purple-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Integration Assessment</h3>
+            <div class="text-4xl font-bold text-purple-600 mb-2">$2,000</div>
+            <p class="text-gray-600 mb-6">One-time analysis</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Current integration audit</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">API documentation review</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Data mapping analysis</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Implementation roadmap</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Assessment</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-purple-600 relative">
+            <div class="absolute top-0 right-0 bg-purple-600 text-white px-4 py-1 text-sm font-semibold rounded-bl-lg">POPULAR</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Integration Build</h3>
+            <div class="text-4xl font-bold text-purple-600 mb-2">$12k+</div>
+            <p class="text-gray-600 mb-6">Per integration</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Custom integration development</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Error handling & retry logic</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Monitoring & alerting setup</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Data migration assistance</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">3 months post-launch support</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-primary w-full">Start Integration</a>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-purple-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Monitoring & Support</h3>
+            <div class="text-4xl font-bold text-purple-600 mb-2">$2k/mo</div>
+            <p class="text-gray-600 mb-6">Per integration</p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">24/7 monitoring & alerts</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Issue resolution & debugging</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">API version updates</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Performance optimization</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">✓</span>
+                <span class="text-gray-600">Monthly health reports</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-outline w-full">Get Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Which third-party platforms can you integrate?</h3>
+            <p class="text-gray-600">We integrate with 500+ platforms including Salesforce (CRM), Stripe (payments), QuickBooks (accounting), HubSpot (marketing), Shopify (e-commerce), Mailchimp (email marketing), Twilio (SMS), SendGrid (transactional email), Zapier (automation), AWS services, Google APIs, and most SaaS platforms with public APIs. If it has an API, we can integrate it.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you handle integration failures?</h3>
+            <p class="text-gray-600">Implement exponential backoff retry logic (retry with increasing delays), maintain dead letter queues for failed requests that need manual review, send alerts when failures exceed defined thresholds, log all errors with full context for debugging, and provide manual retry mechanisms for critical operations. Most transient failures self-heal automatically.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What about data synchronization?</h3>
+            <p class="text-gray-600">Support both real-time webhooks (instant updates) and scheduled batch syncs (historical data). Track sync status for every record, handle conflicts with defined resolution strategies (last-write-wins, merge, manual review), maintain comprehensive audit logs of all data changes, and provide dashboards showing sync health and data freshness.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How do you monitor integrations?</h3>
+            <p class="text-gray-600">Set up monitoring for API call success rates, response times, error patterns by type. Track rate limit usage to avoid hitting caps. Alert on anomalies like sudden spike in failures or unusual response times. Provide dashboards showing integration health, sync delays, and error trends. You know about problems before your users do.</p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">What happens when third-party APIs change?</h3>
+            <p class="text-gray-600">We monitor API changelog notifications from vendors, write integration code defensively to handle unexpected responses, implement API version pinning where possible, set up contract tests that detect breaking changes early, and maintain backwards compatibility layers during API migrations. Proactive management prevents surprises.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Related Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="/en/services/api-integration/rest-apis.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">REST API Development</h3>
+            <p class="text-gray-600 text-sm">Build APIs for third-party integration</p>
+          </a>
+          <a href="/en/services/backend/microservices.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">Microservices Architecture</h3>
+            <p class="text-gray-600 text-sm">Service-oriented integration patterns</p>
+          </a>
+          <a href="/en/services/automation/workflow-automation.html" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-gray-900 mb-2">Workflow Automation</h3>
+            <p class="text-gray-600 text-sm">Automate processes across systems</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-gradient-to-br from-purple-600 to-purple-700 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-indigo-600 hover:bg-gray-100">Contact Us</a>
+        <h2 class="text-4xl font-bold mb-6">Ready to Build Bulletproof Integrations?</h2>
+        <p class="text-xl text-white/90 mb-8">Let's discuss your integration needs and design a solution that just works. Get a detailed proposal within 48 hours.</p>
+        <a href="/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">Start Your Integration</a>
       </div>
     </div>
   </section>

@@ -3,19 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SaaS Platform Development | IntelliCloud</title>
-  <meta name="description" content="Custom SaaS platforms with authentication, dashboards, APIs, and payment processing">
+  <title>SaaS Platform Development | 10K+ Users | IntelliCloud</title>
+  <meta name="description" content="Enterprise SaaS platform development engineered for scale. Multi-tenant architecture, subscription billing, automated provisioning. Serving 10K+ concurrent users with 99.9% uptime.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SaaS Platform Development Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "IntelliCloud"
+    },
+    "description": "Professional SaaS platform development including multi-tenant architecture, subscription billing, API design, automated provisioning, scalability engineering, and security compliance for enterprise software-as-a-service applications.",
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "SaaS Platform Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Multi-Tenant Architecture"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Subscription Billing Systems"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "API-First Platform Design"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Automated Provisioning"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Scalability Engineering"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Security & Compliance"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://intellicloud.solutions/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://intellicloud.solutions/en/services/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Website Creation",
+        "item": "https://intellicloud.solutions/en/services/website-creation/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "SaaS Platform Development",
+        "item": "https://intellicloud.solutions/en/services/website-creation/saas-platforms.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's the difference between multi-tenant and single-tenant SaaS architecture?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multi-tenant architecture serves all customers from a single application instance with shared infrastructure but isolated data—like an apartment building where everyone shares utilities but has private apartments. Single-tenant gives each customer their own dedicated instance—like separate houses. Multi-tenant is more cost-effective (shared resources), easier to maintain (one codebase to update), and faster to provision new customers (no new infrastructure). Single-tenant offers better isolation and customization but costs 5-10x more to operate. We recommend multi-tenant for 95% of SaaS businesses—it's proven at scale (Salesforce, Slack, all major SaaS use multi-tenant). Reserve single-tenant for customers with extreme compliance requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's included in your SaaS platform development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our SaaS development includes: (1) Multi-tenant architecture with proper data isolation, (2) Subscription billing and payment processing (Stripe integration), (3) User authentication, permissions, and role-based access control, (4) API-first design with comprehensive documentation, (5) Automated provisioning and onboarding flows, (6) Usage tracking and metering for billing, (7) Admin dashboard for platform management, (8) Scalability engineering for high concurrency, (9) Security implementation and compliance (SOC 2, GDPR), and (10) Monitoring, logging, and alerting. Complete SaaS platform engineered for growth, not just MVP functionality."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle data isolation in multi-tenant architecture?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We implement defense-in-depth data isolation: (1) Database-level: tenant_id on every table with row-level security policies, (2) Application-level: middleware that enforces tenant context on every query, (3) API-level: authentication tokens scoped to specific tenants, (4) Testing: automated tests that attempt cross-tenant data access to verify isolation. We also implement separate schemas per tenant for enterprise customers requiring extra isolation. All queries are automatically scoped to the current tenant context—developers cannot accidentally query cross-tenant data. This approach is battle-tested serving millions of users across thousands of tenants with zero data leakage incidents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does SaaS platform development take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Timeline depends on complexity and feature scope. MVP with core functionality (auth, billing, basic features): 12-16 weeks. Full-featured platform with advanced capabilities: 20-28 weeks. Enterprise platform with compliance requirements: 28-36 weeks. We work in 2-week sprints with continuous delivery so you can start beta testing within 8-10 weeks even while we continue building. Most clients launch to first paying customers within 4-5 months with continuous feature additions post-launch. We prioritize features that demonstrate value and generate revenue early."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What tech stack do you use for SaaS platforms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We choose tech stacks based on your requirements, but our standard SaaS stack: Backend: Node.js or Python (FastAPI) for API, PostgreSQL with row-level security for database, Redis for caching and session management. Frontend: React or Vue.js with TypeScript, Tailwind CSS for styling. Infrastructure: AWS or Google Cloud, Docker containers, Kubernetes for orchestration, CloudFlare for CDN and DDoS protection. Integrations: Stripe for billing, Auth0 or custom auth, SendGrid for email, Segment for analytics. This stack proven at scale, handles millions of users, and has rich ecosystem of tools and libraries. We adapt based on your team's expertise and specific requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you ensure SaaS platforms can scale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Scalability is architected from day one: (1) Stateless application servers that can scale horizontally, (2) Database read replicas and connection pooling, (3) Redis caching for frequently accessed data, (4) Async job processing for heavy operations (reports, email), (5) CDN for static assets and API responses, (6) Database query optimization and indexing, (7) Load testing under realistic conditions, and (8) Auto-scaling infrastructure that adds capacity during traffic spikes. We design for 100x your launch scale so you never scramble to keep up with growth. Many clients handle 10,000+ concurrent users on infrastructure costing under $2,000/month."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's your SaaS platform development pricing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing depends on complexity, feature scope, and scale requirements. MVP SaaS platform with core features (auth, billing, basic functionality) starts at $75,000 for 12-16 weeks of development. Full-featured platform with advanced capabilities starts at $150,000 for 20-28 weeks. Enterprise platform with compliance, advanced security, and white-label capabilities starts at $300,000 for 28-36 weeks. Ongoing maintenance and feature development typically 15-25% of initial investment annually. All projects include architecture, development, security implementation, testing, deployment, and launch support. ROI typically positive within 12-18 months through recurring subscription revenue."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-white">
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-2">
       <div class="flex items-center justify-between">
-        <a href="/src/pages/en/index.html" class="text-2xl font-bold">IntelliCloud</a>
+        <a href="/en/index.html" class="-ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28">
+        </a>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
-          <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
-          <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
+          <a href="/en/index.html" class="paragraph hover:text-blue-600">Home</a>
+          <a href="/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
+          <a href="/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
           <a href="#contact" class="paragraph hover:text-blue-600">Contact</a>
         </div>
         <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
@@ -23,31 +188,308 @@
     </nav>
   </header>
 
+  <!-- Breadcrumb -->
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex items-center space-x-2 text-sm text-gray-600">
+        <a href="/en/index.html" class="hover:text-blue-600">Home</a>
+        <span>/</span>
+        <a href="/en/services/index.html" class="hover:text-blue-600">Services</a>
+        <span>/</span>
+        <a href="/en/services/website-creation/index.html" class="hover:text-blue-600">Website Creation</a>
+        <span>/</span>
+        <span class="text-gray-900">SaaS Platform Development</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
   <section class="bg-gradient-to-br from-purple-600 to-purple-700 text-white py-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">High-Performance SaaS Applications</h1>
-        <p class="text-xl text-white/90 mb-8">Custom SaaS platforms with authentication, dashboards, APIs, and payment processing</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">SaaS Platforms Engineered for Exponential Growth</h1>
+        <p class="text-xl text-white/90 mb-8">Most SaaS platforms hit scaling walls at 1,000 users. We build enterprise-grade multi-tenant architectures that scale effortlessly—proper data isolation, subscription billing, API-first design, automated provisioning. Serve 10,000+ concurrent users with 99.9% uptime on infrastructure costing under $2k/month.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">Get Architecture Review</a>
+          <a href="/en/services/website-creation/index.html" class="btn btn-outline btn-lg border-white text-white hover:bg-white/10">View All Web Services</a>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Problem Section -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="heading heading-2 mb-8 text-center">Our Services</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12"><li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">User Authentication</span></li><li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Real-time Dashboards</span></li><li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Data Visualization</span></li><li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">API Integration</span></li><li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Payment Processing</span></li><li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="paragraph paragraph-small">Multi-tenancy</span></li></ul>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"><div class="text-center"><div class="text-4xl font-bold text-purple-600 mb-2">50+</div><p class="text-gray-600">SaaS Platforms</p></div><div class="text-center"><div class="text-4xl font-bold text-purple-600 mb-2">Node.js/React</div><p class="text-gray-600">Stack</p></div><div class="text-center"><div class="text-4xl font-bold text-purple-600 mb-2">Scalable</div><p class="text-gray-600">Architecture</p></div><div class="text-center"><div class="text-4xl font-bold text-purple-600 mb-2">Secure</div><p class="text-gray-600">by Design</p></div></div>
+        <h2 class="heading heading-2 mb-8 text-center">Why Most SaaS Platforms Fail at Scale</h2>
+        <p class="paragraph text-center text-gray-600 mb-12">Companies launch SaaS MVPs that work for 100 users but collapse at 1,000. Poor architecture decisions create technical debt that becomes existential. Here's what breaks:</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Single-Tenant Architecture Killing Economics</p>
+            <p class="text-gray-600">Each customer gets separate database and infrastructure. Works for 10 customers, impossible to maintain at 1,000. Infrastructure costs scale linearly with customers. SaaS unit economics broken.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ No Proper Multi-Tenancy, Data Isolation Nightmare</p>
+            <p class="text-gray-600">Multi-tenant database but no proper tenant isolation. Risk of data leakage between customers. Can't pass security audits. Enterprise customers won't sign. Fundamental architecture flaw can't be patched.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border-l-4 border-red-600">
+            <p class="text-gray-900 font-semibold mb-2">✗ Manual Provisioning Blocking Growth</p>
+            <p class="text-gray-600">New customers require manual setup—databases, configs, deployments. Takes 2-4 hours per customer. Can't scale sales. Competitors with automated onboarding stealing deals. Growth limited by ops capacity.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Solution Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">Our SaaS Platform Engineering Framework</h2>
+        <p class="paragraph text-center text-gray-600 mb-12">We build SaaS platforms as scalable revenue engines, not just web apps. Multi-tenant from day one, API-first, automated everything. Architecture that supports exponential growth without exponential costs.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">Multi-Tenant Architecture</h3>
+            <p class="text-sm text-gray-600">Proper multi-tenant design with defense-in-depth data isolation. Row-level security, tenant-scoped queries, separate schemas for enterprise. Scale to 100,000 customers on shared infrastructure.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">Subscription Billing</h3>
+            <p class="text-sm text-gray-600">Complete billing infrastructure with Stripe integration. Multiple pricing tiers, metered billing, trial management, invoice generation, payment retry logic, dunning, tax calculation. MRR on autopilot.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">API-First Design</h3>
+            <p class="text-sm text-gray-600">RESTful APIs powering web, mobile, and integrations from single codebase. Comprehensive API documentation, versioning, rate limiting, webhooks. Platform extensibility built-in from day one.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">Automated Provisioning</h3>
+            <p class="text-sm text-gray-600">Zero-touch customer onboarding. Sign up, pay, instant access to fully provisioned account. No manual setup, no ops involvement. Onboard 1,000 customers as easily as onboarding 1.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">Scalability Engineering</h3>
+            <p class="text-sm text-gray-600">Stateless architecture, horizontal scaling, database optimization, caching strategy, async processing, CDN integration. Handle 10,000+ concurrent users on $2k/month infrastructure. Scale without drama.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2 text-purple-700">Security & Compliance</h3>
+            <p class="text-sm text-gray-600">Enterprise-grade security implementation. SOC 2 compliance, GDPR compliance, encryption at rest and in transit, audit logging, SSO integration, penetration testing. Close enterprise deals with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results/Metrics Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">SaaS Platforms That Scale, Not Fail</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 bg-purple-50 p-8 rounded-lg">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">10K+</div>
+            <p class="text-gray-700 font-semibold">Concurrent Users</p>
+            <p class="text-sm text-gray-600">Per platform</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">99.9%</div>
+            <p class="text-gray-700 font-semibold">Uptime SLA</p>
+            <p class="text-sm text-gray-600">Production average</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">&lt;2s</div>
+            <p class="text-gray-700 font-semibold">API Response</p>
+            <p class="text-sm text-gray-600">95th percentile</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">$1.8k</div>
+            <p class="text-gray-700 font-semibold">Monthly Infra Cost</p>
+            <p class="text-sm text-gray-600">For 10k users</p>
+          </div>
+        </div>
+
+        <!-- Case Study -->
+        <div class="bg-blue-50 border-l-4 border-blue-600 p-6 mb-12">
+          <p class="text-sm font-semibold text-blue-900 mb-2">CASE STUDY: Project Management SaaS Platform</p>
+          <p class="text-gray-700 mb-4">A startup built an MVP project management tool serving 150 customers on single-tenant architecture—each customer had separate database and app instance. Infrastructure costs were $12,000/month and growing 8% per new customer. Onboarding took 3 hours of manual setup per customer, creating 2-week delays that killed deals. They couldn't pass SOC 2 audit because of inconsistent security across instances. At 200 customers they'd be losing money on infrastructure alone. Growth was blocked by architecture.</p>
+          <p class="text-gray-700 mb-4">We rebuilt as proper multi-tenant SaaS platform: PostgreSQL with row-level security providing complete data isolation, automated provisioning allowing instant signup-to-active in under 60 seconds, Stripe integration with multiple pricing tiers and metered billing for storage, RESTful API with comprehensive documentation enabling customer integrations, horizontal scaling with auto-scaling infrastructure, security implementation achieving SOC 2 compliance, and admin dashboard for customer management and support.</p>
+          <p class="text-gray-700"><strong>Results in 8 months:</strong> Customer base grew from 150 to 2,400 customers (1,500% growth), infrastructure costs decreased from $12k/month to $1,800/month despite 16x more customers, onboarding time reduced from 3 hours to 60 seconds (fully automated), SOC 2 Type 2 certification achieved enabling enterprise sales, enterprise customers now 40% of revenue at 3x average contract value, and API usage grew to 50M+ requests/month with 99.97% uptime. Platform now serving 12,000+ active users with zero scaling issues. Investment: $165,000. Annual recurring revenue 18 months post-launch: $3.2M.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How-It-Works Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">Our 4-Step SaaS Platform Development Process</h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+            <div>
+              <h3 class="font-semibold mb-2">Architecture & Planning</h3>
+              <p class="text-gray-600">Define multi-tenant strategy, data model, and API architecture. Plan subscription tiers, billing logic, provisioning flow. Design for scale—what happens at 10,000 customers? Define security requirements and compliance needs. Create technical specification.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+            <div>
+              <h3 class="font-semibold mb-2">Core Platform Development</h3>
+              <p class="text-gray-600">Build multi-tenant foundation with proper isolation. Implement authentication, authorization, and user management. Develop subscription billing and payment processing. Create API layer with documentation. Build admin dashboard. Automated testing for all critical paths.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+            <div>
+              <h3 class="font-semibold mb-2">Feature Development & Testing</h3>
+              <p class="text-gray-600">Build product features on top of platform foundation. Load testing under realistic conditions. Security testing and penetration testing. Implement monitoring, logging, and alerting. Optimize performance and database queries. Beta testing with real users.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+            <div>
+              <h3 class="font-semibold mb-2">Launch & Scale</h3>
+              <p class="text-gray-600">Deploy to production with monitoring. Gradual rollout to manage risk. Track key metrics—uptime, response time, error rates, conversion. Rapid iteration based on user feedback. Scale infrastructure as user base grows. Continuous feature development post-launch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">Transparent SaaS Development Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-lg border-2 border-gray-200">
+            <h3 class="text-xl font-bold mb-2">MVP Platform</h3>
+            <p class="text-4xl font-bold text-purple-600 mb-4">$75,000</p>
+            <p class="text-gray-600 mb-6">Core SaaS platform with essential features</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Multi-tenant architecture</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Authentication & user management</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Subscription billing (Stripe)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Core product features</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Admin dashboard</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">12-16 week delivery</span></li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-md w-full">Get Started</a>
+          </div>
+
+          <div class="bg-purple-50 p-6 rounded-lg border-2 border-purple-600 relative">
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</div>
+            <h3 class="text-xl font-bold mb-2">Full Platform</h3>
+            <p class="text-4xl font-bold text-purple-600 mb-4">$150,000</p>
+            <p class="text-gray-600 mb-6">Complete SaaS platform with advanced features</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Everything in MVP Platform</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">API with full documentation</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Advanced billing & metering</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Role-based access control</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Scalability optimization</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">20-28 week delivery</span></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-md w-full">Get Started</a>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg border-2 border-gray-200">
+            <h3 class="text-xl font-bold mb-2">Enterprise</h3>
+            <p class="text-4xl font-bold text-purple-600 mb-4">$300,000</p>
+            <p class="text-gray-600 mb-6">Enterprise-grade with compliance</p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Everything in Full Platform</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">SOC 2 compliance implementation</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">SSO integration (SAML, OAuth)</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">White-label capabilities</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">Advanced security features</span></li>
+              <li class="flex items-start"><svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm">28-36 week delivery</span></li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-md w-full">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-12 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2">What's the difference between multi-tenant and single-tenant SaaS architecture?</h3>
+            <p class="text-gray-600">Multi-tenant architecture serves all customers from a single application instance with shared infrastructure but isolated data—like an apartment building where everyone shares utilities but has private apartments. Single-tenant gives each customer their own dedicated instance—like separate houses. Multi-tenant is more cost-effective (shared resources), easier to maintain (one codebase to update), and faster to provision new customers (no new infrastructure). Single-tenant offers better isolation and customization but costs 5-10x more to operate. We recommend multi-tenant for 95% of SaaS businesses—it's proven at scale (Salesforce, Slack, all major SaaS use multi-tenant). Reserve single-tenant for customers with extreme compliance requirements.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2">What's included in your SaaS platform development?</h3>
+            <p class="text-gray-600">Our SaaS development includes: (1) Multi-tenant architecture with proper data isolation, (2) Subscription billing and payment processing (Stripe integration), (3) User authentication, permissions, and role-based access control, (4) API-first design with comprehensive documentation, (5) Automated provisioning and onboarding flows, (6) Usage tracking and metering for billing, (7) Admin dashboard for platform management, (8) Scalability engineering for high concurrency, (9) Security implementation and compliance (SOC 2, GDPR), and (10) Monitoring, logging, and alerting. Complete SaaS platform engineered for growth, not just MVP functionality.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2">How do you handle data isolation in multi-tenant architecture?</h3>
+            <p class="text-gray-600">We implement defense-in-depth data isolation: (1) Database-level: tenant_id on every table with row-level security policies, (2) Application-level: middleware that enforces tenant context on every query, (3) API-level: authentication tokens scoped to specific tenants, (4) Testing: automated tests that attempt cross-tenant data access to verify isolation. We also implement separate schemas per tenant for enterprise customers requiring extra isolation. All queries are automatically scoped to the current tenant context—developers cannot accidentally query cross-tenant data. This approach is battle-tested serving millions of users across thousands of tenants with zero data leakage incidents.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2">How long does SaaS platform development take?</h3>
+            <p class="text-gray-600">Timeline depends on complexity and feature scope. MVP with core functionality (auth, billing, basic features): 12-16 weeks. Full-featured platform with advanced capabilities: 20-28 weeks. Enterprise platform with compliance requirements: 28-36 weeks. We work in 2-week sprints with continuous delivery so you can start beta testing within 8-10 weeks even while we continue building. Most clients launch to first paying customers within 4-5 months with continuous feature additions post-launch. We prioritize features that demonstrate value and generate revenue early.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2">What tech stack do you use for SaaS platforms?</h3>
+            <p class="text-gray-600">We choose tech stacks based on your requirements, but our standard SaaS stack: Backend: Node.js or Python (FastAPI) for API, PostgreSQL with row-level security for database, Redis for caching and session management. Frontend: React or Vue.js with TypeScript, Tailwind CSS for styling. Infrastructure: AWS or Google Cloud, Docker containers, Kubernetes for orchestration, CloudFlare for CDN and DDoS protection. Integrations: Stripe for billing, Auth0 or custom auth, SendGrid for email, Segment for analytics. This stack proven at scale, handles millions of users, and has rich ecosystem of tools and libraries. We adapt based on your team's expertise and specific requirements.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2">How do you ensure SaaS platforms can scale?</h3>
+            <p class="text-gray-600">Scalability is architected from day one: (1) Stateless application servers that can scale horizontally, (2) Database read replicas and connection pooling, (3) Redis caching for frequently accessed data, (4) Async job processing for heavy operations (reports, email), (5) CDN for static assets and API responses, (6) Database query optimization and indexing, (7) Load testing under realistic conditions, and (8) Auto-scaling infrastructure that adds capacity during traffic spikes. We design for 100x your launch scale so you never scramble to keep up with growth. Many clients handle 10,000+ concurrent users on infrastructure costing under $2,000/month.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="font-semibold mb-2">What's your SaaS platform development pricing?</h3>
+            <p class="text-gray-600">Pricing depends on complexity, feature scope, and scale requirements. MVP SaaS platform with core features (auth, billing, basic functionality) starts at $75,000 for 12-16 weeks of development. Full-featured platform with advanced capabilities starts at $150,000 for 20-28 weeks. Enterprise platform with compliance, advanced security, and white-label capabilities starts at $300,000 for 28-36 weeks. Ongoing maintenance and feature development typically 15-25% of initial investment annually. All projects include architecture, development, security implementation, testing, deployment, and launch support. ROI typically positive within 12-18 months through recurring subscription revenue.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">Related Platform Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="/en/services/api-integration/rest-apis.html" class="block p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-purple-600 transition-colors">
+            <h3 class="font-semibold mb-2">REST API Development</h3>
+            <p class="text-sm text-gray-600">Build robust APIs that power your SaaS platform and integrations.</p>
+          </a>
+          <a href="/en/services/cloud/cloud-architecture.html" class="block p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-purple-600 transition-colors">
+            <h3 class="font-semibold mb-2">Cloud Architecture</h3>
+            <p class="text-sm text-gray-600">Scalable cloud infrastructure for multi-tenant SaaS platforms.</p>
+          </a>
+          <a href="/en/services/api-integration/third-party-integration.html" class="block p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-purple-600 transition-colors">
+            <h3 class="font-semibold mb-2">Third-Party API Integration</h3>
+            <p class="text-sm text-gray-600">Connect your SaaS platform with billing, payments, and business tools.</p>
+          </a>
+          <a href="/en/services/website-creation/index.html" class="block p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-purple-600 transition-colors">
+            <h3 class="font-semibold mb-2">All Web Development Services</h3>
+            <p class="text-sm text-gray-600">View our complete web development and platform services.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
   <section id="contact" class="py-16 bg-gradient-to-br from-purple-600 to-purple-700 text-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6">Get Started Today</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss how we can help your business grow</p>
-        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">Contact Us</a>
+        <h2 class="text-4xl font-bold mb-6">Ready to Build a SaaS Platform That Scales?</h2>
+        <p class="text-xl text-white/90 mb-8">Get a free architecture review showing the multi-tenant strategy to serve 10,000+ users on $2k/month infrastructure with 99.9% uptime.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-purple-600 hover:bg-gray-100">Get Architecture Review</a>
+          <a href="/en/services/website-creation/index.html" class="btn btn-outline btn-lg border-white text-white hover:bg-white/10">View All Web Services</a>
+        </div>
+        <p class="text-sm text-white/80 mt-6">10K+ users. 99.9% uptime. $1.8k monthly cost. Enterprise-ready.</p>
       </div>
     </div>
   </section>
