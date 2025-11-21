@@ -38,7 +38,41 @@
             </div>
           </div>
 
-          <a href="#services" class="paragraph hover:text-blue-600 transition-colors">Services</a>
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="paragraph hover:text-blue-600 transition-colors flex items-center">
+              Services
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <a href="/src/pages/en/services/index.html" class="block px-4 py-3 hover:bg-gray-50">All Services</a>
+              <a href="/src/pages/en/services/cloud-architecture/index.html" class="block px-4 py-3 hover:bg-gray-50">Cloud Architecture</a>
+              <a href="/src/pages/en/services/website-creation/index.html" class="block px-4 py-3 hover:bg-gray-50">Website Creation</a>
+              <a href="/src/pages/en/services/ecommerce/index.html" class="block px-4 py-3 hover:bg-gray-50">eCommerce</a>
+              <a href="/src/pages/en/services/mobile-application/index.html" class="block px-4 py-3 hover:bg-gray-50">Mobile Applications</a>
+              <a href="/src/pages/en/services/api-integration/index.html" class="block px-4 py-3 hover:bg-gray-50">API Integration</a>
+              <a href="/src/pages/en/services/ui-ux/index.html" class="block px-4 py-3 hover:bg-gray-50">UI/UX Design</a>
+            </div>
+          </div>
+
+          <!-- Lead Generation Dropdown -->
+          <div class="relative group">
+            <button class="paragraph hover:text-blue-600 transition-colors flex items-center">
+              Lead Generation
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <a href="/src/pages/en/lead-generation/index.html" class="block px-4 py-3 hover:bg-gray-50">All Services</a>
+              <a href="/src/pages/en/lead-generation/sem/index.html" class="block px-4 py-3 hover:bg-gray-50">SEM</a>
+              <a href="/src/pages/en/lead-generation/seo/index.html" class="block px-4 py-3 hover:bg-gray-50">SEO</a>
+              <a href="/src/pages/en/lead-generation/local-listing/index.html" class="block px-4 py-3 hover:bg-gray-50">Local Listing</a>
+            </div>
+          </div>
+
           <a href="#contact" class="paragraph hover:text-blue-600 transition-colors">Contact</a>
         </div>
 
@@ -320,6 +354,117 @@
             </li>
           </ul>
           <a href="#contact" class="btn btn-outline btn-md w-full">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Generation Services -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="heading heading-2 mb-4">Lead Generation Services</h2>
+        <p class="paragraph text-gray-600">
+          Drive qualified leads and grow your business with proven digital marketing strategies
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Lead Gen Card 1: SEM -->
+        <div class="bg-white rounded-lg border border-gray-200 p-8 hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 mb-6 bg-blue-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">Search Engine Marketing</h3>
+          <p class="paragraph mb-6">Get immediate visibility with Google Ads and PPC campaigns</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Google Ads campaigns</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">PPC management</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">ROI optimization</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/lead-generation/sem/index.html" class="btn btn-outline btn-md w-full">Explore SEM</a>
+        </div>
+
+        <!-- Lead Gen Card 2: SEO -->
+        <div class="bg-white rounded-lg border border-gray-200 p-8 hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 mb-6 bg-green-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">Search Engine Optimization</h3>
+          <p class="paragraph mb-6">Build sustainable organic traffic with comprehensive SEO strategy</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">On-page & technical SEO</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Content strategy</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Link building</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/lead-generation/seo/index.html" class="btn btn-outline btn-md w-full">Explore SEO</a>
+        </div>
+
+        <!-- Lead Gen Card 3: Local Listing -->
+        <div class="bg-white rounded-lg border border-gray-200 p-8 hover:shadow-xl transition-shadow duration-300">
+          <div class="w-16 h-16 mb-6 bg-orange-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">Local Listing Management</h3>
+          <p class="paragraph mb-6">Dominate local search with Google Business Profile optimization</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Google Business Profile</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Local SEO strategy</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Review management</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/lead-generation/local-listing/index.html" class="btn btn-outline btn-md w-full">Explore Local Listing</a>
         </div>
       </div>
     </div>
