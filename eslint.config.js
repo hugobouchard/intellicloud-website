@@ -16,6 +16,10 @@ export default [
         document: 'readonly',
         navigator: 'readonly',
         console: 'readonly',
+        setTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearTimeout: 'readonly',
+        clearInterval: 'readonly',
         // Node globals
         process: 'readonly',
         __dirname: 'readonly',
