@@ -76,7 +76,7 @@
         <a href="/src/pages/en/contact.html" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
 
         <!-- Mobile Menu Button -->
-        <button class="md:hidden p-2" aria-label="Toggle menu">
+        <button type="button" class="md:hidden p-2 cursor-pointer" aria-label="Toggle menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
@@ -85,17 +85,17 @@
     </div>
 
     <!-- Mobile Navigation (hidden by default) -->
-    <div class="md:hidden hidden mt-4 pb-4 border-t border-gray-200 pt-4" id="mobile-menu">
-      <div class="flex flex-col space-y-4">
-        <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600">Home</a>
-        <a href="/src/pages/en/technology/index.html" class="paragraph hover:text-blue-600">Technology</a>
-        <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600">Services</a>
-        <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600">Lead Generation</a>
-        <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600">Contact</a>
-        <div class="flex items-center space-x-2 pt-2">
-          <a href="/src/pages/en/index.html" class="paragraph paragraph-small hover:text-blue-600">EN</a>
+    <div class="md:hidden hidden mt-4 pb-4 border-t border-gray-200 pt-4 bg-white" id="mobile-menu">
+      <div class="flex flex-col space-y-4 px-4">
+        <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600 transition-colors">Home</a>
+        <a href="/src/pages/en/technology/index.html" class="paragraph hover:text-blue-600 transition-colors">Technology</a>
+        <a href="/src/pages/en/services/index.html" class="paragraph hover:text-blue-600 transition-colors">Services</a>
+        <a href="/src/pages/en/lead-generation/index.html" class="paragraph hover:text-blue-600 transition-colors">Lead Generation</a>
+        <a href="/src/pages/en/contact.html" class="paragraph hover:text-blue-600 transition-colors">Contact</a>
+        <div class="flex items-center space-x-2 pt-2 border-t border-gray-100">
+          <a href="/src/pages/en/index.html" class="paragraph paragraph-small hover:text-blue-600 transition-colors">EN</a>
           <span class="text-gray-300">|</span>
-          <a href="/src/pages/fr/index.html" class="paragraph paragraph-small hover:text-blue-600">FR</a>
+          <a href="/src/pages/fr/index.html" class="paragraph paragraph-small hover:text-blue-600 transition-colors">FR</a>
         </div>
       </div>
     </div>
