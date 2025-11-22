@@ -34,7 +34,7 @@ jobs:
         with:
           urls: |
             http://localhost:4173
-          uploadArtifacts: true
+          uploadArtifacts: false
           temporaryPublicStorage: true
           budgetPath: ./.lighthouserc.json
           configPath: ./.lighthouserc.json
