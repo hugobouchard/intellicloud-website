@@ -40,7 +40,6 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           channelId: live
           projectId: site-web-ic
-          target: production
 
       - name: Deploy to Firebase (Staging)
         if: github.ref == 'refs/heads/staging' && github.event_name == 'push'
@@ -49,7 +48,6 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           projectId: site-web-ic
-          target: staging
 
       - name: Deploy to Firebase (Preview)
         if: github.event_name == 'pull_request'
