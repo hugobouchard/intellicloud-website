@@ -6,9 +6,10 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "cleanUrls": true,
     "rewrites": [
       {
-        "source": "!(/version/**|/**/*.html)",
+        "regex": "^(?!/version|/assets).*$",
         "destination": "/index.html"
       }
     ],
