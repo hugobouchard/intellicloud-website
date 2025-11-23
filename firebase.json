@@ -7,12 +7,6 @@
       "**/node_modules/**"
     ],
     "cleanUrls": true,
-    "rewrites": [
-      {
-        "regex": "^(?!/version|/assets).*$",
-        "destination": "/index.html"
-      }
-    ],
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|gif|png|svg|webp)",
