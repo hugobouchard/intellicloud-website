@@ -7,6 +7,7 @@
       "**/node_modules/**"
     ],
     "cleanUrls": true,
+    "trailingSlashBehavior": "ADD",
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|gif|png|svg|webp)",
