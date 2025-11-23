@@ -1,0 +1,138 @@
+<!--
+  Heading Component
+  Atomic Design: Atom
+
+  Levels: h1 through h6
+  Variants: default, light, semibold, bold
+-->
+
+<!-- H1 - Main Page Title -->
+<h1 class="heading heading-1">
+  Main Page Heading
+</h1>
+
+<!-- H2 - Section Title -->
+<h2 class="heading heading-2">
+  Section Heading
+</h2>
+
+<!-- H3 - Subsection Title -->
+<h3 class="heading heading-3">
+  Subsection Heading
+</h3>
+
+<!-- H4 - Component Title -->
+<h4 class="heading heading-4">
+  Component Heading
+</h4>
+
+<!-- H5 - Small Heading -->
+<h5 class="heading heading-5">
+  Small Heading
+</h5>
+
+<!-- H6 - Smallest Heading -->
+<h6 class="heading heading-6">
+  Smallest Heading
+</h6>
+
+<!-- Heading with Light Weight -->
+<h2 class="heading heading-2 heading-light">
+  Light Weight Heading
+</h2>
+
+<!-- Heading with Semibold Weight -->
+<h2 class="heading heading-2 heading-semibold">
+  Semibold Heading
+</h2>
+
+<!-- Heading with Bold Weight -->
+<h2 class="heading heading-2 heading-bold">
+  Bold Heading
+</h2>
+
+<!-- Heading with Accent Color -->
+<h2 class="heading heading-2 heading-accent">
+  Accent Color Heading
+</h2>
+
+<style>
+  /* Base Heading Styles */
+  .heading {
+    font-family: var(--font-sans);
+    font-weight: var(--font-bold);
+    line-height: var(--leading-tight);
+    color: var(--color-black);
+    margin-bottom: var(--space-4);
+    letter-spacing: -0.02em;
+  }
+
+  /* Heading Levels */
+  .heading-1 {
+    font-size: var(--text-5xl);
+    line-height: var(--leading-none);
+    margin-bottom: var(--space-8);
+  }
+
+  .heading-2 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-6);
+  }
+
+  .heading-3 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-5);
+  }
+
+  .heading-4 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .heading-5 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-3);
+  }
+
+  .heading-6 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-3);
+  }
+
+  /* Font Weight Variants */
+  .heading-light {
+    font-weight: var(--font-light);
+  }
+
+  .heading-semibold {
+    font-weight: var(--font-semibold);
+  }
+
+  .heading-bold {
+    font-weight: var(--font-bold);
+  }
+
+  /* Color Variants */
+  .heading-accent {
+    color: var(--color-blue-600);
+  }
+
+  .heading-muted {
+    color: var(--color-gray-600);
+  }
+
+  /* Responsive Sizing */
+  @media (max-width: 768px) {
+    .heading-1 {
+      font-size: var(--text-4xl);
+    }
+
+    .heading-2 {
+      font-size: var(--text-3xl);
+    }
+
+    .heading-3 {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>

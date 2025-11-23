@@ -1,0 +1,168 @@
+<!--
+  Badge Component
+  Atomic Design: Atom
+
+  Variants:
+  - Default badge
+  - Primary badge
+  - Success badge
+  - Warning badge
+  - Error badge
+  - Info badge
+
+  Sizes:
+  - sm (small)
+  - md (medium/default)
+  - lg (large)
+-->
+
+<!-- Default Badge -->
+<span class="badge badge-default badge-md">
+  Default
+</span>
+
+<!-- Primary Badge -->
+<span class="badge badge-primary badge-md">
+  Primary
+</span>
+
+<!-- Success Badge -->
+<span class="badge badge-success badge-md">
+  Success
+</span>
+
+<!-- Warning Badge -->
+<span class="badge badge-warning badge-md">
+  Warning
+</span>
+
+<!-- Error Badge -->
+<span class="badge badge-error badge-md">
+  Error
+</span>
+
+<!-- Info Badge -->
+<span class="badge badge-info badge-md">
+  Info
+</span>
+
+<!-- Small Badge -->
+<span class="badge badge-primary badge-sm">
+  Small
+</span>
+
+<!-- Large Badge -->
+<span class="badge badge-primary badge-lg">
+  Large
+</span>
+
+<!-- Pill Badge (fully rounded) -->
+<span class="badge badge-primary badge-md badge-pill">
+  Pill
+</span>
+
+<!-- Outline Badge -->
+<span class="badge badge-outline badge-md">
+  Outline
+</span>
+
+<style>
+  /* Base Badge Styles */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-weight: var(--font-medium);
+    white-space: nowrap;
+    border-radius: var(--radius-base);
+    border: 1px solid transparent;
+    transition: var(--transition-all);
+  }
+
+  /* Badge Sizes */
+  .badge-sm {
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--text-xs);
+  }
+
+  .badge-md {
+    padding: calc(var(--space-1) + 1px) var(--space-3);
+    font-size: var(--text-sm);
+  }
+
+  .badge-lg {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-base);
+  }
+
+  /* Badge Variants */
+
+  /* Default */
+  .badge-default {
+    background-color: var(--color-gray-200);
+    color: var(--color-gray-800);
+  }
+
+  /* Primary */
+  .badge-primary {
+    background-color: var(--color-blue-100);
+    color: var(--color-blue-800);
+  }
+
+  /* Success */
+  .badge-success {
+    background-color: #D1FAE5;
+    color: #065F46;
+  }
+
+  /* Warning */
+  .badge-warning {
+    background-color: #FEF3C7;
+    color: #92400E;
+  }
+
+  /* Error */
+  .badge-error {
+    background-color: #FEE2E2;
+    color: #991B1B;
+  }
+
+  /* Info */
+  .badge-info {
+    background-color: var(--color-blue-50);
+    color: var(--color-blue-700);
+  }
+
+  /* Outline Variant */
+  .badge-outline {
+    background-color: transparent;
+    color: var(--color-gray-700);
+    border-color: var(--color-gray-300);
+  }
+
+  /* Pill Variant */
+  .badge-pill {
+    border-radius: var(--radius-full);
+  }
+
+  /* Dot Indicator (can be added inside badge) */
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: var(--radius-full);
+    margin-right: var(--space-2);
+  }
+
+  .badge-dot-success {
+    background-color: #10B981;
+  }
+
+  .badge-dot-error {
+    background-color: #EF4444;
+  }
+
+  .badge-dot-warning {
+    background-color: #F59E0B;
+  }
+</style>

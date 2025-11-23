@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Technology Solutions | Agile Development | IntelliCloud</title>
+  <meta name="description" content="Cloud infrastructure, high-scale commerce platforms, custom applications, and API integrations. Built for enterprise revenue growth.">
+  <link rel="stylesheet" href="/src/styles/tailwind.css">
+</head>
+<body class="bg-white">
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-2">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28 w-auto">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600 transition-colors">Home</a>
+
+          <!-- Technology Dropdown -->
+          <div class="relative group">
+            <button class="paragraph hover:text-blue-600 transition-colors flex items-center">
+              Technology
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="/src/pages/en/technology/index.html" class="block px-4 py-3 hover:bg-gray-50 font-semibold border-b border-gray-100">All Technologies</a>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">CRM Solutions</div>
+                <a href="/src/pages/en/technology/crm/salesforce.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Salesforce</a>
+                <a href="/src/pages/en/technology/crm/hubspot.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">HubSpot</a>
+              </div>
+              <a href="/src/pages/en/technology/ai/index.html" class="block px-4 py-2 hover:bg-gray-50">AI Integration</a>
+              <a href="/src/pages/en/technology/cloud/index.html" class="block px-4 py-2 hover:bg-gray-50">Cloud Infrastructure</a>
+              <a href="/src/pages/en/technology/api/index.html" class="block px-4 py-2 hover:bg-gray-50">API Integration</a>
+            </div>
+          </div>
+
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="paragraph font-semibold text-blue-600 flex items-center">
+              Services
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 max-h-[80vh] overflow-y-auto">
+              <a href="/src/pages/en/services/index.html" class="block px-4 py-3 hover:bg-gray-50 font-semibold border-b border-gray-100">All Services</a>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">Cloud Architecture</div>
+                <a href="/src/pages/en/services/cloud-architecture/aws.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">AWS</a>
+                <a href="/src/pages/en/services/cloud-architecture/google-cloud.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Google Cloud</a>
+                <a href="/src/pages/en/services/cloud-architecture/salesforce.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Salesforce Cloud</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">Website Creation</div>
+                <a href="/src/pages/en/services/website-creation/responsive-design.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Responsive Design</a>
+                <a href="/src/pages/en/services/website-creation/saas-platforms.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">SaaS Platforms</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">eCommerce</div>
+                <a href="/src/pages/en/services/ecommerce/shopify.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Shopify</a>
+                <a href="/src/pages/en/services/ecommerce/custom-platforms.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Custom Platforms</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">Mobile Applications</div>
+                <a href="/src/pages/en/services/mobile-application/ios.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">iOS Development</a>
+                <a href="/src/pages/en/services/mobile-application/android.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Android Development</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">API Integration</div>
+                <a href="/src/pages/en/services/api-integration/rest-apis.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">REST APIs</a>
+                <a href="/src/pages/en/services/api-integration/third-party-integration.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Third-Party Integration</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">UI/UX Design</div>
+                <a href="/src/pages/en/services/ui-ux/design-system.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Design Systems</a>
+                <a href="/src/pages/en/services/ui-ux/user-research.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">User Research</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lead Generation Dropdown -->
+          <div class="relative group">
+            <button class="paragraph hover:text-blue-600 transition-colors flex items-center">
+              Lead Generation
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="/src/pages/en/lead-generation/index.html" class="block px-4 py-3 hover:bg-gray-50 font-semibold border-b border-gray-100">All Services</a>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">SEM</div>
+                <a href="/src/pages/en/lead-generation/sem/google-ads.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Google Ads</a>
+                <a href="/src/pages/en/lead-generation/sem/ppc-campaigns.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">PPC Campaigns</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">SEO</div>
+                <a href="/src/pages/en/lead-generation/seo/on-page-seo.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">On-Page SEO</a>
+                <a href="/src/pages/en/lead-generation/seo/technical-seo.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Technical SEO</a>
+                <a href="/src/pages/en/lead-generation/seo/content-strategy.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Content Strategy</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">Local Listing</div>
+                <a href="/src/pages/en/lead-generation/local-listing/google-business.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Google Business Profile</a>
+                <a href="/src/pages/en/lead-generation/local-listing/local-seo.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Local SEO</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="paragraph hover:text-blue-600 transition-colors">Contact</a>
+        </div>
+
+        <!-- Language Switcher & CTA -->
+        <div class="flex items-center space-x-4">
+          <div class="hidden md:flex items-center space-x-2">
+            <a href="/src/pages/en/services/index.html" class="paragraph paragraph-small font-semibold text-blue-600">EN</a>
+            <span class="text-gray-300">|</span>
+            <a href="/src/pages/fr/index.html" class="paragraph paragraph-small hover:text-blue-600">FR</a>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <nav class="flex items-center space-x-2 text-sm">
+        <a href="/src/pages/en/index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="text-gray-900 font-semibold">Services</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">The Technical Arsenal</h1>
+        <p class="text-xl md:text-2xl text-blue-100 mb-8">
+          Cloud-native applications, high-scale platforms, and custom solutions engineered for enterprise growth. We ship revenue-generating technology, not hobby projects.
+        </p>
+        <a href="#services" class="btn btn-primary btn-lg bg-white text-blue-600 hover:bg-gray-100">
+          Explore Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section id="services" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="heading heading-2 mb-4">Our Services</h2>
+        <p class="paragraph text-gray-600">Comprehensive technology solutions tailored to your business needs</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <!-- Service Card 1: Cloud Architecture -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="w-16 h-16 mb-6 bg-blue-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">Cloud Architecture</h3>
+          <p class="paragraph mb-6">Enterprise-grade cloud infrastructure on AWS, Google Cloud, and Salesforce</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Scalable infrastructure design</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Cloud migration services</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">24/7 monitoring & support</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/services/cloud-architecture/index.html" class="btn btn-outline btn-md w-full">Explore Cloud Services</a>
+        </div>
+
+        <!-- Service Card 2: Website Creation -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="w-16 h-16 mb-6 bg-purple-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">Website Creation</h3>
+          <p class="paragraph mb-6">Modern, high-performance websites and SaaS platforms built for conversion</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Custom SaaS platforms</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Responsive design</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Performance optimization</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/services/website-creation/index.html" class="btn btn-outline btn-md w-full">Explore Website Services</a>
+        </div>
+
+        <!-- Service Card 3: eCommerce -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="w-16 h-16 mb-6 bg-green-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">eCommerce Solutions</h3>
+          <p class="paragraph mb-6">Powerful eCommerce platforms on Shopify and custom solutions</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Shopify store setup</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Custom eCommerce platforms</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Conversion optimization</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/services/ecommerce/index.html" class="btn btn-outline btn-md w-full">Explore eCommerce</a>
+        </div>
+
+        <!-- Service Card 4: Mobile Applications -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="w-16 h-16 mb-6 bg-orange-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">Mobile Applications</h3>
+          <p class="paragraph mb-6">Native iOS and Android apps that engage users and drive results</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Native iOS development</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Native Android development</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">App Store optimization</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/services/mobile-application/index.html" class="btn btn-outline btn-md w-full">Explore Mobile Apps</a>
+        </div>
+
+        <!-- Service Card 5: API Integration -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="w-16 h-16 mb-6 bg-indigo-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">API Integration</h3>
+          <p class="paragraph mb-6">Seamless API integration and development for connected systems</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">REST API development</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Third-party integration</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-indigo-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">API documentation</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/services/api-integration/index.html" class="btn btn-outline btn-md w-full">Explore API Services</a>
+        </div>
+
+        <!-- Service Card 6: UI/UX Design -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="w-16 h-16 mb-6 bg-pink-100 rounded-lg flex items-center justify-center">
+            <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+            </svg>
+          </div>
+          <h3 class="heading heading-3 mb-3">UI/UX Design</h3>
+          <p class="paragraph mb-6">User-centered design that delights customers and drives engagement</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">User research & testing</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Design systems</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-pink-600 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="paragraph paragraph-small">Prototyping & wireframing</span>
+            </li>
+          </ul>
+          <a href="/src/pages/en/services/ui-ux/index.html" class="btn btn-outline btn-md w-full">Explore UI/UX Design</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="heading heading-2 mb-4">Trusted by Businesses Worldwide</h2>
+          <p class="paragraph text-gray-600">Delivering excellence across all service areas</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">500+</div>
+            <p class="text-gray-600">Projects Delivered</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">15+</div>
+            <p class="text-gray-600">Years Experience</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">98%</div>
+            <p class="text-gray-600">Client Satisfaction</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">24/7</div>
+            <p class="text-gray-600">Support Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="py-16 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Project?</h2>
+        <p class="text-xl text-blue-100 mb-8">Let's discuss how our services can help you achieve your business goals</p>
+        <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-blue-600 hover:bg-gray-100">
+          Get Started Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">IntelliCloud</h3>
+          <p class="text-gray-400">Custom technology solutions for modern businesses</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="/src/pages/en/services/cloud-architecture/index.html" class="text-gray-400 hover:text-white">Cloud Architecture</a></li>
+            <li><a href="/src/pages/en/services/website-creation/index.html" class="text-gray-400 hover:text-white">Website Creation</a></li>
+            <li><a href="/src/pages/en/services/ecommerce/index.html" class="text-gray-400 hover:text-white">eCommerce</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Technologies</h4>
+          <ul class="space-y-2">
+            <li><a href="/src/pages/en/technology/crm/index.html" class="text-gray-400 hover:text-white">CRM Solutions</a></li>
+            <li><a href="/src/pages/en/technology/ai/index.html" class="text-gray-400 hover:text-white">AI Integration</a></li>
+            <li><a href="/src/pages/en/technology/cloud/index.html" class="text-gray-400 hover:text-white">Cloud Infrastructure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2">
+            <li><a href="#contact" class="text-gray-400 hover:text-white">Get in Touch</a></li>
+            <li><a href="mailto:info@intellicloud.com" class="text-gray-400 hover:text-white">info@intellicloud.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 IntelliCloud. All rights reserved.</p>
+        <p class="text-xs text-gray-500 mt-2">v1.1 - November 21, 2025 09:22 PM EST</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

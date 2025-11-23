@@ -1,0 +1,89 @@
+<!--
+  Paragraph Component
+  Atomic Design: Atom
+
+  Variants:
+  - Default paragraph
+  - Lead paragraph (larger, emphasized)
+  - Small paragraph
+  - Muted paragraph
+-->
+
+<!-- Default Paragraph -->
+<p class="paragraph">
+  This is a default paragraph with normal text size and weight. It provides readable body text
+  for content sections and maintains good line height for comfortable reading.
+</p>
+
+<!-- Lead Paragraph -->
+<p class="paragraph paragraph-lead">
+  This is a lead paragraph, typically used for introductory text or to emphasize important
+  content at the beginning of a section. It's larger and more prominent than regular paragraphs.
+</p>
+
+<!-- Small Paragraph -->
+<p class="paragraph paragraph-small">
+  This is a small paragraph, often used for secondary information, captions, or supporting text
+  that doesn't require as much visual weight as the main content.
+</p>
+
+<!-- Muted Paragraph -->
+<p class="paragraph paragraph-muted">
+  This is a muted paragraph with reduced color intensity, useful for de-emphasized content or
+  supplementary information that should be visible but not draw too much attention.
+</p>
+
+<!-- Bold Paragraph -->
+<p class="paragraph paragraph-bold">
+  This is a bold paragraph that adds emphasis through font weight, perfect for highlighting
+  important information within your content.
+</p>
+
+<style>
+  /* Base Paragraph Styles */
+  .paragraph {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    font-weight: var(--font-normal);
+    line-height: var(--leading-relaxed);
+    color: var(--color-black);
+    margin-bottom: var(--space-4);
+  }
+
+  /* Lead Paragraph */
+  .paragraph-lead {
+    font-size: var(--text-xl);
+    line-height: var(--leading-relaxed);
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-6);
+  }
+
+  /* Small Paragraph */
+  .paragraph-small {
+    font-size: var(--text-sm);
+    line-height: var(--leading-normal);
+    color: var(--color-gray-600);
+  }
+
+  /* Muted Paragraph */
+  .paragraph-muted {
+    color: var(--color-gray-600);
+  }
+
+  /* Bold Paragraph */
+  .paragraph-bold {
+    font-weight: var(--font-semibold);
+  }
+
+  /* Last paragraph in a container shouldn't have bottom margin */
+  .paragraph:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Responsive Typography */
+  @media (max-width: 768px) {
+    .paragraph-lead {
+      font-size: var(--text-lg);
+    }
+  }
+</style>

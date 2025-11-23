@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elastic Cloud Infrastructure | AWS & Cloud Architecture | IntelliCloud</title>
+  <meta name="description" content="Enterprise cloud infrastructure built for scale, security, and cost optimization. AWS, Google Cloud, and Salesforce expertise.">
+  <link rel="stylesheet" href="/src/styles/tailwind.css">
+</head>
+<body class="bg-white">
+  <!-- Header (same as services index) -->
+    <!-- Header -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-2">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/src/pages/en/index.html" class="flex items-center -ml-4 lg:ml-0">
+          <img src="/src/images/logo new gray.png" alt="IntelliCloud" class="h-24 lg:h-28 w-auto">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/src/pages/en/index.html" class="paragraph hover:text-blue-600 transition-colors">Home</a>
+
+          <!-- Technology Dropdown -->
+          <div class="relative group">
+            <button class="paragraph hover:text-blue-600 transition-colors flex items-center">
+              Technology
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="/src/pages/en/technology/index.html" class="block px-4 py-3 hover:bg-gray-50 font-semibold border-b border-gray-100">All Technologies</a>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">CRM Solutions</div>
+                <a href="/src/pages/en/technology/crm/salesforce.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Salesforce</a>
+                <a href="/src/pages/en/technology/crm/hubspot.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">HubSpot</a>
+              </div>
+              <a href="/src/pages/en/technology/ai/index.html" class="block px-4 py-2 hover:bg-gray-50">AI Integration</a>
+              <a href="/src/pages/en/technology/cloud/index.html" class="block px-4 py-2 hover:bg-gray-50">Cloud Infrastructure</a>
+              <a href="/src/pages/en/technology/api/index.html" class="block px-4 py-2 hover:bg-gray-50">API Integration</a>
+            </div>
+          </div>
+
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="paragraph font-semibold text-blue-600 flex items-center">
+              Services
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 max-h-[80vh] overflow-y-auto">
+              <a href="/src/pages/en/services/index.html" class="block px-4 py-3 hover:bg-gray-50 font-semibold border-b border-gray-100">All Services</a>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">Cloud Architecture</div>
+                <a href="/src/pages/en/services/cloud-architecture/aws.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">AWS</a>
+                <a href="/src/pages/en/services/cloud-architecture/google-cloud.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Google Cloud</a>
+                <a href="/src/pages/en/services/cloud-architecture/salesforce.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Salesforce Cloud</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">Website Creation</div>
+                <a href="/src/pages/en/services/website-creation/responsive-design.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Responsive Design</a>
+                <a href="/src/pages/en/services/website-creation/saas-platforms.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">SaaS Platforms</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">eCommerce</div>
+                <a href="/src/pages/en/services/ecommerce/shopify.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Shopify</a>
+                <a href="/src/pages/en/services/ecommerce/custom-platforms.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Custom Platforms</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">Mobile Applications</div>
+                <a href="/src/pages/en/services/mobile-application/ios.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">iOS Development</a>
+                <a href="/src/pages/en/services/mobile-application/android.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Android Development</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">API Integration</div>
+                <a href="/src/pages/en/services/api-integration/rest-apis.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">REST APIs</a>
+                <a href="/src/pages/en/services/api-integration/third-party-integration.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Third-Party Integration</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">UI/UX Design</div>
+                <a href="/src/pages/en/services/ui-ux/design-system.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Design Systems</a>
+                <a href="/src/pages/en/services/ui-ux/user-research.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">User Research</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lead Generation Dropdown -->
+          <div class="relative group">
+            <button class="paragraph hover:text-blue-600 transition-colors flex items-center">
+              Lead Generation
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="/src/pages/en/lead-generation/index.html" class="block px-4 py-3 hover:bg-gray-50 font-semibold border-b border-gray-100">All Services</a>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">SEM</div>
+                <a href="/src/pages/en/lead-generation/sem/google-ads.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Google Ads</a>
+                <a href="/src/pages/en/lead-generation/sem/ppc-campaigns.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">PPC Campaigns</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">SEO</div>
+                <a href="/src/pages/en/lead-generation/seo/on-page-seo.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">On-Page SEO</a>
+                <a href="/src/pages/en/lead-generation/seo/technical-seo.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Technical SEO</a>
+                <a href="/src/pages/en/lead-generation/seo/content-strategy.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Content Strategy</a>
+              </div>
+              <div class="py-1">
+                <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase">Local Listing</div>
+                <a href="/src/pages/en/lead-generation/local-listing/google-business.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Google Business Profile</a>
+                <a href="/src/pages/en/lead-generation/local-listing/local-seo.html" class="block px-4 py-2 hover:bg-gray-50 text-sm">Local SEO</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="paragraph hover:text-blue-600 transition-colors">Contact</a>
+        </div>
+
+        <!-- Language Switcher & CTA -->
+        <div class="flex items-center space-x-4">
+          <div class="hidden md:flex items-center space-x-2">
+            <a href="/home/user/intellicloud-website/src/pages/en/services/cloud-architecture/index.html" class="paragraph paragraph-small font-semibold text-blue-600">EN</a>
+            <span class="text-gray-300">|</span>
+            <a href="/src/pages/fr/index.html" class="paragraph paragraph-small hover:text-blue-600">FR</a>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm hidden md:inline-flex">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-gray-50 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <nav class="flex items-center space-x-2 text-sm">
+        <a href="/src/pages/en/index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        <a href="/src/pages/en/services/index.html" class="text-gray-600 hover:text-blue-600">Services</a>
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        <span class="text-gray-900 font-semibold">Cloud Architecture</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="w-20 h-20 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-6">
+          <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Elastic Infrastructure for Scale</h1>
+        <p class="text-xl text-blue-100 mb-8">Cloud that grows with your revenue. We architect infrastructure on AWS and Google Cloud that scales infinitely while optimizing your costs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud Solutions Cards -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="heading heading-2 mb-4">Cloud Platforms We Support</h2>
+        <p class="paragraph text-gray-600">Choose the right cloud platform for your business needs</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <a href="/src/pages/en/services/cloud-architecture/aws.html" class="bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="text-3xl font-bold mb-4">AWS</div>
+          <p class="mb-6">Comprehensive cloud computing platform with 200+ services</p>
+          <div class="flex items-center text-sm font-semibold">
+            Learn More
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          </div>
+        </a>
+        <a href="/src/pages/en/services/cloud-architecture/google-cloud.html" class="bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="text-3xl font-bold mb-4">Google Cloud</div>
+          <p class="mb-6">AI-powered cloud platform with BigQuery and advanced analytics</p>
+          <div class="flex items-center text-sm font-semibold">
+            Learn More
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          </div>
+        </a>
+        <a href="/src/pages/en/services/cloud-architecture/salesforce.html" class="bg-gradient-to-br from-cyan-500 to-cyan-600 text-white rounded-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+          <div class="text-3xl font-bold mb-4">Salesforce</div>
+          <p class="mb-6">World's #1 CRM platform with powerful cloud capabilities</p>
+          <div class="flex items-center text-sm font-semibold">
+            Learn More
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Cloud Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="heading heading-2 mb-4">Why Choose Cloud Architecture?</h2>
+        <p class="paragraph text-gray-600">Transform your business with modern cloud infrastructure</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Infinite Scalability</h3>
+          <p class="paragraph paragraph-small text-gray-600">Handle 10x traffic spikes without downtime. Infrastructure that grows with your revenue.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Security</h3>
+          <p class="paragraph paragraph-small text-gray-600">Enterprise-grade security and compliance</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Cost Optimization</h3>
+          <p class="paragraph paragraph-small text-gray-600">Cut infrastructure costs 40-60%. Pay only for what you use, optimized automatically.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Performance</h3>
+          <p class="paragraph paragraph-small text-gray-600">Lightning-fast global infrastructure</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Reliability</h3>
+          <p class="paragraph paragraph-small text-gray-600">99.99% uptime SLA guarantees</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Global Reach</h3>
+          <p class="paragraph paragraph-small text-gray-600">Deploy anywhere in the world instantly</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Cloud Services -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="heading heading-2 mb-4">Our Cloud Services</h2>
+        <p class="paragraph text-gray-600">Comprehensive cloud solutions from strategy to implementation</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200">
+          <h3 class="text-2xl font-bold mb-4">Architecture Design</h3>
+          <p class="paragraph mb-4">Custom cloud architecture tailored to your business requirements</p>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Infrastructure assessment</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Scalability planning</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Cost optimization</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border border-green-200">
+          <h3 class="text-2xl font-bold mb-4">Migration & Setup</h3>
+          <p class="paragraph mb-4">Seamless migration from on-premise to cloud with zero downtime</p>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Data migration</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Application deployment</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Testing & validation</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200">
+          <h3 class="text-2xl font-bold mb-4">Optimization & Monitoring</h3>
+          <p class="paragraph mb-4">Continuous monitoring and optimization for peak performance</p>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Performance monitoring</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Cost optimization</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-purple-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Automated scaling</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 border border-orange-200">
+          <h3 class="text-2xl font-bold mb-4">Security & Compliance</h3>
+          <p class="paragraph mb-4">Enterprise-grade security with industry compliance standards</p>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Security audits</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Compliance management</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="paragraph paragraph-small">Disaster recovery</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+          <div class="md:flex">
+            <div class="md:w-1/2 p-8 md:p-12">
+              <div class="text-sm text-blue-600 font-semibold mb-2">SUCCESS STORY</div>
+              <h3 class="text-3xl font-bold mb-4">E-commerce Platform Migration to AWS</h3>
+              <p class="paragraph mb-6">How we helped a major retailer migrate their entire infrastructure to AWS, resulting in 40% cost savings and 3x performance improvement</p>
+              <div class="space-y-4 mb-6">
+                <div>
+                  <div class="text-sm text-gray-600 mb-1">Challenge</div>
+                  <p class="paragraph paragraph-small">Legacy on-premise infrastructure couldn't handle traffic spikes during sales events</p>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-600 mb-1">Solution</div>
+                  <p class="paragraph paragraph-small">Designed and implemented auto-scaling AWS architecture with CloudFront CDN</p>
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-primary btn-md">View Full Case Study</a>
+            </div>
+            <div class="md:w-1/2 bg-gradient-to-br from-blue-600 to-indigo-700 p-8 md:p-12 flex items-center">
+              <div class="grid grid-cols-2 gap-6 w-full">
+                <div class="text-center text-white">
+                  <div class="text-4xl font-bold mb-2">40%</div>
+                  <div class="text-sm text-blue-100">Cost Reduction</div>
+                </div>
+                <div class="text-center text-white">
+                  <div class="text-4xl font-bold mb-2">3x</div>
+                  <div class="text-sm text-blue-100">Performance Boost</div>
+                </div>
+                <div class="text-center text-white">
+                  <div class="text-4xl font-bold mb-2">99.99%</div>
+                  <div class="text-sm text-blue-100">Uptime</div>
+                </div>
+                <div class="text-center text-white">
+                  <div class="text-4xl font-bold mb-2">Zero</div>
+                  <div class="text-sm text-blue-100">Downtime</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="heading heading-2 mb-8 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">How long does a cloud migration take?</h3>
+            <p class="paragraph paragraph-small text-gray-600">Migration timelines vary based on complexity, but typical projects range from 4-12 weeks. We ensure zero downtime during the transition.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">Which cloud platform is best for my business?</h3>
+            <p class="paragraph paragraph-small text-gray-600">It depends on your specific needs. AWS offers the most comprehensive services, Google Cloud excels in AI/ML, and Salesforce is ideal for CRM-centric businesses. We'll help you choose.</p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-semibold text-lg mb-2">What ongoing support do you provide?</h3>
+            <p class="paragraph paragraph-small text-gray-600">We offer 24/7 monitoring, performance optimization, security updates, and dedicated support teams to ensure your cloud infrastructure runs smoothly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-16 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">Stop Overpaying for Infrastructure</h2>
+        <p class="text-xl text-blue-100 mb-8">Companies using legacy on-premise systems are leaving 40-60% in potential savings on the table. Cloud infrastructure that scales with your business is the competitive advantage.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/src/pages/en/index.html#contact" class="btn btn-primary btn-lg bg-white text-blue-600 hover:bg-gray-100">Schedule Infrastructure Review</a>
+          <a href="/src/pages/en/services/cloud-architecture/aws.html" class="btn btn-outline btn-lg border-white text-white hover:bg-white/10">Explore AWS</a>
+        </div>
+        <p class="text-sm text-blue-100 mt-6">40% cost reduction. 3x performance. Zero downtime migrations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="text-center text-gray-400">
+        <p>&copy; 2025 IntelliCloud. All rights reserved.</p>
+        <p class="text-xs text-gray-500 mt-2">v1.1 - November 21, 2025 09:22 PM EST</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- Navigation Dropdown Organism Component -->
+<div class="relative group">
+  <button class="paragraph hover:text-blue-600 transition-colors flex items-center">
+    Technology
+    <svg class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+    <div class="p-2">
+      <a href="/src/pages/en/technology/index.html" class="block px-4 py-3 rounded-md hover:bg-gray-50 transition-colors">
+        <div class="font-semibold mb-1">All Technologies</div>
+        <div class="text-sm text-gray-600">View our complete tech stack</div>
+      </a>
+
+      <div class="border-t border-gray-100 my-2"></div>
+
+      <a href="/src/pages/en/technology/crm/index.html" class="block px-4 py-3 rounded-md hover:bg-blue-50 transition-colors group/item">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+          <span class="font-semibold group-hover/item:text-blue-600">CRM Solutions</span>
+        </div>
+      </a>
+
+      <a href="/src/pages/en/technology/ai/index.html" class="block px-4 py-3 rounded-md hover:bg-purple-50 transition-colors group/item">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 text-purple-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+          <span class="font-semibold group-hover/item:text-purple-600">AI Integration</span>
+        </div>
+      </a>
+
+      <a href="/src/pages/en/technology/cloud/index.html" class="block px-4 py-3 rounded-md hover:bg-green-50 transition-colors group/item">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+          </svg>
+          <span class="font-semibold group-hover/item:text-green-600">Cloud Infrastructure</span>
+        </div>
+      </a>
+
+      <a href="/src/pages/en/technology/api/index.html" class="block px-4 py-3 rounded-md hover:bg-orange-50 transition-colors group/item">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <span class="font-semibold group-hover/item:text-orange-600">API Integration</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

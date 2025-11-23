@@ -1,0 +1,10 @@
+/**
+ * Tailwind CSS Directives
+ */
+
+@import './design-tokens.css';
+@import './globals.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
