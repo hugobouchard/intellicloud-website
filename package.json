@@ -1,6 +1,6 @@
 {
   "name": "intellicloud-website",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "IntelliCloud official website - Modern, minimalist design with atomic design system",
   "type": "module",
   "scripts": {
