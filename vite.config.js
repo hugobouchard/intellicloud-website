@@ -6,6 +6,7 @@ import { glob } from 'glob'
 const files = glob.sync('src/pages/**/*.html')
 const input = {
   main: resolve(__dirname, 'index.html'),
+  admin: resolve(__dirname, 'admin.html'),
 }
 
 files.forEach(file => {
