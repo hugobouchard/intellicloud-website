@@ -7,6 +7,11 @@
   <meta name="description" content="The elite technical team for enterprise growth. We architect Salesforce dashboards, custom portals, and AI agents that accelerate your bottom line.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
 </head>
+<script type="module">
+  // Dynamic page content loader
+  import { initializeDynamicPage } from '/src/scripts/pageLoader.js'
+  // Page will be initialized on load
+</script>
 <body class="bg-white">
   <!-- Header -->
   <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -135,10 +140,10 @@
   <section class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 md:py-32">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in" data-dynamic="hero-title">
           We Don't Just Build Software. We Engineer Revenue.
         </h1>
-        <p class="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up">
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up" data-dynamic="hero-description">
           The elite technical team for enterprise growth. We architect high-velocity Salesforce dashboards, custom client portals, and AI agents that accelerate your bottom line.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">

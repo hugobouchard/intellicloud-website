@@ -4,6 +4,10 @@ class AdminApp {
   constructor() {
     this.currentUser = null
     this.currentView = 'pages'
+    this.editingPageId = null
+    this.pages = []
+    this.navItems = []
+    this.settings = {}
     this.init()
   }
 
@@ -146,14 +150,6 @@ class AdminApp {
                   Pages
                 </span>
               </button>
-              <button data-view="seo" class="nav-item w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
-                <span class="flex items-center gap-3">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                  </svg>
-                  SEO Meta
-                </span>
-              </button>
               <button data-view="navigation" class="nav-item w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
                 <span class="flex items-center gap-3">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,14 +165,6 @@ class AdminApp {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                   </svg>
                   Settings
-                </span>
-              </button>
-              <button data-view="media" class="nav-item w-full text-left px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
-                <span class="flex items-center gap-3">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                  </svg>
-                  Media
                 </span>
               </button>
             </nav>
@@ -220,20 +208,16 @@ class AdminApp {
       case 'pages':
         this.showPagesView(content)
         break
-      case 'seo':
-        this.showSEOView(content)
-        break
       case 'navigation':
         this.showNavigationView(content)
         break
       case 'settings':
         this.showSettingsView(content)
         break
-      case 'media':
-        this.showMediaView(content)
-        break
     }
   }
+
+  // ==================== PAGES VIEW ====================
 
   async showPagesView(content) {
     content.innerHTML = `
@@ -263,13 +247,21 @@ class AdminApp {
       return
     }
 
+    this.pages = pages || []
+
     if (!pages || pages.length === 0) {
       document.getElementById('pagesTable').innerHTML = `
         <div class="p-8 text-center text-gray-500">No pages yet. Create your first page!</div>
       `
-      return
+    } else {
+      this.renderPagesTable(pages)
     }
 
+    // Setup create button
+    document.getElementById('createPageBtn').addEventListener('click', () => this.showPageEditor())
+  }
+
+  renderPagesTable(pages) {
     const tableHTML = `
       <div class="overflow-x-auto">
         <table class="w-full">
@@ -277,7 +269,6 @@ class AdminApp {
             <tr>
               <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
               <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Slug</th>
-              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Language</th>
               <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
               <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Updated</th>
               <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
@@ -288,7 +279,6 @@ class AdminApp {
               <tr class="hover:bg-gray-50">
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${page.title}</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${page.slug}</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${page.language.toUpperCase()}</td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
                     page.status === 'published' ? 'bg-green-100 text-green-800' :
@@ -300,8 +290,8 @@ class AdminApp {
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${new Date(page.updated_at).toLocaleDateString()}</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                  <button class="text-blue-600 hover:text-blue-900 mr-3" onclick="window.editPage('${page.id}')">Edit</button>
-                  <button class="text-red-600 hover:text-red-900" onclick="window.deletePage('${page.id}')">Delete</button>
+                  <button class="text-blue-600 hover:text-blue-900 mr-3 edit-page-btn" data-id="${page.id}">Edit</button>
+                  <button class="text-red-600 hover:text-red-900 delete-page-btn" data-id="${page.id}">Delete</button>
                 </td>
               </tr>
             `).join('')}
@@ -311,54 +301,421 @@ class AdminApp {
     `
 
     document.getElementById('pagesTable').innerHTML = tableHTML
+
+    // Setup edit buttons
+    document.querySelectorAll('.edit-page-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const pageId = e.currentTarget.getAttribute('data-id')
+        const page = this.pages.find(p => p.id === pageId)
+        this.showPageEditor(page)
+      })
+    })
+
+    // Setup delete buttons
+    document.querySelectorAll('.delete-page-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const pageId = e.currentTarget.getAttribute('data-id')
+        this.deletePage(pageId)
+      })
+    })
   }
 
-  showSEOView(content) {
+  showPageEditor(page = null) {
+    const isNew = !page
+    const headline = page?.content?.headline || ''
+    const cta = page?.content?.call_to_action || ''
+
+    const modal = document.createElement('div')
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4'
+    modal.innerHTML = `
+      <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-center">
+          <h2 class="text-2xl font-bold text-gray-900">${isNew ? 'Create New Page' : 'Edit Page'}</h2>
+          <button class="close-modal text-gray-500 hover:text-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+        <form id="pageForm" class="p-6 space-y-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Page Title *</label>
+            <input type="text" name="title" value="${page?.title || ''}" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Slug *</label>
+            <input type="text" name="slug" value="${page?.slug || ''}" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required ${page ? 'disabled' : ''}>
+            <p class="text-xs text-gray-500 mt-1">URL-friendly identifier (cannot be changed after creation)</p>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Headline</label>
+            <input type="text" name="headline" value="${headline}" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+            <textarea name="description" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">${page?.description || ''}</textarea>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Call to Action</label>
+            <input type="text" name="cta" value="${cta}" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Status</label>
+            <select name="status" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="draft" ${page?.status === 'draft' ? 'selected' : ''}>Draft</option>
+              <option value="published" ${page?.status === 'published' ? 'selected' : ''}>Published</option>
+              <option value="archived" ${page?.status === 'archived' ? 'selected' : ''}>Archived</option>
+            </select>
+          </div>
+
+          <div class="flex gap-3 pt-6 border-t border-gray-200">
+            <button type="button" class="close-modal flex-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Cancel</button>
+            <button type="submit" class="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">${isNew ? 'Create Page' : 'Update Page'}</button>
+          </div>
+        </form>
+      </div>
+    `
+
+    document.getElementById('content').appendChild(modal)
+
+    // Setup close buttons
+    modal.querySelectorAll('.close-modal').forEach(btn => {
+      btn.addEventListener('click', () => modal.remove())
+    })
+
+    // Setup form submission
+    modal.querySelector('#pageForm').addEventListener('submit', async (e) => {
+      e.preventDefault()
+      const formData = new FormData(e.target)
+
+      const data = {
+        title: formData.get('title'),
+        slug: formData.get('slug'),
+        description: formData.get('description'),
+        status: formData.get('status'),
+        language: 'en',
+        content: {
+          headline: formData.get('headline'),
+          call_to_action: formData.get('cta'),
+          excerpt: formData.get('description')
+        },
+        updated_by: this.currentUser.email
+      }
+
+      if (isNew) {
+        const { error } = await supabase
+          .from('ic_web_pages')
+          .insert([{ ...data, created_by: this.currentUser.email }])
+
+        if (error) {
+          alert('Error creating page: ' + error.message)
+        } else {
+          alert('Page created successfully!')
+          modal.remove()
+          this.showPagesView(document.getElementById('content'))
+        }
+      } else {
+        const { error } = await supabase
+          .from('ic_web_pages')
+          .update(data)
+          .eq('id', page.id)
+
+        if (error) {
+          alert('Error updating page: ' + error.message)
+        } else {
+          alert('Page updated successfully!')
+          modal.remove()
+          this.showPagesView(document.getElementById('content'))
+        }
+      }
+    })
+  }
+
+  async deletePage(pageId) {
+    if (!confirm('Are you sure you want to delete this page?')) {
+      return
+    }
+
+    const { error } = await supabase
+      .from('ic_web_pages')
+      .delete()
+      .eq('id', pageId)
+
+    if (error) {
+      alert('Error deleting page: ' + error.message)
+    } else {
+      alert('Page deleted successfully!')
+      this.showPagesView(document.getElementById('content'))
+    }
+  }
+
+  // ==================== NAVIGATION VIEW ====================
+
+  async showNavigationView(content) {
     content.innerHTML = `
       <div>
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">SEO Meta Management</h2>
-        <div class="bg-white rounded-lg shadow p-6">
-          <p class="text-gray-600">SEO meta management interface will be displayed here.</p>
-          <p class="text-sm text-gray-500 mt-2">You can manage meta titles, descriptions, Open Graph tags, and more.</p>
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-900">Navigation</h2>
+          <button id="addNavItemBtn" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+            Add Menu Item
+          </button>
         </div>
+        <div id="navTree" class="bg-white rounded-lg shadow">
+          <div class="p-8 text-center text-gray-500">Loading navigation...</div>
+        </div>
+      </div>
+    `
+
+    const { data: navItems, error } = await supabase
+      .from('ic_web_navigation')
+      .select('*')
+      .eq('menu_key', 'main')
+      .eq('language', 'en')
+      .order('order_position')
+
+    if (error) {
+      document.getElementById('navTree').innerHTML = `<div class="p-8 text-red-600">Error: ${error.message}</div>`
+      return
+    }
+
+    this.navItems = navItems || []
+
+    if (!navItems || navItems.length === 0) {
+      document.getElementById('navTree').innerHTML = `<div class="p-8 text-center text-gray-500">No navigation items yet</div>`
+    } else {
+      this.renderNavTree(navItems)
+    }
+
+    document.getElementById('addNavItemBtn').addEventListener('click', () => this.showNavItemEditor())
+  }
+
+  renderNavTree(items) {
+    const topLevel = items.filter(item => !item.parent_id)
+
+    const html = `
+      <div class="divide-y">
+        ${topLevel.map(item => this.renderNavItem(item, items)).join('')}
+      </div>
+    `
+
+    document.getElementById('navTree').innerHTML = html
+
+    // Setup edit/delete buttons
+    document.querySelectorAll('.edit-nav-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const itemId = e.currentTarget.getAttribute('data-id')
+        const item = this.navItems.find(i => i.id === itemId)
+        this.showNavItemEditor(item)
+      })
+    })
+
+    document.querySelectorAll('.delete-nav-btn').forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        const itemId = e.currentTarget.getAttribute('data-id')
+        if (confirm('Delete this navigation item?')) {
+          const { error } = await supabase
+            .from('ic_web_navigation')
+            .delete()
+            .eq('id', itemId)
+
+          if (!error) {
+            this.showNavigationView(document.getElementById('content'))
+          }
+        }
+      })
+    })
+  }
+
+  renderNavItem(item, allItems, level = 0) {
+    const children = allItems.filter(i => i.parent_id === item.id)
+
+    return `
+      <div style="padding-left: ${level * 24}px" class="py-3 px-6 ${level > 0 ? 'bg-gray-50' : 'bg-white'}">
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="font-medium text-gray-900">${item.label}</p>
+            <p class="text-sm text-gray-500">${item.url}</p>
+          </div>
+          <div class="flex gap-2">
+            <button class="edit-nav-btn text-blue-600 hover:text-blue-900 text-sm" data-id="${item.id}">Edit</button>
+            <button class="delete-nav-btn text-red-600 hover:text-red-900 text-sm" data-id="${item.id}">Delete</button>
+          </div>
+        </div>
+        ${children.length > 0 ? children.map(child => this.renderNavItem(child, allItems, level + 1)).join('') : ''}
       </div>
     `
   }
 
-  showNavigationView(content) {
-    content.innerHTML = `
-      <div>
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Navigation Management</h2>
-        <div class="bg-white rounded-lg shadow p-6">
-          <p class="text-gray-600">Navigation menu management interface will be displayed here.</p>
-          <p class="text-sm text-gray-500 mt-2">Manage your site's navigation menus for both English and French.</p>
+  showNavItemEditor(item = null) {
+    const isNew = !item
+    const modal = document.createElement('div')
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4'
+    modal.innerHTML = `
+      <div class="bg-white rounded-lg shadow-xl max-w-md w-full">
+        <div class="border-b border-gray-200 p-6 flex justify-between items-center">
+          <h2 class="text-xl font-bold text-gray-900">${isNew ? 'Add Menu Item' : 'Edit Menu Item'}</h2>
+          <button class="close-modal text-gray-500 hover:text-gray-700">✕</button>
         </div>
+
+        <form id="navForm" class="p-6 space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Label *</label>
+            <input type="text" name="label" value="${item?.label || ''}" class="w-full px-3 py-2 border border-gray-300 rounded-lg" required>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">URL *</label>
+            <input type="text" name="url" value="${item?.url || ''}" class="w-full px-3 py-2 border border-gray-300 rounded-lg" required>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Parent Item</label>
+            <select name="parent_id" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+              <option value="">None (Top Level)</option>
+              ${this.navItems.filter(i => i.id !== item?.id).map(i =>
+                `<option value="${i.id}" ${item?.parent_id === i.id ? 'selected' : ''}>${i.label}</option>`
+              ).join('')}
+            </select>
+          </div>
+
+          <div class="flex gap-3 pt-4">
+            <button type="button" class="close-modal flex-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">Cancel</button>
+            <button type="submit" class="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">${isNew ? 'Add' : 'Update'}</button>
+          </div>
+        </form>
       </div>
     `
+
+    document.getElementById('content').appendChild(modal)
+
+    modal.querySelectorAll('.close-modal').forEach(btn => {
+      btn.addEventListener('click', () => modal.remove())
+    })
+
+    modal.querySelector('#navForm').addEventListener('submit', async (e) => {
+      e.preventDefault()
+      const formData = new FormData(e.target)
+
+      const data = {
+        label: formData.get('label'),
+        url: formData.get('url'),
+        parent_id: formData.get('parent_id') || null,
+        menu_key: 'main',
+        language: 'en',
+        is_active: true,
+        order_position: 0
+      }
+
+      if (isNew) {
+        const { error } = await supabase
+          .from('ic_web_navigation')
+          .insert([data])
+
+        if (error) {
+          alert('Error: ' + error.message)
+        } else {
+          modal.remove()
+          this.showNavigationView(document.getElementById('content'))
+        }
+      } else {
+        const { error } = await supabase
+          .from('ic_web_navigation')
+          .update(data)
+          .eq('id', item.id)
+
+        if (error) {
+          alert('Error: ' + error.message)
+        } else {
+          modal.remove()
+          this.showNavigationView(document.getElementById('content'))
+        }
+      }
+    })
   }
 
-  showSettingsView(content) {
+  // ==================== SETTINGS VIEW ====================
+
+  async showSettingsView(content) {
     content.innerHTML = `
       <div>
         <h2 class="text-2xl font-bold text-gray-900 mb-6">Site Settings</h2>
-        <div class="bg-white rounded-lg shadow p-6">
-          <p class="text-gray-600">Site settings management interface will be displayed here.</p>
-          <p class="text-sm text-gray-500 mt-2">Configure global site settings like name, tagline, contact info, etc.</p>
+        <div id="settingsForm" class="bg-white rounded-lg shadow">
+          <div class="p-8 text-center text-gray-500">Loading settings...</div>
         </div>
       </div>
     `
+
+    const { data: settings, error } = await supabase
+      .from('ic_web_site_settings')
+      .select('*')
+
+    if (error) {
+      document.getElementById('settingsForm').innerHTML = `<div class="p-8 text-red-600">Error: ${error.message}</div>`
+      return
+    }
+
+    this.settings = {}
+    settings?.forEach(s => {
+      this.settings[s.key] = s
+    })
+
+    this.renderSettingsForm()
   }
 
-  showMediaView(content) {
-    content.innerHTML = `
-      <div>
-        <h2 class="text-2xl font-bold text-gray-900 mb-6">Media Library</h2>
-        <div class="bg-white rounded-lg shadow p-6">
-          <p class="text-gray-600">Media library interface will be displayed here.</p>
-          <p class="text-sm text-gray-500 mt-2">Upload and manage images and other media assets.</p>
+  renderSettingsForm() {
+    const html = `
+      <form id="settingsUpdateForm" class="p-6 space-y-6">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Site Name</label>
+          <input type="text" name="site_name" value="${this.settings.site_name?.value?.en || ''}" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
         </div>
-      </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Site Tagline</label>
+          <input type="text" name="site_tagline" value="${this.settings.site_tagline?.value?.en || ''}" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Contact Email</label>
+          <input type="email" name="contact_email" value="${this.settings.contact_email?.value || ''}" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+        </div>
+
+        <div class="pt-6 border-t border-gray-200">
+          <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">Save Settings</button>
+        </div>
+      </form>
     `
+
+    document.getElementById('settingsForm').innerHTML = html
+
+    document.getElementById('settingsUpdateForm').addEventListener('submit', async (e) => {
+      e.preventDefault()
+      const formData = new FormData(e.target)
+
+      const updates = [
+        { key: 'site_name', value: { en: formData.get('site_name') } },
+        { key: 'site_tagline', value: { en: formData.get('site_tagline') } },
+        { key: 'contact_email', value: formData.get('contact_email') }
+      ]
+
+      for (const update of updates) {
+        const setting = this.settings[update.key]
+        if (setting) {
+          await supabase
+            .from('ic_web_site_settings')
+            .update({ value: update.value })
+            .eq('id', setting.id)
+        }
+      }
+
+      alert('Settings saved!')
+    })
   }
 }
 

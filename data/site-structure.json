@@ -1,0 +1,322 @@
+{
+  "site": {
+    "id": "intellicloud",
+    "title": "IntelliCloud Website",
+    "nodes": [
+      {
+        "id": "home",
+        "title": "Home",
+        "headline": "IntelliCloud: Where Cloud, AI and Marketing Become Revenue",
+        "description": "IntelliCloud merges cloud engineering, Salesforce, AI and modern marketing into one integrated growth system so you can scale operations, elevate customer experience and grow revenue with less chaos.",
+        "call_to_action": "Talk to an IntelliCloud strategist",
+        "children": []
+      },
+      {
+        "id": "cloud-technology",
+        "title": "Cloud & Technology",
+        "headline": "Cloud & Technology — The Digital Foundation Your Revenue Deserves",
+        "description": "We design, build and integrate the platforms your business runs on: Google Cloud, AWS, Salesforce, modern web apps, APIs and AI infrastructure, all engineered to support real-world growth.",
+        "call_to_action": "Explore Cloud & Technology services",
+        "children": [
+          {
+            "id": "cloud-engineering",
+            "title": "Cloud Engineering",
+            "headline": "Modern Cloud Architecture for Real-World Performance",
+            "description": "We architect high-availability environments on Google Cloud and AWS with serverless apps, DevOps workflows, CI/CD and security baked in, ready for AI workloads and data-intensive applications.",
+            "call_to_action": "Schedule a cloud architecture review",
+            "children": []
+          },
+          {
+            "id": "web-application-development",
+            "title": "Web Application Development",
+            "headline": "Web Apps and Portals Built Like Products",
+            "description": "We build fast, secure and scalable web applications with Nuxt, Vue and TypeScript, from customer portals to internal tools and dashboards that your teams actually enjoy using.",
+            "call_to_action": "Plan your next web application",
+            "children": [
+              {
+                "id": "cloud-native-business-applications",
+                "title": "Cloud-Native Business Applications",
+                "headline": "Cloud-Native Business Applications Tailored to Your Processes",
+                "description": "We design and deliver custom quote tools, onboarding portals and multi-tenant SaaS foundations that run natively on modern cloud infrastructure.",
+                "call_to_action": "Design a custom business application",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "salesforce-engineering-crm-development",
+            "title": "Salesforce Engineering & CRM Development",
+            "headline": "Salesforce, Supercharged for Revenue Teams",
+            "description": "We transform Salesforce into a true revenue platform with Apex, Lightning Web Components, Aura and Flows that automate work, surface insight and keep your pipeline moving.",
+            "call_to_action": "Review your Salesforce roadmap",
+            "children": [
+              {
+                "id": "intelligent-crm-systems",
+                "title": "Intelligent CRM Systems",
+                "headline": "Intelligent CRM Systems That Support How You Actually Sell",
+                "description": "We design CRM structures, objects, dashboards and processes so your teams get clarity instead of clutter and leaders see live, accurate revenue data.",
+                "call_to_action": "Redesign your CRM for growth",
+                "children": []
+              },
+              {
+                "id": "marketing-automation-platforms",
+                "title": "Marketing Automation Platforms",
+                "headline": "Marketing Automation Platforms Connected End-to-End",
+                "description": "We implement and integrate marketing automation tools with Salesforce and HubSpot so journeys, scoring and campaigns are tightly connected to sales outcomes and reporting.",
+                "call_to_action": "Audit your marketing automation stack",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "systems-integration-apis",
+            "title": "Systems Integration & APIs",
+            "headline": "Your Entire Stack, Finally Working as One",
+            "description": "We connect CRM, ERP, marketing platforms and custom applications using REST APIs, webhooks, Twilio, SendGrid, Google Maps and more so data flows cleanly end to end.",
+            "call_to_action": "Discuss your integration challenges",
+            "children": []
+          },
+          {
+            "id": "ai-engineering",
+            "title": "AI Engineering",
+            "headline": "AI Engineering Embedded in Your Products and Processes",
+            "description": "We build AI-powered features and workflows using Gemini, OpenAI, Claude and Grok, integrating them directly into your apps, portals and CRM so intelligence shows up where people work.",
+            "call_to_action": "Identify high-value AI use cases",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "revenue-lead-generation",
+        "title": "Revenue & Lead Generation",
+        "headline": "Revenue & Lead Generation — One System from Click to Customer",
+        "description": "We design and operate demand programs, funnels and tracking so every qualified lead is captured, worked and measured from first touch to closed deal.",
+        "call_to_action": "Build your revenue and lead engine",
+        "children": [
+          {
+            "id": "demand-generation",
+            "title": "Demand Generation",
+            "headline": "Demand Generation That Fills Pipeline Consistently",
+            "description": "We orchestrate inbound and outbound programs across search, social, email and AI-driven campaigns to bring a steady flow of qualified opportunities into your CRM.",
+            "call_to_action": "Design a demand generation plan",
+            "children": [
+              {
+                "id": "inbound",
+                "title": "Inbound",
+                "headline": "Inbound Programs That Capture High-Intent Demand",
+                "description": "We combine Google Ads, Meta Ads, SEO, local search and LLM-enhanced content to rank, attract and convert buyers who are already looking for what you sell.",
+                "call_to_action": "Optimize your inbound engine",
+                "children": []
+              },
+              {
+                "id": "outbound",
+                "title": "Outbound",
+                "headline": "Outbound Campaigns That Open the Right Doors",
+                "description": "We build targeted outbound motions using TMT lists, one-to-one messaging and sequenced email campaigns that cut through noise and book real conversations.",
+                "call_to_action": "Launch a high-conversion outbound sequence",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "revenue-engine-systems",
+            "title": "Revenue Engine Systems",
+            "headline": "Revenue Engine Systems That Align Marketing and Sales",
+            "description": "We map and implement the full lead-to-revenue journey, from acquisition and qualification to opportunity management and renewals, so teams operate from one shared funnel.",
+            "call_to_action": "Map your end-to-end revenue engine",
+            "children": []
+          },
+          {
+            "id": "engagement-tracking-tools",
+            "title": "Engagement & Tracking Tools",
+            "headline": "Engagement and Tracking That Reveal What Really Works",
+            "description": "We implement LiveChat, call tracking and multi-touch attribution so every visit, conversation and call is tied back to campaigns and revenue.",
+            "call_to_action": "Fix your tracking and attribution",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ai-automation",
+        "title": "AI & Automation",
+        "headline": "AI & Automation That Quietly Scale Your Business",
+        "description": "We design AI agents, automations and data intelligence layers that remove manual work, speed up response times and give leaders clearer insight.",
+        "call_to_action": "Explore AI & automation opportunities",
+        "children": [
+          {
+            "id": "ai-agents-workflows",
+            "title": "AI Agents & Workflows",
+            "headline": "AI Agents and Workflows That Support Your Teams 24/7",
+            "description": "We build agents on Gemini, GPT, Claude and Grok that triage requests, answer questions and execute routine tasks across sales, service and operations.",
+            "call_to_action": "Define your first AI agents",
+            "children": [
+              {
+                "id": "ai-sales-support-assistants",
+                "title": "AI Sales & Support Assistants",
+                "headline": "AI Sales & Support Assistants That Handle the First Mile",
+                "description": "We deploy AI assistants that qualify leads, answer common questions and route issues so your human teams can focus on complex, high-value interactions.",
+                "call_to_action": "Pilot an AI assistant in your team",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "ai-for-marketing-crm",
+            "title": "AI for Marketing & CRM",
+            "headline": "AI for Marketing & CRM That Makes Every Touch Smarter",
+            "description": "We add predictive scoring, intelligent segmentation and AI-driven nurturing into your marketing and CRM stack to prioritize the right accounts and messages.",
+            "call_to_action": "Add AI intelligence to your CRM",
+            "children": []
+          },
+          {
+            "id": "operational-automation",
+            "title": "Operational Automation",
+            "headline": "Operational Automation That Frees Teams From Repetition",
+            "description": "We identify high-volume, repeatable workflows and rebuild them using triggers, APIs and AI so work moves automatically instead of relying on spreadsheets and reminders.",
+            "call_to_action": "Automate your top three manual processes",
+            "children": []
+          },
+          {
+            "id": "data-intelligence-bi",
+            "title": "Data Intelligence & BI",
+            "headline": "Data Intelligence & BI for Confident, Real-Time Decisions",
+            "description": "We design analytics pipelines and BI models that turn scattered data into clear dashboards for executives, managers and frontline teams.",
+            "call_to_action": "Get a unified performance dashboard",
+            "children": [
+              {
+                "id": "performance-dashboards-bi-systems",
+                "title": "Performance Dashboards & BI Systems",
+                "headline": "Performance Dashboards That Put the Right Numbers in Front of the Right People",
+                "description": "We build role-specific dashboards for marketing, sales, service and leadership so everyone sees timely metrics and can drill into the details that matter.",
+                "call_to_action": "Design your executive and team dashboards",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "talent-recruitment-acquisition",
+        "title": "Talent Recruitment & Acquisition",
+        "headline": "Talent Recruitment & Acquisition for Modern Digital Teams",
+        "description": "We help you hire the cloud, AI, Salesforce and growth talent needed to run the systems we build and sustain your transformation.",
+        "call_to_action": "Discuss your critical digital hires",
+        "children": [
+          {
+            "id": "technical-talent-recruitment",
+            "title": "Technical Talent Recruitment",
+            "headline": "Technical Talent Recruitment for Cloud, AI and Salesforce",
+            "description": "We source and vet engineers and specialists who understand modern stacks, from Google Cloud and AWS to Salesforce, Vue and data platforms.",
+            "call_to_action": "Start a search for technical talent",
+            "children": []
+          },
+          {
+            "id": "marketing-growth-talent-recruitment",
+            "title": "Marketing & Growth Talent Recruitment",
+            "headline": "Marketing & Growth Talent That Know How to Drive Pipeline",
+            "description": "We recruit performance marketers, demand generation leaders and RevOps specialists who can turn your platforms and data into revenue.",
+            "call_to_action": "Find your next growth marketer",
+            "children": []
+          },
+          {
+            "id": "ai-assisted-candidate-profiling",
+            "title": "AI-Assisted Candidate Profiling",
+            "headline": "AI-Assisted Candidate Profiling to Reduce Hiring Risk",
+            "description": "We use structured scorecards and LLM-driven analysis to assess skills, experience and fit so you make better hiring decisions faster.",
+            "call_to_action": "Improve how you evaluate candidates",
+            "children": []
+          },
+          {
+            "id": "recruitment-automations",
+            "title": "Recruitment Automations",
+            "headline": "Recruitment Automations That Scale Your Hiring Process",
+            "description": "We implement outreach, scoring and scheduling automations so your recruiting team can focus on human conversations instead of admin.",
+            "call_to_action": "Streamline your recruiting workflow",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "consulting-strategy",
+        "title": "Consulting & Strategy",
+        "headline": "Consulting & Strategy That Connect Vision to Systems",
+        "description": "We align your business model, go-to-market and technology investments, then define a roadmap that turns strategy into working cloud, AI, CRM and marketing systems.",
+        "call_to_action": "Book a strategic working session",
+        "children": [
+          {
+            "id": "digital-transformation",
+            "title": "Digital Transformation",
+            "headline": "Digital Transformation That Respects Where You Are Today",
+            "description": "We assess your current stack and processes, then plan a sequence of changes that modernize your technology and teams without disrupting the business.",
+            "call_to_action": "Plan your digital transformation",
+            "children": []
+          },
+          {
+            "id": "ai-strategy",
+            "title": "AI Strategy",
+            "headline": "AI Strategy With Clear Use Cases and Guardrails",
+            "description": "We help you identify where AI can create real value, prioritize initiatives and define governance so you can scale AI safely and effectively.",
+            "call_to_action": "Create your AI strategy roadmap",
+            "children": []
+          },
+          {
+            "id": "cloud-architecture-strategy",
+            "title": "Cloud & Architecture Strategy",
+            "headline": "Cloud & Architecture Strategy for Scalable, Connected Systems",
+            "description": "We design target architectures and platform choices on Google Cloud, AWS and Salesforce that support your long-term growth instead of fighting it.",
+            "call_to_action": "Review your target architecture",
+            "children": []
+          },
+          {
+            "id": "crm-revops-strategy",
+            "title": "CRM & RevOps Strategy",
+            "headline": "CRM & RevOps Strategy for Faster, Cleaner Revenue",
+            "description": "We reimagine your pipeline stages, territories, SLAs and reporting so sales, marketing and success work from a shared, efficient revenue process.",
+            "call_to_action": "Audit your CRM and RevOps setup",
+            "children": []
+          },
+          {
+            "id": "growth-strategy",
+            "title": "Growth Strategy",
+            "headline": "Growth Strategy That Unifies Channels, Content and AI",
+            "description": "We create an integrated plan across SEO, paid media, content, outbound, AEO and AI so every channel knows its role in hitting your revenue targets.",
+            "call_to_action": "Align your growth channels around one plan",
+            "children": []
+          },
+          {
+            "id": "technical-program-leadership",
+            "title": "Technical Program Leadership",
+            "headline": "Technical Program Leadership to Deliver Complex Change",
+            "description": "We lead cross-functional programs that touch cloud, AI, CRM and marketing, keeping initiatives on track and tied to measurable business outcomes.",
+            "call_to_action": "Add experienced leadership to your key programs",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "title": "About",
+        "headline": "About IntelliCloud",
+        "description": "A hybrid team of cloud engineers, Salesforce experts, AI builders, marketers and strategists focused on engineering the systems that power your next phase of growth.",
+        "call_to_action": "Learn more about IntelliCloud",
+        "children": []
+      },
+      {
+        "id": "insights",
+        "title": "Insights",
+        "headline": "Insights from the Front Lines of Cloud, AI and Revenue Engineering",
+        "description": "Articles, breakdowns and case studies that share what is working right now in cloud architecture, AI adoption, CRM, marketing and digital growth.",
+        "call_to_action": "Browse the latest insights",
+        "children": []
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "headline": "Let's Build Your Next Growth System",
+        "description": "Connect with IntelliCloud to discuss your current state, your growth goals and which systems will move the needle fastest.",
+        "call_to_action": "Contact the IntelliCloud team",
+        "children": []
+      }
+    ]
+  }
+}

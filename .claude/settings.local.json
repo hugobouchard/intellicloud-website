@@ -45,7 +45,9 @@
       "Bash(supabase status:*)",
       "Bash($env:SUPABASE_ACCESS_TOKEN=\"sbp_2b6809bc813d030a47ca2f07ce2c8a094482653a\")",
       "Bash(npm run dev)",
-      "Bash(node scripts/test-admin-access.js:*)"
+      "Bash(node scripts/test-admin-access.js:*)",
+      "Bash(node scripts/import-site-structure.js:*)",
+      "Bash(node --require dotenv/config:*)"
     ],
     "deny": [],
     "ask": []

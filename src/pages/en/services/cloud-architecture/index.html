@@ -7,6 +7,11 @@
   <meta name="description" content="Enterprise cloud infrastructure built for scale, security, and cost optimization. AWS, Google Cloud, and Salesforce expertise.">
   <link rel="stylesheet" href="/src/styles/tailwind.css">
 </head>
+<script type="module">
+  // Dynamic page content loader
+  import { initializeDynamicPage } from '/src/scripts/pageLoader.js'
+  // Page will be initialized on load
+</script>
 <body class="bg-white">
   <!-- Header (same as services index) -->
     <!-- Header -->
@@ -152,8 +157,8 @@
         <div class="w-20 h-20 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-6">
           <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
         </div>
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Elastic Infrastructure for Scale</h1>
-        <p class="text-xl text-blue-100 mb-8">Cloud that grows with your revenue. We architect infrastructure on AWS and Google Cloud that scales infinitely while optimizing your costs.</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6" data-dynamic="hero-title">Elastic Infrastructure for Scale</h1>
+        <p class="text-xl text-blue-100 mb-8" data-dynamic="hero-description">Cloud that grows with your revenue. We architect infrastructure on AWS and Google Cloud that scales infinitely while optimizing your costs.</p>
       </div>
     </div>
   </section>
