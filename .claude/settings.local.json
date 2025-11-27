@@ -30,7 +30,9 @@
       "WebFetch(domain:www.anthropic.com)",
       "Bash(powershell -Command:*)",
       "Bash(git rm:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(npm install)",
+      "Bash(npx firebase deploy:*)"
     ],
     "deny": [],
     "ask": []
