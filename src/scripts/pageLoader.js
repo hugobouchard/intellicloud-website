@@ -148,7 +148,7 @@ function setLoadingState(isLoading) {
  * Initialize page with dynamic content
  * This is called automatically on page load
  */
-export async function initializeDynamicPage() {
+async function initializeDynamicPage() {
   const slug = getCurrentPageSlug()
 
   setLoadingState(true)
@@ -188,3 +188,6 @@ if (document.readyState === 'loading') {
 } else {
   initializeDynamicPage()
 }
+
+// Export for use in main.js
+export { initializeDynamicPage }

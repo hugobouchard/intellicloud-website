@@ -3,6 +3,12 @@
  * IntelliCloud Website
  */
 
+// Import dynamic page content loader
+import { initializeDynamicPage } from '../scripts/pageLoader.js'
+
+// Initialize dynamic page content
+initializeDynamicPage()
+
 // Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle

@@ -47,7 +47,9 @@
       "Bash(npm run dev)",
       "Bash(node scripts/test-admin-access.js:*)",
       "Bash(node scripts/import-site-structure.js:*)",
-      "Bash(node --require dotenv/config:*)"
+      "Bash(node --require dotenv/config:*)",
+      "Bash(npm run deploy:production:*)",
+      "Bash(node test-pages.js:*)"
     ],
     "deny": [],
     "ask": []
