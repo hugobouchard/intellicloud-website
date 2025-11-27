@@ -51,15 +51,24 @@ export const authHelpers = {
       return false
     }
 
-    const { data, error } = await supabase
-      .from('ic_web_admin_users')
-      .select('*')
-      .eq('email', user.email)
-      .eq('is_active', true)
-      .single()
+    try {
+      const { data, error } = await supabase
+        .from('ic_web_admin_users')
+        .select('*')
+        .eq('email', user.email)
+        .eq('is_active', true)
+        .single()
 
-    if (error || !data) return false
-    return true
+      if (error) {
+        console.error('Admin access check error:', error.message)
+        return false
+      }
+      if (!data) return false
+      return true
+    } catch (err) {
+      console.error('Admin access check exception:', err)
+      return false
+    }
   }
 }
 

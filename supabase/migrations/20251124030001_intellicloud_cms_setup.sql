@@ -254,6 +254,11 @@ CREATE POLICY "IntelliCloud admins can do everything on media"
     USING (ic_web_is_intellicloud_admin())
     WITH CHECK (ic_web_is_intellicloud_admin());
 
+-- Authenticated users can view admin_users to check their own access
+CREATE POLICY "Authenticated users can view admin_users"
+    ON ic_web_admin_users FOR SELECT
+    USING (auth.role() = 'authenticated');
+
 CREATE POLICY "IntelliCloud admins can view admin_users"
     ON ic_web_admin_users FOR SELECT
     USING (ic_web_is_intellicloud_admin());

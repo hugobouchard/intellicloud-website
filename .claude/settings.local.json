@@ -32,7 +32,20 @@
       "Bash(git rm:*)",
       "Bash(git pull:*)",
       "Bash(npm install)",
-      "Bash(npx firebase deploy:*)"
+      "Bash(npx firebase deploy:*)",
+      "Bash(supabase --version:*)",
+      "Bash(supabase projects list:*)",
+      "Bash(supabase link:*)",
+      "Bash(supabase login:*)",
+      "Bash(supabase db:*)",
+      "Bash(supabase start:*)",
+      "Bash(supabase secrets:*)",
+      "WebSearch",
+      "Bash(supabase auth:*)",
+      "Bash(supabase status:*)",
+      "Bash($env:SUPABASE_ACCESS_TOKEN=\"sbp_2b6809bc813d030a47ca2f07ce2c8a094482653a\")",
+      "Bash(npm run dev)",
+      "Bash(node scripts/test-admin-access.js:*)"
     ],
     "deny": [],
     "ask": []
