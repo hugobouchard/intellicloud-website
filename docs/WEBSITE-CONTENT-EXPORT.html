@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliCloud Website - Complete Content Export</title>
+    <style>
+        /* Print-friendly styles optimized for Word export */
+        @page {
+            margin: 1in;
+            size: letter;
+        }
+
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+
+        h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-top: 24pt;
+            margin-bottom: 12pt;
+            page-break-after: avoid;
+            border-bottom: 3pt solid #2563EB;
+            padding-bottom: 6pt;
+        }
+
+        h2 {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-top: 18pt;
+            margin-bottom: 10pt;
+            page-break-after: avoid;
+            border-bottom: 1pt solid #E5E7EB;
+            padding-bottom: 4pt;
+        }
+
+        h3 {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #374151;
+            margin-top: 14pt;
+            margin-bottom: 8pt;
+            page-break-after: avoid;
+        }
+
+        h4 {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #4B5563;
+            margin-top: 12pt;
+            margin-bottom: 6pt;
+            page-break-after: avoid;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 10pt;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-bottom: 10pt;
+            padding-left: 20pt;
+        }
+
+        li {
+            margin-bottom: 4pt;
+        }
+
+        .page-section {
+            page-break-before: always;
+            margin-top: 0;
+        }
+
+        .meta-info {
+            background-color: #F3F4F6;
+            padding: 8pt;
+            margin-bottom: 12pt;
+            border-left: 4pt solid #2563EB;
+            font-size: 10pt;
+        }
+
+        .file-path {
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+            color: #6B7280;
+            font-style: italic;
+        }
+
+        .stat-box {
+            background-color: #EFF6FF;
+            border: 1pt solid #BFDBFE;
+            padding: 12pt;
+            margin: 12pt 0;
+            border-radius: 4pt;
+        }
+
+        .stat-item {
+            font-weight: bold;
+            color: #2563EB;
+            margin-bottom: 4pt;
+        }
+
+        .feature-list {
+            background-color: #F9FAFB;
+            padding: 12pt;
+            margin: 12pt 0;
+            border-left: 3pt solid #9CA3AF;
+        }
+
+        .toc {
+            background-color: #F9FAFB;
+            padding: 16pt;
+            margin-bottom: 24pt;
+            border: 1pt solid #D1D5DB;
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 12pt;
+        }
+
+        .toc a {
+            color: #2563EB;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            background-color: #1F2937;
+            color: #fff;
+            padding: 16pt;
+            margin: 12pt 0;
+            border-radius: 4pt;
+        }
+
+        .hero-section h1,
+        .hero-section h2,
+        .hero-section h3 {
+            color: #fff;
+            border-bottom: none;
+        }
+
+        .testimonial {
+            border-left: 4pt solid #10B981;
+            padding-left: 12pt;
+            margin: 12pt 0;
+            font-style: italic;
+        }
+
+        .case-study {
+            background-color: #FEF3C7;
+            border: 1pt solid #FCD34D;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .page-section {
+                page-break-before: always;
+            }
+
+            h1, h2, h3, h4 {
+                page-break-after: avoid;
+            }
+
+            .stat-box, .feature-list, .case-study {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <div style="text-align: center; padding: 100pt 0;">
+        <h1 style="font-size: 36pt; border-bottom: none; margin-bottom: 24pt;">IntelliCloud</h1>
+        <h2 style="font-size: 24pt; color: #6B7280; border-bottom: none;">Complete Website Content Documentation</h2>
+        <p style="font-size: 14pt; color: #9CA3AF; margin-top: 48pt;">We Engineer Revenue, Not Just Software</p>
+        <p style="font-size: 11pt; color: #9CA3AF; margin-top: 96pt;">Generated: November 2025</p>
+        <p style="font-size: 10pt; color: #9CA3AF;">Version 2.0</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="page-section toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#home">1. Home Page</a></li>
+            <li><a href="#technology">2. Technology Section</a>
+                <ul>
+                    <li><a href="#tech-overview">2.1 Technology Overview</a></li>
+                    <li><a href="#tech-ai">2.2 AI Integration</a></li>
+                    <li><a href="#tech-api">2.3 API Integration</a></li>
+                    <li><a href="#tech-cloud">2.4 Cloud Infrastructure</a></li>
+                    <li><a href="#tech-crm">2.5 CRM Solutions</a></li>
+                    <li><a href="#tech-salesforce">2.6 Salesforce</a></li>
+                    <li><a href="#tech-hubspot">2.7 HubSpot</a></li>
+                </ul>
+            </li>
+            <li><a href="#services">3. Services Section</a>
+                <ul>
+                    <li><a href="#services-overview">3.1 Services Overview</a></li>
+                </ul>
+            </li>
+            <li><a href="#lead-generation">4. Lead Generation Section</a>
+                <ul>
+                    <li><a href="#lead-overview">4.1 Lead Generation Overview</a></li>
+                    <li><a href="#lead-sem">4.2 Search Engine Marketing (SEM)</a></li>
+                    <li><a href="#lead-seo">4.3 Search Engine Optimization (SEO)</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page-section">
+        <h1>1. Home Page</h1>
+
+        <div class="meta-info">
+            <p><strong>File Path:</strong> <span class="file-path">/index.html</span></p>
+            <p><strong>Page Title:</strong> IntelliCloud - We Engineer Revenue, Not Just Software</p>
+            <p><strong>Meta Description:</strong> The elite technical team for enterprise growth. We architect Salesforce dashboards, custom portals, and AI agents that accelerate your bottom line.</p>
+        </div>
+
+        <div class="hero-section">
+            <h2>Hero Section</h2>
+            <h3>We Don't Just Build Software. We Engineer Revenue.</h3>
+            <p>The elite technical team for enterprise growth. We architect high-velocity Salesforce dashboards, custom client portals, and AI agents that accelerate your bottom line.</p>
+        </div>
+
+        <h2>The Technical Arsenal</h2>
+        <p>Salesforce dashboards, AI agents, cloud infrastructure, and custom APIs. The weapons for enterprise revenue acceleration.</p>
+
+        <h3>Core Capabilities</h3>
+
+        <div class="feature-list">
+            <h4>1. Salesforce Intelligence & Portals</h4>
+            <p>Live dashboards and customer portals. Your revenue command center.</p>
+            <ul>
+                <li>Salesforce</li>
+                <li>HubSpot</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h4>2. Enterprise AI Agents</h4>
+            <p>AI that automates revenue workflows. Customer service to sales acceleration.</p>
+            <ul>
+                <li>Gemini</li>
+                <li>OpenAI</li>
+                <li>Claude</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h4>3. Elastic Cloud Platforms</h4>
+            <p>Infrastructure that grows with your revenue. AWS & Google Cloud.</p>
+        </div>
+
+        <div class="feature-list">
+            <h4>4. Systems Integration Networks</h4>
+            <p>Unified systems that automate your business. Twilio, Stripe, custom APIs.</p>
+        </div>
+
+        <div class="stat-box">
+            <p class="stat-item">$500M+ Client Revenue</p>
+            <p class="stat-item">3.8x Average ROI</p>
+        </div>
+
+        <h2>Our Services</h2>
+
+        <h3>1. Cloud Architecture</h3>
+        <p>Scalable, secure cloud infrastructure on AWS, Google Cloud, and Azure</p>
+        <ul>
+            <li>Architecture Design</li>
+            <li>Migration Services</li>
+            <li>DevOps & CI/CD</li>
+        </ul>
+
+        <h3>2. Web Development</h3>
+        <p>Modern, responsive websites and web applications built with latest technologies</p>
+        <ul>
+            <li>Custom Web Apps</li>
+            <li>E-commerce Solutions</li>
+            <li>Progressive Web Apps</li>
+        </ul>
+
+        <h3>3. API Integration</h3>
+        <p>Seamless integration with third-party services and custom API development</p>
+        <ul>
+            <li>REST & GraphQL APIs</li>
+            <li>Third-Party Integration</li>
+            <li>Webhook Management</li>
+        </ul>
+
+        <h3>4. Marketing Automation</h3>
+        <p>Data-driven marketing campaigns and automation to grow your business</p>
+        <ul>
+            <li>Email Campaigns</li>
+            <li>Marketing Analytics</li>
+            <li>Lead Generation</li>
+        </ul>
+
+        <h2>Lead Generation Services</h2>
+        <p>Drive qualified leads and grow your business with proven digital marketing strategies</p>
+
+        <h3>1. Search Engine Marketing</h3>
+        <p>Get immediate visibility with Google Ads and PPC campaigns</p>
+        <ul>
+            <li>Google Ads campaigns</li>
+            <li>PPC management</li>
+            <li>ROI optimization</li>
+        </ul>
+
+        <h3>2. Search Engine Optimization</h3>
+        <p>Build sustainable organic traffic with comprehensive SEO strategy</p>
+        <ul>
+            <li>On-page & technical SEO</li>
+            <li>Content strategy</li>
+            <li>Link building</li>
+        </ul>
+
+        <h3>3. Local Listing Management</h3>
+        <p>Dominate local search with Google Business Profile optimization</p>
+        <ul>
+            <li>Google Business Profile</li>
+            <li>Local SEO strategy</li>
+            <li>Review management</li>
+        </ul>
+
+        <h2>Featured Case Study</h2>
+
+        <div class="case-study">
+            <h3>TechCorp Enterprise</h3>
+            <p><strong>Industry:</strong> SaaS Company, 500+ employees</p>
+
+            <h4>Challenge</h4>
+            <p>Multiple disconnected systems leading to data silos and inefficient processes</p>
+
+            <h4>Solution</h4>
+            <p>Implemented Salesforce CRM with AI integration and custom cloud infrastructure on AWS</p>
+
+            <h4>Results</h4>
+            <ul>
+                <li><strong>40%</strong> Sales Increase</li>
+                <li><strong>60%</strong> Faster Resolution</li>
+                <li><strong>95%</strong> User Adoption</li>
+                <li><strong>$2M</strong> Cost Savings</li>
+            </ul>
+        </div>
+
+        <h2>Client Testimonials</h2>
+
+        <div class="testimonial">
+            <p>"IntelliCloud transformed our CRM implementation. Their Salesforce expertise saved us months of development time."</p>
+            <p><strong>Sarah Johnson</strong>, CTO, TechCorp</p>
+        </div>
+
+        <div class="testimonial">
+            <p>"The AI integration exceeded our expectations. Our customer support efficiency increased by 300%."</p>
+            <p><strong>Michael Chen</strong>, CEO, StartupXYZ</p>
+        </div>
+
+        <div class="testimonial">
+            <p>"Outstanding cloud architecture. Our AWS infrastructure is now scalable, secure, and cost-effective."</p>
+            <p><strong>Emma Rodriguez</strong>, VP Engineering, DataFlow</p>
+        </div>
+    </div>
+
+    <!-- TECHNOLOGY SECTION -->
+    <div id="technology" class="page-section">
+        <h1>2. Technology Section</h1>
+
+        <div id="tech-overview">
+            <h2>2.1 Technology Overview</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/technology/index.html</span></p>
+                <p><strong>Page Title:</strong> The Technical Arsenal | Enterprise Technology Stack | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> Expert implementation of Salesforce, AI agents, cloud infrastructure, and custom APIs. The technical weapons for enterprise growth.</p>
+            </div>
+
+            <h3>The Technical Arsenal</h3>
+            <p>Expert implementation of Salesforce dashboards, AI agents, cloud infrastructure, and custom APIs. The weapons for enterprise revenue acceleration.</p>
+
+            <h3>Technology Categories</h3>
+
+            <h4>1. CRM Solutions</h4>
+            <p>Streamline customer relationships with enterprise CRM platforms</p>
+            <ul>
+                <li>Salesforce Implementation</li>
+                <li>HubSpot Integration</li>
+                <li>Custom CRM Development</li>
+            </ul>
+
+            <h4>2. AI Integration</h4>
+            <p>Leverage cutting-edge AI for business automation and insights</p>
+            <ul>
+                <li>Google Gemini AI</li>
+                <li>OpenAI / ChatGPT</li>
+                <li>Claude AI Solutions</li>
+            </ul>
+
+            <h4>3. Cloud Infrastructure</h4>
+            <p>Scalable, secure cloud architecture and deployment</p>
+            <ul>
+                <li>Amazon Web Services</li>
+                <li>Google Cloud Platform</li>
+                <li>Microsoft Azure</li>
+            </ul>
+
+            <h4>4. API Integration</h4>
+            <p>Seamless third-party API integrations and custom APIs</p>
+            <ul>
+                <li>Twilio Communications</li>
+                <li>SendGrid Email</li>
+                <li>Stripe Payments</li>
+            </ul>
+
+            <div class="stat-box">
+                <p class="stat-item">15+ Years Experience</p>
+                <p class="stat-item">150+ Projects Completed</p>
+                <p class="stat-item">50+ Happy Clients</p>
+                <p class="stat-item">99% Client Satisfaction</p>
+            </div>
+        </div>
+
+        <div id="tech-ai" class="page-section">
+            <h2>2.2 Enterprise AI Integration</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/technology/ai/index.html</span></p>
+                <p><strong>Page Title:</strong> Enterprise AI Agents | AI Integration Solutions | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> Custom AI agents and LLM implementations that automate revenue-critical processes. Gemini, OpenAI, and Claude expertise.</p>
+            </div>
+
+            <h3>Enterprise AI Agents</h3>
+            <p>Custom AI agents that automate revenue-critical workflows. From customer service to sales acceleration, AI that pays for itself.</p>
+
+            <h3>AI Platforms</h3>
+
+            <h4>1. Google Gemini</h4>
+            <p>Advanced AI for enterprise use</p>
+            <ul>
+                <li>Document Analysis</li>
+                <li>Content Generation</li>
+                <li>Data Insights</li>
+            </ul>
+
+            <h4>2. OpenAI</h4>
+            <p>ChatGPT & GPT-4 for business</p>
+            <ul>
+                <li>Custom Chatbots</li>
+                <li>Content Creation</li>
+                <li>Code Generation</li>
+            </ul>
+
+            <h4>3. Claude AI</h4>
+            <p>Advanced reasoning & analysis</p>
+            <ul>
+                <li>Complex Analysis</li>
+                <li>Code Review</li>
+                <li>Document Processing</li>
+            </ul>
+
+            <h3>AI Use Cases</h3>
+            <ul>
+                <li><strong>Customer Support:</strong> AI-powered chatbots and support automation</li>
+                <li><strong>Content Creation:</strong> Automated content generation and optimization</li>
+                <li><strong>Data Analysis:</strong> Extract insights from large datasets</li>
+                <li><strong>Process Automation:</strong> Automate repetitive business workflows</li>
+            </ul>
+        </div>
+
+        <div id="tech-api" class="page-section">
+            <h2>2.3 API Integration</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/technology/api/index.html</span></p>
+                <p><strong>Page Title:</strong> Systems Integration Networks | Enterprise APIs | IntelliCloud</p>
+            </div>
+
+            <h3>Systems Integration Networks</h3>
+            <p>Custom APIs and third-party integrations that unify your business. Twilio, SendGrid, Stripe, and any system you need to connect.</p>
+
+            <h3>API Platforms</h3>
+
+            <h4>1. Twilio</h4>
+            <p>Communications platform</p>
+            <ul>
+                <li>SMS & Voice APIs</li>
+                <li>Video Integration</li>
+                <li>WhatsApp Business</li>
+            </ul>
+
+            <h4>2. SendGrid</h4>
+            <p>Email delivery platform</p>
+            <ul>
+                <li>Transactional Emails</li>
+                <li>Marketing Campaigns</li>
+                <li>Email Analytics</li>
+            </ul>
+
+            <h4>3. Stripe</h4>
+            <p>Payment processing</p>
+            <ul>
+                <li>Payment APIs</li>
+                <li>Subscription Billing</li>
+                <li>Connect Marketplace</li>
+            </ul>
+
+            <h3>API Integration Services</h3>
+            <ul>
+                <li><strong>Third-Party APIs:</strong> Integrate popular SaaS platforms</li>
+                <li><strong>Custom API Development:</strong> Build RESTful and GraphQL APIs</li>
+                <li><strong>Webhook Management:</strong> Real-time event processing</li>
+                <li><strong>API Documentation:</strong> Clear, comprehensive API docs</li>
+            </ul>
+        </div>
+
+        <div id="tech-cloud" class="page-section">
+            <h2>2.4 Cloud Infrastructure</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/technology/cloud/index.html</span></p>
+                <p><strong>Page Title:</strong> Elastic Cloud Platforms | AWS & Google Cloud | IntelliCloud</p>
+            </div>
+
+            <h3>Elastic Cloud Platforms</h3>
+            <p>Cloud infrastructure that scales infinitely as your revenue grows. AWS and Google Cloud optimization for cost and performance.</p>
+
+            <h3>Cloud Platforms</h3>
+
+            <h4>1. Amazon Web Services (AWS)</h4>
+            <p>Scalable cloud infrastructure at enterprise scale</p>
+            <ul>
+                <li>EC2, RDS, Lambda, S3</li>
+                <li>CloudFront CDN</li>
+                <li>Auto-scaling & Load Balancing</li>
+            </ul>
+
+            <h4>2. Google Cloud Platform</h4>
+            <p>Google's cloud with AI-first tools</p>
+            <ul>
+                <li>Compute Engine, Cloud Run</li>
+                <li>BigQuery Data Warehouse</li>
+                <li>Cloud AI & ML Services</li>
+            </ul>
+
+            <h3>Cloud Services</h3>
+            <ul>
+                <li><strong>Architecture Design:</strong> Scalable, resilient cloud architecture</li>
+                <li><strong>Migration Services:</strong> Seamless cloud migration from on-premise</li>
+                <li><strong>DevOps & CI/CD:</strong> Automated deployment pipelines</li>
+                <li><strong>Monitoring & Support:</strong> 24/7 monitoring and optimization</li>
+            </ul>
+        </div>
+
+        <div id="tech-crm" class="page-section">
+            <h2>2.5 CRM Solutions</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/technology/crm/index.html</span></p>
+                <p><strong>Page Title:</strong> Revenue Intelligence Platforms | Salesforce & HubSpot | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> Salesforce and HubSpot implementations that centralize customer data and accelerate revenue cycles. CRM as your revenue engine.</p>
+            </div>
+
+            <h3>Revenue Intelligence Platforms</h3>
+            <p>Your CRM as your revenue engine. Salesforce and HubSpot implementations that centralize customer data and accelerate every sales cycle.</p>
+
+            <h3>CRM Platforms</h3>
+
+            <h4>1. Salesforce</h4>
+            <p>The world's #1 CRM platform</p>
+            <p>Streamline your customer relationships with enterprise CRM. Salesforce delivers real-time data access, workflow automation, and predictive analytics.</p>
+
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Sales Cloud & Service Cloud</li>
+                <li>Marketing Automation</li>
+                <li>Einstein AI Analytics</li>
+                <li>Custom App Development</li>
+            </ul>
+
+            <h4>2. HubSpot</h4>
+            <p>All-in-one sales & marketing</p>
+            <p>All-in-one sales and marketing platform. HubSpot combines ease of use with powerful built-in analytics and integration-ready architecture.</p>
+
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Marketing Hub & Sales Hub</li>
+                <li>Email Campaign Management</li>
+                <li>Free CRM Tier Available</li>
+                <li>1000+ App Integrations</li>
+            </ul>
+
+            <h3>CRM Services</h3>
+            <ul>
+                <li><strong>Custom Configuration:</strong> Tailor CRM to your business processes and workflows</li>
+                <li><strong>API Integration:</strong> Connect CRM with your existing tech stack seamlessly</li>
+                <li><strong>Data Migration:</strong> Seamless data transfer from legacy systems to new CRM</li>
+                <li><strong>User Training:</strong> Comprehensive training programs for your team</li>
+            </ul>
+        </div>
+
+        <div id="tech-salesforce" class="page-section">
+            <h2>2.6 Salesforce Implementation</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/technology/crm/salesforce.html</span></p>
+                <p><strong>Page Title:</strong> Salesforce Intelligence & Experience Cloud | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> Custom Executive Dashboards visualizing pipeline health in real-time. Experience Cloud portals that reduce support costs by 40%.</p>
+            </div>
+
+            <h3>Salesforce Intelligence & Experience</h3>
+            <p>Two core competencies: Executive Dashboards that visualize pipeline health in real-time, and Experience Cloud portals where customers serve themselves.</p>
+
+            <h3>Salesforce Pillars</h3>
+
+            <h4>1. Executive Dashboards</h4>
+            <p>Stop staring at spreadsheets. We build live dashboards that visualize pipeline health, forecast accuracy, and revenue velocity in real-time.</p>
+
+            <h4>2. Experience Cloud Portals</h4>
+            <p>Branded portals where customers check status, pay bills, and log tickets without calling you. Reduce support costs by 40%.</p>
+
+            <h4>3. Predictive Analytics</h4>
+            <p>Einstein AI provides insights to predict customer behavior and trends</p>
+
+            <h4>4. Scalability</h4>
+            <p>Grows with your business from startup to enterprise</p>
+
+            <h4>5. AppExchange Ecosystem</h4>
+            <p>5000+ pre-built apps and integrations available</p>
+
+            <h3>Salesforce Expertise</h3>
+            <ul>
+                <li><strong>Custom Configuration:</strong> Tailored Salesforce setup matching your unique business processes</li>
+                <li><strong>API Integration:</strong> Connect Salesforce with your existing tools and systems</li>
+                <li><strong>Data Migration:</strong> Seamless transfer of data from legacy systems to Salesforce</li>
+                <li><strong>User Training:</strong> Comprehensive training programs for admins and end users</li>
+            </ul>
+
+            <h3>Success Story</h3>
+
+            <div class="case-study">
+                <h4>TechCorp Enterprise</h4>
+                <p><strong>Industry:</strong> SaaS Company, 500+ employees</p>
+
+                <p><strong>Challenge:</strong> Multiple disconnected systems leading to data silos and inefficient processes</p>
+
+                <p><strong>Solution:</strong> Implemented Salesforce Sales Cloud and Service Cloud with custom integrations to their existing marketing automation and billing systems</p>
+
+                <p><strong>Results:</strong></p>
+                <ul>
+                    <li><strong>40%</strong> Increase in sales productivity</li>
+                    <li><strong>60%</strong> Faster case resolution</li>
+                    <li><strong>95%</strong> User adoption rate</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="tech-hubspot" class="page-section">
+            <h2>2.7 HubSpot Implementation</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/technology/crm/hubspot.html</span></p>
+                <p><strong>Page Title:</strong> HubSpot Implementation & Integration | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> Expert HubSpot implementation and integration - all-in-one sales and marketing platform</p>
+            </div>
+
+            <h3>HubSpot Solutions</h3>
+            <p>All-in-one sales and marketing platform built for growth</p>
+
+            <h3>Why HubSpot</h3>
+            <ul>
+                <li><strong>Ease of Use:</strong> Intuitive interface that your team will love using every day</li>
+                <li><strong>Built-in Analytics:</strong> Comprehensive reporting and dashboards out of the box</li>
+                <li><strong>Integration Ready:</strong> 1000+ integrations with your favorite tools</li>
+                <li><strong>Free CRM Available:</strong> Start with free tools and scale as you grow</li>
+            </ul>
+
+            <h3>HubSpot Services</h3>
+            <ul>
+                <li><strong>Marketing Hub Setup:</strong> Email campaigns, landing pages, and marketing automation</li>
+                <li><strong>Sales Hub Integration:</strong> Pipeline management and sales automation tools</li>
+                <li><strong>Custom Workflows:</strong> Automated processes tailored to your business</li>
+                <li><strong>Training & Support:</strong> Onboarding and ongoing optimization</li>
+            </ul>
+
+            <h3>Success Story</h3>
+
+            <div class="case-study">
+                <h4>GrowthStart Inc</h4>
+                <p><strong>Industry:</strong> B2B SaaS Startup, 25 employees</p>
+
+                <p><strong>Challenge:</strong> Needed an affordable, easy-to-use CRM and marketing platform to scale their outbound and inbound efforts</p>
+
+                <p><strong>Solution:</strong> Implemented HubSpot Marketing Hub and Sales Hub with custom email workflows and lead scoring</p>
+
+                <p><strong>Results:</strong></p>
+                <ul>
+                    <li><strong>300%</strong> Increase in qualified leads</li>
+                    <li><strong>50%</strong> Reduction in sales cycle</li>
+                    <li><strong>98%</strong> Team adoption rate</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <div id="services" class="page-section">
+        <h1>3. Services Section</h1>
+
+        <div id="services-overview">
+            <h2>3.1 Services Overview</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/services/index.html</span></p>
+                <p><strong>Page Title:</strong> Custom Technology Solutions | Agile Development | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> Cloud infrastructure, high-scale commerce platforms, custom applications, and API integrations. Built for enterprise revenue growth.</p>
+            </div>
+
+            <h3>The Technical Arsenal</h3>
+            <p>Cloud-native applications, high-scale platforms, and custom solutions engineered for enterprise growth. We ship revenue-generating technology, not hobby projects.</p>
+
+            <h3>Services</h3>
+
+            <h4>1. Cloud Architecture</h4>
+            <p>Enterprise-grade cloud infrastructure on AWS, Google Cloud, and Salesforce</p>
+            <ul>
+                <li>Scalable infrastructure design</li>
+                <li>Cloud migration services</li>
+                <li>24/7 monitoring & support</li>
+            </ul>
+
+            <h4>2. Website Creation</h4>
+            <p>Modern, high-performance websites and SaaS platforms built for conversion</p>
+            <ul>
+                <li>Custom SaaS platforms</li>
+                <li>Responsive design</li>
+                <li>Performance optimization</li>
+            </ul>
+
+            <h4>3. eCommerce Solutions</h4>
+            <p>Powerful eCommerce platforms on Shopify and custom solutions</p>
+            <ul>
+                <li>Shopify store setup</li>
+                <li>Custom eCommerce platforms</li>
+                <li>Conversion optimization</li>
+            </ul>
+
+            <h4>4. Mobile Applications</h4>
+            <p>Native iOS and Android apps that engage users and drive results</p>
+            <ul>
+                <li>Native iOS development</li>
+                <li>Native Android development</li>
+                <li>App Store optimization</li>
+            </ul>
+
+            <h4>5. API Integration</h4>
+            <p>Seamless API integration and development for connected systems</p>
+            <ul>
+                <li>REST API development</li>
+                <li>Third-party integration</li>
+                <li>API documentation</li>
+            </ul>
+
+            <h4>6. UI/UX Design</h4>
+            <p>User-centered design that delights customers and drives engagement</p>
+            <ul>
+                <li>User research & testing</li>
+                <li>Design systems</li>
+                <li>Prototyping & wireframing</li>
+            </ul>
+
+            <div class="stat-box">
+                <p class="stat-item">500+ Projects Delivered</p>
+                <p class="stat-item">15+ Years Experience</p>
+                <p class="stat-item">98% Client Satisfaction</p>
+                <p class="stat-item">24/7 Support Available</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEAD GENERATION SECTION -->
+    <div id="lead-generation" class="page-section">
+        <h1>4. Lead Generation Section</h1>
+
+        <div id="lead-overview">
+            <h2>4.1 Lead Generation Overview</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/lead-generation/index.html</span></p>
+                <p><strong>Page Title:</strong> Revenue Engineering | Marketing with a P&L | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> We build tracking infrastructure to prove exactly which dollar created which deal. Marketing integrated with Salesforce for closed-loop attribution.</p>
+            </div>
+
+            <h3>Revenue Engineering</h3>
+            <p>Marketing with a P&L. We don't just buy traffic; we build the tracking infrastructure to prove exactly which dollar created which deal.</p>
+
+            <h3>The Problem Most Companies Ignore</h3>
+
+            <h4>1. Blind Spending</h4>
+            <p>Marketing budgets spent without knowing which channels actually close deals. You can't optimize what you can't measure.</p>
+
+            <h4>2. Pipeline Mystery</h4>
+            <p>Sales teams can't trace deals back to the marketing activity that created them. No closed-loop attribution.</p>
+
+            <h4>3. Wasted Budget</h4>
+            <p>Companies are throwing away 30-50% of their acquisition budget on channels that don't generate qualified pipeline.</p>
+
+            <h3>Revenue Engineering Transforms Your Acquisition Machine</h3>
+            <p>We build the infrastructure to track every dollar. Then we optimize relentlessly to prove which acquisition channel generates your highest-quality pipeline.</p>
+
+            <h3>Complete Acquisition Stack</h3>
+            <ul>
+                <li><strong>Paid Acquisition (SEM):</strong> High-intent targeting with UTM tracking integrated into Salesforce</li>
+                <li><strong>Organic Assets (SEO):</strong> Permanent search visibility that compounds with time and generates evergreen leads</li>
+                <li><strong>Local Visibility:</strong> Multi-location domination for businesses with multiple markets</li>
+                <li><strong>Salesforce Integration:</strong> Closed-loop attribution that proves exact ROI per channel</li>
+                <li><strong>Continuous Optimization:</strong> Monthly analysis + budget reallocation to highest-performing channels</li>
+                <li><strong>Deal Attribution:</strong> Every closed deal traced back to the source that created it</li>
+            </ul>
+
+            <div class="stat-box">
+                <p class="stat-item">3.5x Average ROAS Improvement (Within 90 days)</p>
+                <p class="stat-item">$75M+ Revenue Tracked (Across client portfolio)</p>
+                <p class="stat-item">100% Deal Attribution (No blind spots)</p>
+                <p class="stat-item">18 mo Payback Period (Average for SEO)</p>
+            </div>
+
+            <h3>The Revenue Engineering Process</h3>
+
+            <h4>1. Audit & Baseline</h4>
+            <p>We analyze your current channels, spending, and pipeline attribution to identify gaps and opportunities.</p>
+
+            <h4>2. Build Infrastructure</h4>
+            <p>We implement tracking, Salesforce integration, and reporting dashboards that capture every touchpoint.</p>
+
+            <h4>3. Launch & Optimize</h4>
+            <p>We execute campaigns, launch SEO programs, and begin reallocating budget to high-performing channels.</p>
+
+            <h4>4. Scale & Measure</h4>
+            <p>Monthly optimization based on attribution data. We prove ROI and scale channels that generate the best deals.</p>
+        </div>
+
+        <div id="lead-sem" class="page-section">
+            <h2>4.2 Search Engine Marketing (SEM)</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/lead-generation/sem/index.html</span></p>
+                <p><strong>Page Title:</strong> Paid Acquisition Architecture | SEM Services | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> High-intent targeting integrated with Salesforce for closed-loop attribution. We target ready-to-buy keywords, not vanity traffic.</p>
+            </div>
+
+            <h3>Paid Acquisition Architecture</h3>
+            <p>We target ready-to-buy keywords, not vanity traffic. Campaigns integrated directly into Salesforce for closed-loop reporting.</p>
+
+            <h3>SEM Services</h3>
+            <ul>
+                <li>Google Ads Management</li>
+                <li>PPC Campaign Management</li>
+                <li>Keyword Research</li>
+                <li>Ad Copywriting</li>
+                <li>Bid Management</li>
+                <li>Conversion Tracking</li>
+            </ul>
+
+            <div class="stat-box">
+                <p class="stat-item">300% Average ROI</p>
+                <p class="stat-item">$50M+ Ad Spend Managed</p>
+                <p class="stat-item">500+ Campaigns Launched</p>
+                <p class="stat-item">Certified Google Ads Experts</p>
+            </div>
+        </div>
+
+        <div id="lead-seo" class="page-section">
+            <h2>4.3 Search Engine Optimization (SEO)</h2>
+
+            <div class="meta-info">
+                <p><strong>File Path:</strong> <span class="file-path">/src/pages/en/lead-generation/seo/index.html</span></p>
+                <p><strong>Page Title:</strong> Organic Revenue Assets | SEO Strategy | IntelliCloud</p>
+                <p><strong>Meta Description:</strong> Build permanent search visibility with attribution tracking. Elite SEO strategy that compounds in value and delivers verified revenue impact.</p>
+            </div>
+
+            <h3>Organic Revenue Assets</h3>
+            <p>Build permanent search visibility that compounds in value. We architect SEO programs with attribution tracking and revenue verification baked in.</p>
+
+            <h3>Why SEO is the Most Profitable Channel</h3>
+
+            <h4>1. 99% Intent</h4>
+            <p>Organic search is high-intent buyers. They're actively looking for a solution. No wasted impressions.</p>
+
+            <h4>2. $0 CPC</h4>
+            <p>Once you rank, there's no per-click cost. Unlike paid ads, SEO gets cheaper as you grow.</p>
+
+            <h4>3. 18 Month Payback</h4>
+            <p>After 18 months, SEO generates 3.2x ROI. It's the highest-ROI channel long-term.</p>
+
+            <h3>Complete SEO Stack</h3>
+
+            <h4>1. Technical SEO</h4>
+            <p>Your site architecture, crawlability, and indexation are your foundation. We eliminate the technical barriers so Google can understand your content at maximum velocity.</p>
+            <ul>
+                <li>Site speed optimization (avg: 2.1s load time)</li>
+                <li>Mobile-first indexing setup</li>
+                <li>Core Web Vitals optimization</li>
+                <li>Crawlability & indexing perfection</li>
+            </ul>
+
+            <h4>2. Content as Assets</h4>
+            <p>Every piece of content is engineered to rank and convert. We build content that compounds in value with time.</p>
+            <ul>
+                <li>Keyword research and intent mapping</li>
+                <li>Topic cluster architecture</li>
+                <li>Conversion-optimized copywriting</li>
+                <li>Quarterly content refresh & updates</li>
+            </ul>
+
+            <h4>3. On-Page Optimization</h4>
+            <p>Perfect markup that signals intent to Google AND converts visitors to leads.</p>
+            <ul>
+                <li>Title & meta tag optimization</li>
+                <li>Header hierarchy and semantics</li>
+                <li>Schema markup implementation</li>
+                <li>Internal linking strategy</li>
+            </ul>
+
+            <h4>4. Authority & Links</h4>
+            <p>We build your domain authority through strategic partnerships and link acquisition.</p>
+            <ul>
+                <li>Backlink audit and disavow strategy</li>
+                <li>High-quality link building</li>
+                <li>Brand mention tracking</li>
+                <li>Authority scorecard reporting</li>
+            </ul>
+
+            <div class="stat-box">
+                <p class="stat-item">$40M+ Revenue Attributed to SEO (Across client portfolio)</p>
+                <p class="stat-item">3.2x Average ROI (At 18 months)</p>
+                <p class="stat-item">18 mo Payback Period (Then profit indefinitely)</p>
+                <p class="stat-item">98 Avg Lighthouse Score (Technical excellence)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPENDIX -->
+    <div class="page-section">
+        <h1>Appendix</h1>
+
+        <h2>About This Document</h2>
+        <p>This document contains a comprehensive export of all content from the IntelliCloud website (intellicloud.com). The content is organized by section and page, making it easy to reference and understand the complete website structure.</p>
+
+        <h3>Document Structure</h3>
+        <p>Each section includes:</p>
+        <ul>
+            <li>File path for reference</li>
+            <li>Page title and meta description</li>
+            <li>All headings organized hierarchically</li>
+            <li>Body content including paragraphs, lists, and key features</li>
+            <li>Statistics and metrics</li>
+            <li>Case studies and testimonials</li>
+        </ul>
+
+        <h3>Export Instructions</h3>
+        <p>To export this document to Microsoft Word:</p>
+        <ol>
+            <li>Open this HTML file in your web browser</li>
+            <li>Press Ctrl+P (Windows) or Cmd+P (Mac) to open the print dialog</li>
+            <li>Select "Save as PDF" or "Microsoft Print to PDF" as the printer</li>
+            <li>Save the PDF file</li>
+            <li>Open the PDF in Microsoft Word (File > Open)</li>
+            <li>Word will convert the PDF to an editable document</li>
+        </ol>
+
+        <p><strong>Alternative Method:</strong></p>
+        <ol>
+            <li>Open this HTML file in Microsoft Word directly (File > Open)</li>
+            <li>Word will import the HTML and preserve formatting</li>
+            <li>Save as a .docx file</li>
+        </ol>
+
+        <h3>Contact Information</h3>
+        <p><strong>Website:</strong> https://intellicloud.com</p>
+        <p><strong>Email:</strong> info@intellicloud.com</p>
+        <p><strong>Version:</strong> 2.0 (November 2025)</p>
+    </div>
+
+</body>
+</html>
