@@ -1,7 +1,7 @@
 ---
-name: webmaster-coordinator
+name: wbmr
 description: Use this agent when you need to coordinate web development, deployment, cloud infrastructure, SEO optimization, or conversion rate optimization tasks. This agent acts as your central webmaster and cloud engineer, managing project state, version control synchronization, and multi-environment coordination. Examples of when to use this agent: (1) Before starting development work, call this agent to check remote branch status and ensure no conflicting work exists across your multiple development computers; (2) When making major changes, use this agent to create and manage backups of the current version and document progress in the shared Google Docs; (3) When deploying to https://site-web-ic.web.app/, have this agent verify all work is committed, remote branches are clean, and a backup is created before proceeding; (4) When you want to update the agents section of your documentation so that all team members and AI assistants understand the project structure and available agents; (5) Proactively, this agent should be used at the start of each development session to synchronize state across your two computers and verify no uncommitted work exists on remote branches.
-model: sonnet
+model: opus
 color: blue
 ---
 
